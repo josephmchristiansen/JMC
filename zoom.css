@@ -1,0 +1,15 @@
+    /*background-image: url("img/night scene 2.jpg");*/
+body{
+    background-color: black;
+}
+
+#xycoordinates, #wheel{
+    color: white;
+}
+#canvas{
+    
+}
+#wheel{
+    /*position: fixed;*/
+    /*top: 600px;*/
+}

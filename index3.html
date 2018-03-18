@@ -1,0 +1,121 @@
+<html lang="eg">
+    <head>
+        <meta charset="utf-8">
+        <title>Joseph M. Christiansen</title>
+        <link rel="stylesheet" href="base.css">
+        <link href="https://fonts.googleapis.com/css?family=Armata" rel="stylesheet">
+        <script src="jquery-1.8.3.min.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+    <div id=header class=nav-bar onmouseleave="setTimeout(headerClose, 200)">
+            <ul class=nav-btns>
+                <li class=nav-btn> <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a></li>
+                <li class=nav-btn><a href="portfolio.html">PORTFOLIO</a></li>
+                <li class=nav-btn><a href="certificates.html">CERTIFICATES</a></li>
+                <li class=nav-btn><a href="skills.html">SKILLS</a></li>
+                <li class=nav-btn><a href="about.html">CONTACT</a></li>
+                <li class=nav-btn><a href="webdev.html">PROJECTS</a></li>
+                <li id=logo class="nav-btn"><a href="index.html"></a></li>
+                <li id=home2 class="nav-btn home2"><a href="index.html">JMC</a></li>
+                <li id=home class="nav-btn home"><a href="index.html">JOSEPH M. CHRISTIANSEN</a></li>
+            </ul>
+
+            </div>
+        <script>
+          function myFunction() {
+            var x = document.getElementById("header");
+            if (x.className === "nav-bar") {
+              x.className += " r";
+            } else {
+              x.className = "nav-bar";
+            }
+          }
+
+          function headerClose() {
+            var x = document.getElementById("header");
+            x.className = "nav-bar";
+          }
+        </script>
+    </head>
+    <body id=body onload="startTime()">
+    <!-- <div id=L3> -->
+    <!-- <div id=L2> -->
+    <!-- <div id=L1> -->
+
+      <div id=bgimg>
+        <svg id="svg2" viewBox="0 0 2048 1080">
+          <path id="P4" d="m660 472.36 140 100 840 160 408-43v363h-2048v-440z" fill="#646464">
+            <!-- <animate begin="0s" fill="freeze" attributeName="d" dur="3s" to="m 992.64715,1010.2568 -367.64711,-757.8947 624.99996,0 0,544.73685 z" /> -->
+          </path>
+          <path id="P3" d="m1040 572.36 1008 170v310h-2048v-200z" fill="#505050">
+
+          </path>
+          <path id="P2" d="m 400,1047.3622 -400,0 0,3 0,2 1140,0 908,0 0,-5 -403,0 -815.3457,0 z" fill="#3c3c3c">
+            <animate begin="1s" fill="freeze" attributeName="d" dur="10s" to="m 400,442.36218 -400,110 0,340 0,160.00002 1140,0 908,0 0,-296.00002 -403,-54 -815.3457,94.1738 L 400,442.36218 Z" />
+          </path>
+          <path id="P1" d="m 930,1047.3622 -930,0 0,5 1700,0 348,0 0,-5 -78,0 -554.1758,0 z" fill="#282828">
+            <animate begin="1s" fill="freeze" attributeName="d" dur="10s" to="m 930,682.36218 -930,150 0,220.00002 1700,0 348,0 0,-180.00002 -78,-10 -554.1758,53.4492 L 930,682.36218 Z" />
+          </path>
+        </svg>
+      </div>
+
+
+        <div id=content>
+            <div id=hello_container>
+
+
+                <h1>HELLO, MY NAME IS</h1>
+                <script>
+                    document.addEventListener('DOMContentLoaded',function(event){
+                      var dataText = [ "HELLO, MY NAME IS", "HOLA, MI NOMBRE ES", "BONJOUR, MON NOM EST", "SVEIKI, MANS VĀRDS IR", "你好我的名字是", "Nyob zoo, kuv lub npe hu ua ", "HELLO, MY NAME IS"];
+
+                      function typeWriter(text, i, fnCallback) {
+                        if (i < (text.length)) {
+                         document.querySelector("h1").innerHTML = text.substring(0, i+1) +'<span id=span aria-hidden="true"></span>';
+
+                          setTimeout(function() {
+                            typeWriter(text, i + 1, fnCallback)
+                          }, 100);
+                        }
+                        else if (typeof fnCallback == 'function') {
+                          setTimeout(fnCallback, 700);
+                        }
+                      }
+                       function StartTextAnimation(i) {
+                         if (typeof dataText[i] == 'undefined'){
+                            setTimeout(function() {
+                              StartTextAnimation(0);
+                            }, 20000);
+                         }
+                        if (i < dataText[i].length) {
+                         typeWriter(dataText[i], 0, function(){
+                           StartTextAnimation(i + 1);
+                         });
+                        }
+                      }
+                      StartTextAnimation(0);
+                        // document.getElementById("span").style.WebkitAnimationPlayState = "paused";
+                        // document.getElementById("span").style.animationPlayState = "paused";
+                    });
+                </script>
+                <h2>JOSEPH M. CHRISTIANSEN</h2>
+                <h3>I AM A STUDENT AT OLYMPUS HIGH SCHOOL</h3>
+            </div>
+        </div>
+
+        <div id=footer>
+            <div id=foot-container>
+              <div id=foottime>
+              <p id=foot1>© 2018 | JOSEPH M. CHRISTIANSEN | ALL RIGHTS RESERVED</p>
+              <p id=foot2>© 2018 | JOSEPH M. CHRISTIANSEN <br> ALL RIGHTS RESERVED</p>
+              <p id=foot3>© 2018 | JMC <br> ALL RIGHTS RESERVED</p>
+            </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    </div>
+    </body>
+    <!-- <script src="//code.jquery.com/jquery-1.11.2.min.js"></script> -->
+    <!-- <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+</html>

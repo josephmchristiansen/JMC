@@ -1,0 +1,43 @@
+<html lang="eg">
+    <head>
+        <meta charset="utf-8">
+        <title>ZOOM</title>
+        <link rel="stylesheet" href="zoom.css">
+        <link href="https://fonts.googleapis.com/css?family=Armata" rel="stylesheet">
+        <!--<script src="jquery-3.0.0.js"></script>-->
+    </head>
+    <body>
+        
+        <canvas id="canvas" width="400" height="200" style="border:1px solid #fff;" onmousemove="cnvs_getCoordinates(event); imgmove(event);" onmouseout="load();"></canvas>
+
+        
+        <div id="xycoordinates"></div>
+        <div id="wheel">wheel</div>
+        
+        <script>
+        
+        var context = document.getElementById('canvas').getContext("2d");
+        var img = new Image();
+        img.onload = function (){
+            context.drawImage(img, 0, 0, 400, 200);
+        }
+        img.src = "img/night scene 2.jpg";
+        </script>
+        
+        
+        
+        <script>
+            window.onload = function() {
+                wheel();
+            }
+        </script>
+
+
+        
+        
+        
+    </body>
+    <!--<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>-->
+    <!--<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>-->
+    <script type="text/javascript" src="zoom.js"></script>
+</html>
