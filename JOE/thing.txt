@@ -1,0 +1,74 @@
+<div class="iframe-container" id=if1>
+          <div id=iframe-cover onClick="viewIframe(this)">
+            <div id=iframe-cover-text>VIEW PROJECT</div>
+          </div>
+          <div id=iframe-nav-left>
+            <img id=iframe-back src="img/icon-left.png" alt="back" onClick="history.go(-1);return true;"></img>
+            <img id=iframe-forward src="img/icon-right.png" alt="forward"  onClick="history.go(1);return true;"></img>
+            <div id=iframe-title>Math High</div>
+          </div>
+          <div id=iframe-nav-right>
+            <img id=iframe-close src="img/icon-close.png" alt="close"  onClick="closeIframe(this)"></img>
+            <img id=iframe-open src="img/icon-open.png" alt="open"  onClick="openIframe(this)"></img>
+            <img id=iframe-info src="img/icon-info.png" alt="info"  onClick="infoIframe(this)"></img>
+          </div>
+          <iframe style="background: white;"src="webdev/tutorial.01 done/case1/mhJoe.html" height="600" width="700"></iframe>
+        </div>
+
+
+
+
+<!-- <div id=iframe-container>
+        <div id=iframe-forward onClick="history.go(-1);return true;">&lt;</div>
+        <div id=iframe-back onClick="history.go(1);return true;">&gt;</div>
+        <div id=iframe-title><a href="webdev/tutorial.01 done/case2/macbethJoe.html">Macbeth</a></div>
+        <iframe src="webdev/tutorial.01 done/case2/macbethJoe.html"></iframe>
+        </div>
+        <div id=iframe-container>
+        <div id=iframe-forward onClick="history.go(-1);return true;">&lt;</div>
+        <div id=iframe-back onClick="history.go(1);return true;">&gt;</div>
+        <div id=iframe-title><a href="webdev/tutorial.02 done/case1/uwlistJoe.html">Higher Ed</a></div>
+        <iframe src="webdev/tutorial.02 done/case1/uwlistJoe.html"></iframe>
+        </div>
+        <div id=iframe-container>
+        <div id=iframe-forward onClick="history.go(-1);return true;">&lt;</div>
+        <div id=iframe-back onClick="history.go(1);return true;">&gt;</div>
+        <div id=iframe-title><a href="webdev/tutorial.02 done/case2/home.htm">Fiddler on the Roof</a></div>
+        <iframe src="webdev/tutorial.02 done/case2/home.htm"></iframe>
+        </div>
+        <div id=iframe-container>
+        <div id=iframe-forward onClick="history.go(-1);return true;">&lt;</div>
+        <div id=iframe-back onClick="history.go(1);return true;">&gt;</div>
+        <div id=iframe-title><a href="webdev/tutorial.03 done/case1/crypt.htm">Cryptography</a></div>
+        <iframe src="webdev/tutorial.03 done/case1/crypt.htm"></iframe>
+        </div>
+        <div id=iframe-container>
+        <div id=iframe-forward onClick="history.go(-1);return true;">&lt;</div>
+        <div id=iframe-back onClick="history.go(1);return true;">&gt;</div>
+        <div id=iframe-title><a href="webdev/tutorial.03 done/case2/bmtour.htm">Mountain Wheels</a></div>
+        <iframe src="webdev/tutorial.03 done/case2/bmtour.htm"></iframe>
+        </div>
+        <div id=iframe-container>
+        <div id=iframe-forward onClick="history.go(-1);return true;">&lt;</div>
+        <div id=iframe-back onClick="history.go(1);return true;">&gt;</div>
+        <div id=iframe-title><a href="webdev/tutorial.04 done/case2 COMPLETE/redballtxt.htm">Redball Pizza</a></div>
+        <iframe src="webdev/tutorial.04 done/case2 COMPLETE/redballtxt.htm"></iframe>
+        </div>
+        <div id=iframe-container>
+        <div id=iframe-forward onClick="history.go(-1);return true;">&lt;</div>
+        <div id=iframe-back onClick="history.go(1);return true;">&gt;</div>
+        <div id=iframe-title><a href="webdev/tutorial.05/case1 done/sudoku.htm">Sudoku</a></div>
+        <iframe src="webdev/tutorial.05/case1 done/sudoku.htm"></iframe>
+        </div>
+        <div id=iframe-container>
+        <div id=iframe-forward onClick="history.go(-1);return true;">&lt;</div>
+        <div id=iframe-back onClick="history.go(1);return true;">&gt;</div>
+        <div id=iframe-title><a href="webdev/OTHER/form/form.html">Form</a></div>
+        <iframe src="webdev/OTHER/form/form.html"></iframe>
+        </div>
+        <div id=iframe-container>
+        <div id=iframe-forward onClick="history.go(-1);return true;">&lt;</div>
+        <div id=iframe-back onClick="history.go(1);return true;">&gt;</div>
+        <div id=iframe-title><a href="webdev/OTHER/vocab/vocab.html">Vocab</a></div>
+        <iframe src="webdev/OTHER/vocab/vocab.html"></iframe>
+        </div> -->
