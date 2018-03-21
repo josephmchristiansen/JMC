@@ -32,6 +32,23 @@
         <h1>A FEW OF MY PROJECTS</h1>
 
         <div id="grid-1">
+          <div class="iframe-container" id=if15>
+            <div class=iframe-cover onClick="viewIframe(this); document.getElementById('d4tif').src='http://d4t.bitballoon.com/index.html' ">
+              <div class=iframe-cover-text>VIEW PROJECT</div>
+            </div>
+            <div class=iframe-nav-left>
+              <img class=iframe-back src="img/icon-left.png" alt="back" onClick="history.go(-1);return true;"></img>
+              <img class=iframe-forward src="img/icon-right.png" alt="forward"  onClick="history.go(1);return true;"></img>
+              <div class=iframe-title>D4T</div>
+            </div>
+            <div class=iframe-nav-right>
+              <img class=iframe-close src="img/icon-close.png" alt="close"  onClick="closeIframe(this)"></img>
+              <img class=iframe-open src="img/icon-open.png" alt="open"  onClick="closeIframe(this); window.open('http://d4t.bitballoon.com/index.html','_blank');"></img>
+              <img class=iframe-info src="img/icon-info.png" alt="info"  onClick="infoIframe(this)"></img>
+            </div>
+            <iframe id=d4tif style="background: white;"src="http://d4t.bitballoon.com/index.html" height="600" width="700"></iframe>
+          </div>
+
           <div class="iframe-container" id=if11>
             <div class=iframe-cover onClick="viewIframe(this)">
               <div class=iframe-cover-text>VIEW PROJECT</div>
@@ -101,22 +118,7 @@
             <iframe style="background: white;"src="index.html" height="600" width="700"></iframe>
           </div>
 
-          <div class="iframe-container" id=if15>
-            <div class=iframe-cover onClick="viewIframe(this); document.getElementById('d4tif').src='https://preview.c9users.io/christiansenjoe123/tsa/D4T/index.html' ">
-              <div class=iframe-cover-text>VIEW PROJECT</div>
-            </div>
-            <div class=iframe-nav-left>
-              <img class=iframe-back src="img/icon-left.png" alt="back" onClick="history.go(-1);return true;"></img>
-              <img class=iframe-forward src="img/icon-right.png" alt="forward"  onClick="history.go(1);return true;"></img>
-              <div class=iframe-title>D4T</div>
-            </div>
-            <div class=iframe-nav-right>
-              <img class=iframe-close src="img/icon-close.png" alt="close"  onClick="closeIframe(this)"></img>
-              <img class=iframe-open src="img/icon-open.png" alt="open"  onClick="closeIframe(this); window.open('https://preview.c9users.io/christiansenjoe123/tsa/D4T/index.html','_blank');"></img>
-              <img class=iframe-info src="img/icon-info.png" alt="info"  onClick="infoIframe(this)"></img>
-            </div>
-            <iframe id=d4tif style="background: white;"src="https://preview.c9users.io/christiansenjoe123/tsa/D4T/index.html" height="600" width="700"></iframe>
-          </div>
+
 
         </div>
 
