@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="svg.css" type="text/css" />
+        <script src="svg.js"></script>
+    </head>
+    <body onmousemove="showCoords(event)">
+       
+        
+        <svg id=svg width="100" height="100">
+            <script>
+                document.getElementById("svg").setAttribute("width", window.innerWidth);
+                document.getElementById("svg").setAttribute("height", window.innerHeight);
+            </script>
+          
+          <circle id=circle cx="200" cy="200" r="100" stroke="black" stroke-width="2" fill="none" />
+          
+          
+<line id=line-1 x1="0" y1="50" x2="140" y2="280" style="stroke:rgb(255,0,0);stroke-width:2" />
+<line id=line-2 x1="50" y1="0" x2="270" y2="130" style="stroke:rgb(255,0,0);stroke-width:2" />
+
+        </svg>
+    </body>
+</html>
