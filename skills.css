@@ -217,6 +217,26 @@ body{
 .skill *{
   float: left;
 }
+.icon{
+  height: 200px;
+  width: 200px;
+  margin-right: 20px;
+  background-size: 2600px 200px !important;
+}
+
+#icon_1{background: url('img/iconsheet.png') 0px 0px;}
+#icon_2{background: url('img/iconsheet.png') -200px 0px;}
+#icon_3{background: url('img/iconsheet.png') -400px 0px;}
+#icon_4{background: url('img/iconsheet.png') -600px 0px;}
+#icon_5{background: url('img/iconsheet.png') -800px 0px;}
+#icon_6{background: url('img/iconsheet.png') -1000px 0px;}
+#icon_7{background: url('img/iconsheet.png') -1200px 0px;}
+#icon_8{background: url('img/iconsheet.png') -1400px 0px;}
+#icon_9{background: url('img/iconsheet.png') -1600px 0px;}
+#icon_10{background: url('img/iconsheet.png') -1800px 0px;}
+#icon_11{background: url('img/iconsheet.png') -2000px 0px;}
+#icon_12{background: url('img/iconsheet.png') -2200px 0px;}
+#icon_13{background: url('img/iconsheet.png') -2400px 0px;}
 
 
 .box{
@@ -288,6 +308,7 @@ body{
 /*}*/
 
 /*//////////////////////////////////////////*/
+
 
 
 @media (min-width: 750px){
