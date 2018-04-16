@@ -1,0 +1,100 @@
+<html lang="eg">
+    <head>
+        <meta charset="utf-8">
+        <title>John W. Christiansen</title>
+        <link rel="stylesheet" href="base.css">
+        <link href="https://fonts.googleapis.com/css?family=Armata" rel="stylesheet">
+        <script src="jquery-3.0.0.js"></script>
+    </head>
+    <body>
+        <div id=header class=nav-bar>
+            <ul class=nav-btns>
+                <!--<li class=nav-logo><a href="../index.php"><img id=logo src=" "></a></li>-->
+                <!--<li id=nav-btn_portfolio class=nav-btn onclick="portfolio()"><a href="#">PORTFOLIO</a></li>-->
+                <!--<li class=nav-btn onclick="experience()"><a href="#">EXPERIENCE</a></li>-->
+                <!--<li class=nav-btn onclick="skills()"><a href="#">SKILLS</a></li>-->
+                <!--<li class=nav-btn onclick="about()"><a href="#">ABOUT</a></li>-->\
+                <li id=nav-btn_portfolio class=nav-btn><a href="portfolio.html">PORTFOLIO</a></li>
+                <li class=nav-btn><a href="experience.html">EXPERIENCE</a></li>
+                <li class=nav-btn><a href="skills.html">SKILLS</a></li>
+                <li class=nav-btn><a href="about.html">ABOUT</a></li>
+                <!--<li class=right-nav-btn><a href="../LOGIN PAGE/login.php">Login</a></li>-->
+            </ul>
+        </div>
+        <div id=content>
+            <div id=hello_container>
+            <div id=hello >
+            <p id=hello_1>HELLO, I'M</p>
+            <p id=hello_2>JOHN W. CHRISTIANSEN</p>
+            <p id=hello_3>PROJECT ENGINEER AT CASCADE ENERGY, INC.</p>
+        </div>
+            </div>
+            
+            <div id=screens1 >
+            <div id=scroll-hide>
+            <!--<div id=scroll-hide-left ></div>-->
+            <!--<div id=scroll-hide-right ></div>-->
+            <!--<div id=scroll-hide-top ></div>-->
+            <!--<div id=scroll-hide-bottom ></div>-->
+            <!--<div id=scroll-hide-middle></div>-->
+            </div>
+            <div id=screens >
+                <div id=about>
+                    <p id=p1>ABOUT</p>
+                    <p>I'm a Project Engineer<br>at Cascade Energy, Inc.<br>www.cascadeenergy.com</p>
+                    <p>I live in the Boise, Idaho Area</p>
+                    <p>CONTACT</p>
+                    <p>208-789-0525 direct<br>801-318-8759 cell</p>
+                    <!--<p>123-123-1234 direct<br>123-123-1234 cell</p>-->
+                    <img class=social src="linkedin-logo.png"></img>
+                    <img class=social src="facebook-letter-logo.png"></img>
+                    <!--<img class=social src="facebook-letter-logo.png"></img>-->
+                </div>
+                <div id=skills>
+                    <p id=p1>SKILLS</p>
+                    <p>I do not want to bost.<br>However, I do have a lot of skills</p>
+                    <ul dir="rtl">
+                        <li>Engineering</li>
+                        <li>Energy</li>
+                        <li>Mechanical Engineering</li>
+                        <li>Microsoft Office</li>
+                        <li>Labview</li>
+                        <li>Energy Engineering</li>
+                        <li>Client Services</li>
+                        <li>Data Collection</li>
+                        <li>Data Analysis</li>
+                        <li>A crap ton of other skills</li>
+                    </ul>
+                </div>
+                <div id=experience>
+                    <p id=p1>EXPERIENCE</p>
+                    <p>I have experienced a lot.</p>
+                    <ul dir="rtl">
+                        <li>Office Lead</li>
+                        <li>Project Engineer</li>
+                        <li>Intern Research Assistant</li>
+                        <li>Laboratory Teaching Assistant</li>
+                        <li>Acting CMO/Founder</li>
+                        <li>Owner</li>
+                        <li>Client Services</li>
+                    </ul>
+                    <p>EDUCATION</p>
+                    <ul dir="rtl">
+                        <li>Brigham Young University</li>
+                    </ul>
+                </div>
+                <div id=portfolio>
+                    <p id=p1>PORTFOLIO</p>
+                    <p>I'm too cool for a Portfolio...</p>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div id=footer >
+            
+        </div>
+    </body>
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</html>

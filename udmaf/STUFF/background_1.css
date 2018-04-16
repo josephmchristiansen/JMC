@@ -1,0 +1,23 @@
+body{
+  background: #fff;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+.line{
+  stroke: #000;
+  stroke-width: 10px;
+}
+
+.phantomline{
+  stroke: #fff;
+  stroke-width: 20px;
+}
+
+div{
+  height: 100%;
+  width: 10px;
+  position: fixed;
+}

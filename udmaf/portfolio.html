@@ -1,0 +1,182 @@
+<html lang="eg">
+    <head>
+        <meta charset="utf-8">
+        <title>Joseph Christiansen</title>
+        <link rel="stylesheet" href="portfolio.css">
+        <link href="https://fonts.googleapis.com/css?family=Armata" rel="stylesheet">
+        <script src="jquery-3.0.0.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <div id=header class=nav-bar>
+            <ul class=nav-btns>
+                <li class=nav-btn> <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a></li>
+                <li class=nav-btn onmousemove="document.getElementById('nav-port-menu').style.display='block';"><a href="portfolio.html">PORTFOLIO</a></li>
+                <li class=nav-btn><a href="certificates.html">CERTIFICATES</a></li>
+                <li class=nav-btn><a href="skills.html">SKILLS</a></li>
+                <li class=nav-btn><a href="about.html">CONTACT</a></li>
+                <li class=nav-btn><a href="webdev.html">PROJECTS</a></li>
+                <li id=home2 class="nav-btn home2"><a href="index.html">JC</a></li>
+                <li id=home class="nav-btn home"><a href="index.html">JOSEPH CHRISTIANSEN</a></li>
+            </ul>
+            <div class=nav-port-menu id=nav-port-menu onmouseleave="document.getElementById('nav-port-menu').style.display='none';">
+              <ul class=nav-port-menu-btns>
+                <li class=nav-port-menu-btn onclick="document.getElementById('co').scrollIntoView();
+                  window.scrollBy(0, -50);">CONTACT</li>
+                <li class=nav-port-menu-btn onclick="document.getElementById('ps').scrollIntoView();
+                  window.scrollBy(0, -50);">SUMMARY</li>
+                <li class=nav-port-menu-btn onclick="document.getElementById('aoe').scrollIntoView();
+                  window.scrollBy(0, -50);">EXPERTISE</li>
+                <li class=nav-port-menu-btn onclick="document.getElementById('we').scrollIntoView();
+                  window.scrollBy(0, -50);">WORK EX.</li>
+                <li class=nav-port-menu-btn onclick="document.getElementById('ks').scrollIntoView();
+                  window.scrollBy(0, -50);">KEY SKILLS</li>
+                <li class=nav-port-menu-btn onclick="document.getElementById('psk').scrollIntoView();
+                  window.scrollBy(0, -50);">PERSONAL</li>
+                <li class=nav-port-menu-btn onclick="document.getElementById('pro').scrollIntoView();
+                  window.scrollBy(0, -50);">PRO SKILLS</li>
+                <li class=nav-port-menu-btn onclick="document.getElementById('ac').scrollIntoView();
+                  window.scrollBy(0, -50);">ACADEMIC</li>
+                <li class=nav-port-menu-btn onclick="document.getElementById('ref').scrollIntoView();
+                  window.scrollBy(0, -50);">REFERENCES</li>
+              </ul>
+            </div>
+          </div>
+        <script>
+          function myFunction() {
+            var x = document.getElementById("header");
+            if (x.className === "nav-bar") {
+              x.className += " r";
+            } else {
+              x.className = "nav-bar";
+            }
+          }
+        </script>
+    </head>
+<body>
+
+<div class="container">
+  <h1>Résumé</h1>
+
+<div class="grid">
+
+  <div class="box title" id=co ><p>CONTACT</p></div>
+  <div class="box"><ul style="list-style-type:circle;">
+        <li>JOSEPH CHRISTIANSEN</li>
+        <li>example123@gmail.com</li>
+        <li>123-456-7890</li>
+      </ul></div>
+
+  <!-- <div class="box title" id=ps ><p>PERSONAL SUMMARY</p></div>
+  <div class="box"><p>NULL</p></div>
+
+  <div class="box title" id=aoe ><p>AREAS OF EXPERTISE</p></div>
+  <div class="box"><ul style="list-style-type:circle;">
+        <li>NULL</li>
+      </ul>
+  </div> -->
+
+  <div class="box title" id=we><p>WORK EXPERIENCE</p></div>
+  <div class="box">
+    <p><b>White Ditch Irrigation Company</b></p>
+    <p><i>July, 2016 - Present</i></p>
+    <p>Morbi non luctus nibh, at sodales orci. Ut dictum, erat a posuere porta, augue justo blandit elit, id mattis augue eros vitae dui. Ut dictum aliquet lacus, et tristique mauris condimentum sed.</p>
+    <br>
+    <p><b>House robbing</b></p>
+    <p><i>March, 2013 - Present</i></p>
+    <p>Donec dignissim maximus est nec pellentesque. Vivamus lobortis eleifend imperdiet. In sed ultrices neque, id luctus dui.</p>
+    <br>
+    <p><b>Window Washing Service</b></p>
+    <p><i>July, 2013 - Present</i></p>
+    <p>Donec neque nulla, dapibus id tristique vitae, tempor eget diam. Phasellus vulputate mi accumsan maximus gravida. Phasellus blandit nec est a vulputate.</p>
+  </div>
+
+  <div class="box title" id=aw><p>AWARDS</p></div>
+  <div class="box">
+    <p><b>Smart Award</b></p>
+    <p><i>Grade Years received: 10th, 11th, 12th</i></p>
+    <p>Fusce id sem lobortis urna mattis imperdiet vel ut orci. Aliquam erat volutpat. Integer imperdiet quam arcu, vel congue magna vestibulum sed. Sed cursus semper dolor, eget semper turpis accumsan ut.</p>
+    <br>
+    <p><b>Web development Award</b></p>
+    <p><i>January, 2018</i></p>
+    <p>In et felis neque. Curabitur pellentesque ut mi a ultrices. Maecenas pellentesque turpis molestie orci sodales ornare. Sed vitae tincidunt augue.</p>
+    <br>
+    <p><b>Epic Award</b></p>
+    <p><i>December 20, 2017</i></p>
+    <p>Vivamus pretium quis orci non fermentum. Aenean id tortor eros. Vivamus ultrices mattis nisl et fermentum. Aliquam dictum tristique sapien, ut dapibus neque molestie sit amet. Mauris quis orci viverra, malesuada ante ut, rutrum lectus.</p>
+    <br>
+  </div>
+
+  <div class="box title" id=aw><p>LEADERSHIP</p></div>
+  <div class="box">
+    <p><b>Team leader</b></p>
+    <p><i>2017 - Present</i></p>
+    <p>Nunc gravida vulputate lorem, ac facilisis erat lacinia vel. Praesent tellus libero, hendrerit nec elit vel, efficitur scelerisque diam.</p>
+    <br>
+    <p><b>Leader</b></p>
+    <p><i>2014 - 2016</i></p>
+    <p>Cras pulvinar consequat eros, ut facilisis turpis tempus in. Nulla facilisi. Sed pulvinar nisl nec massa molestie ornare. Etiam a lobortis nisl.</p>
+    <br>
+  </div>
+
+  <div class="box title" id=aw><p>VOLUNTEER</p></div>
+  <div class="box">
+    <p><b>Service Project</b></p>
+    <p><i>June, 2015 - December, 2016</i></p>
+    <p>Morbi fringilla ante sed dictum dapibus. Duis eleifend nunc vel elementum sagittis. Mauris et diam ultrices, fermentum mauris eget, rhoncus mi. </p>
+    <br>
+    <p><b>Support Service</b></p>
+    <p><i>August, 2014 - Present</i></p>
+    <p>Aenean semper lacus nec pellentesque tempus. Aenean ac tellus placerat, pharetra ligula nec, elementum ligula. Integer quis ligula justo. Nulla sed aliquet sem. Nunc placerat felis felis, a ultricies turpis feugiat laoreet. Sed tempus et ante eu auctor.</p>
+    <br>
+    <p><b>Cleanup Service Project</b></p>
+    <p><i>June, 2012 - Present</i></p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pellentesque, massa vehicula consequat ullamcorper, purus mauris facilisis urna, sed tincidunt nisi risus nec metus.</p>
+    <br>
+  </div>
+
+  <div class="box title" id=ks><p>KEY SKILLS AND COMPETENCIES</p></div>
+  <div class="box"><ul style="list-style-type:circle;">
+        <li>Computer Programming</li>
+      </ul></div>
+
+  <div class="box title" id=psk><p>PERSONAL SKILLS</p></div>
+  <div class="box"><ul style="list-style-type:circle;">
+        <li>Hard Working</li>
+        <li>Optimistic</li>
+        <li>Helpfull</li>
+      </ul></div>
+
+  <div class="box title" id=pro><p>PROFESSIONAL</p></div>
+  <div class="box"><ul style="list-style-type:circle;">
+        <li>Microsoft Word</li>
+        <li>Microsoft Excel</li>
+        <li>Microsoft PowerPoint</li>
+        <li>Microsoft Office Outlook</li>
+      </ul></div>
+
+  <div class="box title" id=ac><p>ACADEMIC QUALIFICATIONS</p></div>
+  <div class="box"><p>High School &nbsp;&nbsp;&nbsp;&nbsp; 1880 - 2088</p></div>
+
+  <div class="box title" id=ref><p>REFERENCES</p></div>
+  <div class="box"><ul style="list-style-type:circle;">
+        <li>John Doe<br>johndoe@email.com</li>
+        <li>More available on request.</li>
+      </ul></div>
+
+</div>
+</div>
+
+        <div id=footer>
+          <!-- <div id=foottime>PAGE CURRENTLY UNDER DEVELOPMENT</div> -->
+            <div id=foot-container>
+              <p id=foot1>© 2018 | JOSEPH CHRISTIANSEN | ALL RIGHTS RESERVED</p>
+              <p id=foot2>© 2018 | JOSEPH CHRISTIANSEN <br> ALL RIGHTS RESERVED</p>
+              <p id=foot3>© 2018 | JC <br> ALL RIGHTS RESERVED</p>
+            </div>
+        </div>
+
+    </body>
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="test.js"></script>
+</html>
