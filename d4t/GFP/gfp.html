@@ -1,8 +1,12 @@
+
 <html>
   <head>
       <meta charset="utf-8">
       <title>GUIDE FOR PURCHASE</title>
-      <link rel="stylesheet" href="../GFP/gfp.css">
+      <link rel="stylesheet" href="gfp.css">
+      <script type="text/javascript" src="gfp.js"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+      <script src="RESOURCES/jquery-3.2.1.js"></script>
       <div id=nav-dropdown>
           <ul id=tec class=nav-dropdown-btn>
             <li class="nav-btn"><a href="../TECHNOLOGIES/technologies.html?va">VIRTUAL AGENT</a></li>
@@ -70,8 +74,22 @@
       </div>
 
   </head>
-  <body onmousemove="navdropdownhide();">
-    <div class=page>
+  <body onload="linkcheck();" onmousemove="navdropdownhide();">
+    <div class=intro>
+      <h1>Need help deciding what D4T AI Robot to purchase?</h1>
+      <h4>Let us help you. Select the option that best fits you. Or, continue, to browse all of our products.</h4>
+      <div id=intro-options-iam class=intro-options>
+        <div id=intro-opt-ed class=intro-opt onclick="opt('ed');"><div class=intro-opt-iam>I'm an</div><p>EDUCATOR</p></div>
+        <div id=intro-opt-st class=intro-opt onclick="opt('st');"><div class=intro-opt-iam>I'm a</div><p>STUDENT</p></div>
+        <div id=intro-opt-re class=intro-opt onclick="opt('re');"><div class=intro-opt-iam>I'm a</div><p>RESEARCHER</p></div>
+        <div id=intro-opt-ho class=intro-opt onclick="opt('ho');"><div class=intro-opt-iam>I'm a</div><p>HOMEOWNER</p></div>
+        <div id=intro-opt-fa class=intro-opt onclick="opt('fa');"><div class=intro-opt-iam>We're a</div><p>FAMILY</p></div>
+        <div id=intro-opt-bu class=intro-opt onclick="opt('bu');"><div class=intro-opt-iam>We're a</div><p>BUSINESS</p></div>
+        <div id=intro-opt-at class=intro-opt onclick="opt('at');"><div class=intro-opt-iam>I'm an</div><p>ATHLETE</p></div>
+        <div id=intro-opt-x class=intro-opt onclick="opt('x');"><p>BROWSE<br> ALL</p></div>
+      </div>
+    </div>
+    <!-- <div class=page> -->
         <!-- <div class=jumbotron>
 
         <div class=jumbotitle><h4>SHOP</h4></div>
@@ -79,61 +97,113 @@
         </div> -->
 
         <div class=section>
-          <div class=item>
+          <div class="item ed">
+            <div class=item-title>LMS</div>
             <img class=item-img src="img/reading.jpg"></img>
-            <div class=item-title>Educational AI</div>
-            <div class='item-description'>Used  in educational settings to facilitate teaching and make it more accessible.</div>
-            <br>
+            <div class='item-description'>LEARNING MANAGEMENT SYSTEM. Used  in educational settings to facilitate teaching and make it more accessible.</div>
             <div class=item-cost>$12,000</div>
-            <!-- <div class=item-buy>ADD TO CART</div> -->
-            <!--https://www.extremetech.com/wp-content/uploads/2016/02/do_androids_read_robot_book__by_d4n13l3-d5dspfv-640x353.jpg-->
+            <div class=item-buy>PURCHASE</div>
+            <!-- https://www.extremetech.com/wp-content/uploads/2016/02/do_androids_read_robot_book__by_d4n13l3-d5dspfv-640x353.jpg -->
           </div>
-          <div class=item>
+          <div class="item st">
+            <div class=item-title>STUDY TOOLS</div>
             <img class=item-img src="img/teaching.jpg"></img>
-            <div class=item-title>Business AI</div>
             <div class='item-description'>Used for business decisions and business management.</div>
-            <br>
             <div class=item-cost>$12,000</div>
-            <!-- <div class=item-buy>ADD TO CART</div> -->
+            <div class=item-buy>PURCHASE</div>
             <!--https://sdtimes.com/wp-content/uploads/2015/07/0713.sdt-machine-teaching.jpg-->
           </div>
-          <div class=item>
+          <div class="item st">
+            <div class=item-title>PLANNER</div>
             <img class=item-img src="img/home.jpg"></img>
-            <div class=item-title>Home Use AI</div>
             <div class='item-description'>Used to keep track of your calendar and other home operations.</div>
-            <br>
             <div class=item-cost>$8,000</div>
-            <!-- <div class=item-buy>ADD TO CART</div> -->
+            <div class=item-buy>PURCHASE</div>
             <!--https://www.voicebot.ai/wp-content/uploads/2017/02/pwc-smart-home-consumer-study.jpg-->
           </div>
-          <div class=item>
+          <div class="item re">
+            <div class=item-title>DATA ANALYSIS</div>
             <img class=item-img src="img/reading-deluxe.jpg"></img>
-            <div class=item-title>Educational AI Deluxe</div>
             <div class='item-description'>Used to facilitate teaching and increase access to education. This edition has more versatility than the basic version.</div>
-            <br>
             <div class=item-cost>$18,000</div>
-            <!-- <div class=item-buy>ADD TO CART</div> -->
+            <div class=item-buy>PURCHASE</div>
             <!--https://cdn57.androidauthority.net/wp-content/uploads/2016/05/artificial-intelligence-840x473.jpg-->
           </div>
-          <div class=item>
+          <div class="item re">
+            <div class=item-title>SIMULATOR</div>
             <img class=item-img src="img/business-deluxe.jpg"></img>
-            <div class=item-title>Business AI Deluxe</div>
             <div class='item-description'>Used for business decisions and business management. This edition has more versatility than the basic version.</div>
-            <br>
             <div class=item-cost>$18,000</div>
-            <!-- <div class=item-buy>ADD TO CART</div> -->
+            <div class=item-buy>PURCHASE</div>
           </div>
-          <div class=item>
+          <div class="item re">
+            <div class=item-title>PREDICTIVE MODELING</div>
             <img class=item-img src="img/home-deluxe.jpg"></img>
-            <div class=item-title>Home Use AI Deluxe</div>
             <div class='item-description'>Used for keeping track of your calendar and other home operations. This edition has more versatility than the basic version.</div>
-            <br>
             <div class=item-cost>$12,000</div>
-            <!-- <div class=item-buy>ADD TO CART</div> -->
+            <div class=item-buy>PURCHASE</div>
+          </div>
+          <div class="item ho">
+            <div class=item-title>SMART-FUN</div>
+            <img class=item-img src="img/home-deluxe.jpg"></img>
+            <div class='item-description'>Used for keeping track of your calendar and other home operations. This edition has more versatility than the basic version.</div>
+            <div class=item-cost>$12,000</div>
+            <div class=item-buy>PURCHASE</div>
+          </div>
+          <div class="item fa">
+            <div class=item-title>GUARD-DOG</div>
+            <img class=item-img src="img/home-deluxe.jpg"></img>
+            <div class='item-description'>Used for keeping track of your calendar and other home operations. This edition has more versatility than the basic version.</div>
+            <div class=item-cost>$12,000</div>
+            <div class=item-buy>PURCHASE</div>
+          </div>
+          <div class="item bu">
+            <div class=item-title>COMMUNICATOR</div>
+            <img class=item-img src="img/home-deluxe.jpg"></img>
+            <div class='item-description'>Used for keeping track of your calendar and other home operations. This edition has more versatility than the basic version.</div>
+            <div class=item-cost>$12,000</div>
+            <div class=item-buy>PURCHASE</div>
+          </div>
+          <div class="item bu">
+            <div class=item-title>DATA-SAFE</div>
+            <img class=item-img src="img/home-deluxe.jpg"></img>
+            <div class='item-description'>Used for keeping track of your calendar and other home operations. This edition has more versatility than the basic version.</div>
+            <div class=item-cost>$12,000</div>
+            <div class=item-buy>PURCHASE</div>
+          </div>
+          <div class="item bu">
+            <div class=item-title>FINANCE</div>
+            <img class=item-img src="img/home-deluxe.jpg"></img>
+            <div class='item-description'>Used for keeping track of your calendar and other home operations. This edition has more versatility than the basic version.</div>
+            <div class=item-cost>$12,000</div>
+            <div class=item-buy>PURCHASE</div>
+          </div>
+          <div class="item at">
+            <div class=item-title>COACH</div>
+            <img class=item-img src="img/home-deluxe.jpg"></img>
+            <div class='item-description'>Used for keeping track of your calendar and other home operations. This edition has more versatility than the basic version.</div>
+            <div class=item-cost>$12,000</div>
+            <div class=item-buy>PURCHASE</div>
+          </div>
+          <div class="item at">
+            <div class=item-title>POCKET-DOCTOR</div>
+            <img class=item-img src="img/home-deluxe.jpg"></img>
+            <div class='item-description'>Used for keeping track of your calendar and other home operations. This edition has more versatility than the basic version.</div>
+            <div class=item-cost>$12,000</div>
+            <div class=item-buy>PURCHASE</div>
+          </div>
+          <div class="item at">
+            <div class=item-title>BUDDY</div>
+            <img class=item-img src="img/home-deluxe.jpg"></img>
+            <div class='item-description'>Used for keeping track of your calendar and other home operations. This edition has more versatility than the basic version.</div>
+            <div class=item-cost>$12,000</div>
+            <div class=item-buy>PURCHASE</div>
           </div>
         </div>
 
+    <!-- </div> -->
+    <div class=outtro>
+      <p>CONTACT:<br>PHONE: 314-159-2653</p>
     </div>
-
   </body>
 </html>
