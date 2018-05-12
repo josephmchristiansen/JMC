@@ -1,0 +1,542 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>INFO</title>
+        <link rel="stylesheet" href="info.css">
+        <script type="text/javascript" src="info.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <div id=nav-dropdown>
+            <ul id=tec class=nav-dropdown-btn>
+              <li class="nav-btn"><a href="../TECHNOLOGIES/technologies.html?va">VIRTUAL AGENT</a></li>
+              <li class="nav-btn"><a href="../TECHNOLOGIES/technologies.html?dm">DECISION MANAGEMENT</a></li>
+              <li class="nav-btn"><a href="../TECHNOLOGIES/technologies.html?sr">SPEECH RECOGNITION</a></li>
+            </ul>
+            <ul id=bus class=nav-dropdown-btn>
+              <li class="nav-btn"><a href="../BUSAPPS/busapps.html?ci">CUSTOMER INTERACTIONS</a></li>
+              <li class="nav-btn"><a href="../BUSAPPS/busapps.html?dm">DATA MANAGEMENT</a></li>
+              <li class="nav-btn"><a href="../BUSAPPS/busapps.html?ct">CHATBOT</a></li>
+              <li class="nav-btn"><a href="../BUSAPPS/busapps.html?em">EMAIL MANAGEMENT</a></li>
+            </ul>
+            <ul id=edu class=nav-dropdown-btn>
+              <li class="nav-btn"><a href="../EDAPPS/edapps.html?gg">GRADING</a></li>
+              <li class="nav-btn"><a href="../EDAPPS/edapps.html?sg">SCHEDULING</a></li>
+              <li class="nav-btn"><a href="../EDAPPS/edapps.html?gs">GROUPS</a></li>
+              <li class="nav-btn"><a href="../EDAPPS/edapps.html?lg">LEARNING</a></li>
+            </ul>
+            <ul id=res class=nav-dropdown-btn>
+                <li id="nav-dropdown-btn" class="nav-btn"><a href="../RES/res.html?hr">HEALTHCARE RESEARCH</a></li>
+                <li id="nav-dropdown-btn" class="nav-btn"><a href="../RES/res.html?ac">AI CURING CANCER</a></li>
+                <li id="nav-dropdown-btn" class="nav-btn"><a href="../RES/res.html?ar">AI MARKETING RESEARCH</a></li>
+            </ul>
+            <ul id=rec class=nav-dropdown-btn>
+                <li id="nav-dropdown-btn" class="nav-btn"><a href="../REC/rec.html?ac">AI COACHING</a></li>
+                <li id="nav-dropdown-btn" class="nav-btn"><a href="../REC/rec.html?ft">FITNESS TRACKER</a></li>
+                <li id="nav-dropdown-btn" class="nav-btn"><a href="../REC/rec.html?an">AI CAMERAMAN</a></li>
+            </ul>
+            <ul id=pur class=nav-dropdown-btn>
+                <li id="nav-dropdown-btn" class="nav-btn"><a href="../#">pur</a></li>
+            </ul>
+            <ul id=faq class=nav-dropdown-btn>
+              <li class="nav-btn"><a href="../FAQ/faq.html?cu">CURRENT</a></li>
+              <li class="nav-btn"><a href="../FAQ/faq.html?fu">FUTURE</a></li>
+              <li class="nav-btn"><a href="../FAQ/faq.html?pe">PERSONAL</a></li>
+              <li class="nav-btn"><a href="../FAQ/faq.html?co">COMMERCIAL</a></li>
+              <li class="nav-btn"><a href="../FAQ/faq.html?sa">SAFETY</a></li>
+              <li class="nav-btn"><a href="../FAQ/faq.html?li">LIABILITIES</a></li>
+            </ul>
+            <ul id=inf class=nav-dropdown-btn>
+                <li id="nav-dropdown-btn" class="nav-btn"><a href="../INFO/info.html?ts">TSA</a></li>
+                <li id="nav-dropdown-btn" class="nav-btn"><a href="../INFO/info.html?tc">TSA Competitions</a></li>
+                <li id="nav-dropdown-btn" class="nav-btn"><a href="../INFO/info.html?gt">GTI</a></li>
+                <li id="nav-dropdown-btn" class="nav-btn"><a href="../INFO/info.html?gc">GTI Courses</a></li>
+            </ul>
+            <ul id=abt class=nav-dropdown-btn>
+                <li id="nav-dropdown-btn" class="nav-btn"><a href="../#">abt</a></li>
+            </ul>
+        </div>
+        <div id="header" class=nav-bar style="background-color: black;">
+            <ul class=nav-btns>
+                <!-- <li class=nav-btn onmouseover="navdropdown('abt');" ><a href="../ABOUT/about.html">ABOUT</a></li> -->
+                <li class=nav-btn onmouseover="navdropdown('inf');" ><a href="../INFO/info.html">INFO</a></li>
+                <li class=nav-btn onmouseover="navdropdownhideforce()"><a href="../GFP/gfp.html">PURCHASE</a></li>
+                <li class=nav-btn onmouseover="navdropdown('faq');"><a href="../FAQ/faq.html">FAQ</a></li>
+                <li class=nav-btn onmouseover="navdropdown('rec');"><a href="../REC/rec.html">RECREATION</a></li>
+                <li class=nav-btn onmouseover="navdropdown('res');"><a href="../RES/res.html">RESEARCH</a></li>
+                <li class=nav-btn onmouseover="navdropdown('edu');"><a href="../EDAPPS/edapps.html">EDUCATION</a></li>
+                <li class=nav-btn onmouseover="navdropdown('bus');"><a href="../BUSAPPS/busapps.html">BUSINESS</a></li>
+                <li class=nav-btn onmouseover="navdropdown('tec');"><a href="../TECHNOLOGIES/technologies.html">TECH</a></li>
+                <!-- <li class=nav-btn onclick="pagechange('GFP')"><a href="../#">PURCHASE</a></li> -->
+                <img id=D4Ticon style="height:30px; width:30px; float:left; padding:0px; margin:10px;" src="../RESOURCES/D4Ticon.png"/>
+                <li id=home class="nav-btn home"><a href="../index.html">D<b>4</b>TECH</a></li>
+            </ul>
+        </div>
+    </head>
+    <body onload="linkcheck();" onmousemove="navdropdownhide();">
+      <div class=page>
+        <div class=jumbotron>
+          <div class=jumbotitle><h4>INFO</h4></div>
+        </div>
+
+      <div id=tsa-banner>
+        <img style="width:200px" src="img/tsalogonew.png"></img>
+        <p>TECHNOLOGY STUDENT ASSOCIATION</p>
+      </div>
+
+      <div id=intro class=box>
+        <!-- <h1 style="text-align: left">What is the Technology Student Association?</h1> -->
+          <p>"The Technology Student Association (TSA) is a national, non-profit organization of middle and high school students who are engaged in science, technology, engineering, and mathematics (STEM). Since TSA was chartered in 1978, almost 4,000,000 student members have participated through challenging competitions, leadership opportunities, and community service."<span> ~From the <a href="http://www.tsaweb.org/" target="_blank" style="color:black; text-decoration:underline;">TSA website</a></span></p>
+      </div>
+      <div id=mission class=box>
+         <h2>Mission Statement</h2>
+          <p>The Technology Student Association enhances personal development, leadership, and career opportunities in STEM, whereby members apply and integrate these concepts through intracurricular activities, competitions, and related programs.</p>
+      </div>
+     <div id=officers class=box>
+        <h1>2017-2018 National TSA Officers</h1>
+        <div class=tsa-people>
+          <div>
+            <p>President</p>
+            <img src='img/pres.jpg'/>
+            <p>Ms. Aala Nasir</p>
+            <p>National TSA President</p>
+            <p>Deep Run High School</p>
+            <p>Glen Allen, VA</p>
+          </div>
+          <div>
+            <p>Vice President</p>
+            <img src='img/vicepres.jpg'/>
+            <p>Ms. Jessica Strait</p>
+            <p>National TSA Vice President</p>
+            <p>Abingdon High School</p>
+            <p>Abingdon, VA</p>
+          </div>
+          <div>
+            <p>Secretary</p>
+            <img src='img/sec.jpg'/>
+            <p>Ms. Shanda Manasco</p>
+            <p>National TSA Secretary</p>
+            <p>Jemison High School</p>
+            <p>Jemison, AL</p>
+          </div>
+          <div>
+            <p>Treasurer</p>
+            <img src='img/treas.jpg'/>
+            <p>Mr. Simon Jolly</p>
+            <p>National TSA Treasurer</p>
+            <p>Hardin Valley Academy</p>
+            <p>Knoxville, TN</p>
+          </div>
+          <div>
+            <p>Reporter</p>
+            <img src='img/rep.jpg'/>
+            <p>Mr. Yoshi Torralva</p>
+            <p>National TSA Reporter</p>
+            <p>Braden River High School</p>
+            <p>Bradenton, Florida</p>
+          </div>
+          <div>
+            <p>Sergeant-at-Arms</p>
+            <img src='img/serg.jpg'/>
+            <p>Mr. Preston Crawford</p>
+            <p>National TSA Sergeant-at-Arms</p>
+            <p>Lowndes High School</p>
+            <p>Valdosta, GA</p>
+          </div>
+        </div>
+        </div>
+      <div id=tsa-motto>
+        <div id=motto>
+        <h2>Motto</h2>
+          <p style="font-size: calc(26px + 1.5vw)">Learning to lead in a technical world.</p>
+        </div>
+        <div id=creed>
+        <h2>Creed</h2>
+          <p>I believe that Technology Education holds an important place in my life in the technical world. I believe there is a need for the development of good attitudes concerning work, tools, materials, experimentation, and processes of industry. Guided by my teachers, artisans from industry, and my own initiative, I will strive to do my best in making my school, community, state, and nation better places in which to live. I will accept the responsibilities that are mine. I will accept the theories that are supported by proper evidence. I will explore on my own for safer, more effective methods of working and living. I will strive to develop a cooperative attitude and will exercise tact and respect for other individuals. Through the work of my hands and mind, I will express my ideas to the best of my ability. I will make it my goal to do better each day the task before me, and to be steadfast in my belief in my God, and my fellow Americans.</p>
+        </div>
+      </div>
+      <div id=tsainfo>
+      <h4><a href="http://www.tsaweb.org/sites/default/files/Middle%20School%20Website%20Design%20Brief%202018.pdf" target="_blank" >DESIGN BRIEF</a></h4>
+        <h2>Benefits of TSA</h2>
+        <ul id=tsa-benefits-list style="list-style-type: circle;">
+          <li>Recognition</li>
+          <li>Direction and purpose for skills</li>
+          <li>Magnified technilogical literacy</li>
+          <li>Enhanced leadership techniques and experience</li>
+          <li>Option of competing in local, state, and national competitions</li>
+          <li>Networking with students and teachers all over the nation who share similar interests</li>
+        </ul>
+        <h2>TSA at the GTI</h2>
+          <p>Advisors</p>
+            <ul>
+              <li>James (Anthony) Byrom</li>
+              <li>Michael Zervos</li>
+            </ul>
+          <p>We try to expand beyond TSA to help other people compete, problem solve, and learn about different areas of technology. We especially have focused on assisting the Freedom of Technology Club with their projects.</p>
+          <p>We are still a fairly new TSA chapterm so we are still figuring out what the best form of organization is for us. Our particular chapter is in a unique situation. Students from all over the Granite School District are bussed from their home schools to the Granite Technical Institute building. Students stay for two class periods, then are returned to their home schools. This setup has been highly beneficial to the students affected, however, it does make it difficult to organize and have meetings that everyone can participate in. We do not currently have officers. We are considering having four representatives, one chosen from each 2 period class block that will report to our advisors and help distribute information to our members.</p>
+          <p>"We're kind of a flag for all schools." ~Anthony Byrom</p>
+          <p>At the begining of this year we had an assembly where we featured each of the different clubs housed at the GTI, which has greatly increased participation.</p>
+
+</div>
+
+       <!-- <div id=tsa-lists class=box> -->
+         <!-- <span> -->
+          <h2>High School TSA Competitions</h2>
+          <div id=complist>
+            <div class=list-item>
+              <div id=img-1 class=list-img></div>
+              <div class=list-text>
+                <h1>3D Animation</h1>
+                <p>Participants demonstrate their knowledge of 3D animation technology and design skills to creatively solve the challenge posted on the national TSA website.</p>
+              </div>
+            </div>
+            <div class=list-item>
+              <div id=img-2 class=list-img></div>
+              <div class=list-text>
+                <h1>Biotechnology Design</h1>
+                <p>Participants select a contemporary biotechnology problem and demonstrate understanding of it through documented research, the development of a solution, a display (including an optional model or prototype), and an effective multimedia presentation.</p>
+              </div>
+            </div>
+            <div class=list-item>
+              <div id=img-3 class=list-img></div>
+              <div class=list-text>
+                <h1>Digital Video Production</h1>
+                <p>Participants develop a public service announcement and a digital video (with sound) that focuses on the given year’s theme.</p>
+              </div>
+            </div>
+            <div class=list-item>
+              <div id=img-4 class=list-img></div>
+              <div class=list-text>
+                <h1>Music Production</h1>
+                <p>Participants produce an original musical piece that is designed to be played during the national TSA conference opening or closing general sessions.</p>
+              </div>
+            </div>
+            <div class=list-item>
+              <div id=img-5 class=list-img></div>
+              <div class=list-text>
+                <h1>Video Game Design</h1>
+                <p>Participants develop a game that focuses on the subject of their choice. The game must have high artistic, educational, and social value and be interesting, exciting, visually appealing, and intellectually challenging.</p>
+              </div>
+            </div>
+            <div class=list-item>
+              <div id=img-6 class=list-img></div>
+              <div class=list-text>
+                <h1>Webmaster</h1>
+                <p>Participants design, build, and launch a website that features the school’s career and technology/engineering program, the TSA chapter, and the chapter’s ability to research and present a given topic pertaining to technology. Semifinalists participate in an on-site interview to demonstrate the knowledge and expertise gained during the development of the website.</p>
+              </div>
+            </div>
+            <div>
+            <ul id=list-more>
+              <li>Animatronics Participants</li>
+              <li>Architectural Design</li>
+              <li>Architecture Computer-Aided Design (CAD)</li>
+              <li>Chapter Team</li>
+              <li>Children's Stories</li>
+              <li>Coding</li>
+              <li>Computer-Aided Design (CAD)</li>
+              <li>Computer Integrated Manufacturing (CIM)</li>
+              <li>Debating Technological Issues</li>
+              <li>Dragster Design</li>
+              <li>Engineering Design</li>
+              <li>Essays on Technology</li>
+              <li>Extemporaneous Speech</li>
+              <li>Fashion Design and Technology</li>
+              <li>Flight Endurance</li>
+              <li>Future Technology Teacher</li>
+              <li>On Demand Video</li>
+              <li>Photographic Technology</li>
+              <li>Prepared Presentation</li>
+              <li>Promotional Design</li>
+              <li>Scientific Visualization (SciVis)</li>
+              <li>Software Development</li>
+              <li>STEM Careers</li>
+              <li>Structural Design and Engineering</li>
+              <li>System Control Technology</li>
+              <li>Technology Bowl</li>
+              <li>Technology Problem Solving</li>
+              <li>Transportation Modeling</li>
+            </ul>
+            <div id=list-showmore class=list-show onclick="showmore();"><p>SHOW MORE</p></div>
+            <div id=list-showless class=list-show onclick="showless();"><p>SHOW LESS</p></div>
+          </div>
+          </div>
+          <div class=dresscode>
+          <h2>TSA Dress Code</h2>
+            <!-- <div id=dresscode-bgimg></div> -->
+            <div id=dresscode-imgcontainer>
+            <img id=dresscode-dcimg src="img/dresscode.jpg"></img>
+          </div>
+          <img id=dresscode-shirt src="img/shirts.png"></img>
+            <div id=dresscode-code>
+              <div id=dresscode-mostformal class=dresscode-formal>
+              <p>Official TSA Attire (most formal)</p>
+                <ul>
+                  <li>Navy blue BLAZER with an official TSA patch</li>
+                  <li>Scarlet red TIE imprinted with an official TSA logo (for both males and females)</li>
+                  <li>White, button-up TOP with a turn down collar</li>
+                  <li>Light gray PANTS or SKIRT</li>
+                  <li>Black or dark blue SOCKS (males only)</li>
+                  <li>Black dress SHOES (athletic shoes, combat boots, or work boots are considered unacceptable)</li>
+                  <li>Black open toe SHOES or sandals (females only)</li>
+                </ul>
+            </div>
+            <div id=dresscode-lessformal class=dresscode-formal>
+              <p>Professional TSA Attire (less formal)</p>
+                <ul>
+                  <li>Button-up TOP with a turn down collar (T-shirts, polos, golf shirts, or any other informal shirt are considered unacceptable)</li>
+                  <li>Alternative of a BLOUSE (loose top with a collar, buttons, and sleeves) for females</li>
+                  <li>TIE (required for males, optional for females)</li>
+                  <li>Dress PANTS (jeans, shorts, baggy pants, or pants with exterior pockets are considered unacceptable)</li>
+                  <li>DRESSES or SKIRTS are an alternative for females (skirt must be even with fingertips or longer)</li>
+                  <li>Black or dark blue SOCKS (males only)</li>
+                  <li>Black dress SHOES (athletic shoes, combat boots, or work boots are considered unacceptable)</li>
+                  <li>Black open toe SHOES or sandals (females only)</li>
+                </ul>
+            </div>
+            <div id=dresscode-leastformal class=dresscode-formal>
+              <p>Business Casual TSA Attire (least formal)</p>
+                <ul>
+                  <li>Same as professional attire with the following exceptions:</li>
+                  <li>TIE is not required</li>
+                  <li>Polos and golf shirts are acceptable TOPS, however, T-shirts are still unacceptable</li>
+                  <li>Shorts are unacceptable</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+
+<div class=gti>
+<div id=gti-logo>
+  <img src="img/gtilogo.png"></img>
+</div>
+        <header>
+          <h1 >About GTI</h1>
+</header><div><h2 style="text-align: left">Granite Technical Institute</h2>
+  <div id=gti-videos>
+    <iframe id=git-video-1 width="48%" height="315" src="https://www.youtube.com/embed/7miSIF6ZgII?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <iframe id=gti-video-2 width="48%" height="315" src="https://www.youtube.com/embed/8wvAssZxNW8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <p style="font-size:12px;">Videos provided by The <a href="https://schools.graniteschools.org/gti/" target="_blank">Granite Technical Institute</a></p>
+  </div>
+<p>The mission of the Granite Technical Institute is to support students in finding personal purpose, potential and a pathway to their future. This is accomplished by helping students achieve in their program and to move seamlessly to further training and employment. Efforts are being made to directly align critical academic subjects with career and technical education courses, thus promoting real-world application to academic theory in such areas as mathematics, science and English. In addition, articulation and collaboration with Salt Lake Community College and other post-secondary institutions is being enhanced in order to make the transition to further education easier for students. Clear pathways of training have been designed to support student growth from the 9th through the 12th grades.</p>
+<p>The Department of Career and Technical Education in Granite School District has a well-earned reputation for providing high- quality programs that are targeted at high-demand industries. To further this focus, The Granite Technical Institute offers courses in Health Science &amp; Technology, Engineering, Information Technology, Biotechnology/Biomanufacturing, Culinary Arts, Aviation, Agriculture, Cosmetology/Barbering, and Home Building/Construction.</p>
+<h3>How to Sign Up</h3>
+<p>In order to register for any of the classes offered through the Granite Technical Institute, students must first pick up an application in the Career Center of their high school or click on the link below. Once the application is complete and signed by both the student and their guardian, it should be returned to the Career Center for review and approval by the Career Center Coordinator. The Career Center Coordinator will then help the student determine whether or not additional information is required and will help facilitate the scheduling process.</p>
+<h4><a href="https://schools.graniteschools.org/gti/files/2018/01/Application18.19.pdf" target="_blank">Application 2018-2019</a></h4>
+<h3>Transportation</h3>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.822909440753!2d-111.89142858472582!3d40.71635754528614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87528ac28a699ea1%3A0xea03ac94e527cc3d!2s2500+State+St%2C+South+Salt+Lake%2C+UT+84115!5e1!3m2!1sen!2sus!4v1526126316414" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+<p>Transportation (bus) will be provided for students twice daily from the student’s home high school to the GTI. All courses listed in the catalog will be taught at the Granite Technical Institute (2500 South State Street) unless otherwise specified. This schedule is designed to accommodate the two-period block enrollments. Students interested in registering for these courses should see the Career Center Coordinator at their high school. Questions regarding the Granite Technical Institute can be directed to our front office at 385-646-4350</p>
+<p>
+2500 S. State Street Salt Lake City, Utah 84115 <br>
+Attendance Office: (385)-646-4350 <br>
+Main Office: (385)-646-4350 <br>
+Fax: (385)-646-4347 <br>
+Office Hours: Monday-Friday 7:00 a.m. – 3:00 p.m. <br>
+Contact Us: Lbfraser@graniteschools.org
+</p>
+</div>
+<h4><a href="https://schools.graniteschools.org/gti" target="_blank">LEARN MORE HERE</a></h4>
+</div>
+
+
+<h2>Courses offered at the GTI</h2>
+<div id=gtilist>
+  <div class=gti-list-item>
+    <div id=gti-img-1 class=gti-list-img></div>
+    <div class=gti-list-text>
+      <h1>Home Building</h1>
+      <p><b>You will Learn:</b><br>
+• How to design
+• Steps to obtaining building permits
+• Steps to developing a site
+• Subcontracting
+• How to read blueprints
+• Basic construction safety <br>
+<b>Hands-on construction of a house which involves:</b><br>
+• Footings
+• Framing
+• Roofing
+• Sheetrocking
+• Finish carpentry
+• Painting
+• Concrete finishing
+• Tile work
+• Interior hardware
+• Soffitt and fascia</p>
+    </div>
+  </div>
+  <div class=gti-list-item>
+    <div id=gti-img-2 class=gti-list-img></div>
+    <div class=gti-list-text>
+      <h1>Aviation</h1>
+      <p><b>You will Learn:</b><br>
+• Soar through the digital sky of Precision Simulation
+• Dissect the heart of an aircraft
+• X-cellerate throught the ages of history
+• Propel your future through air transportation <br>
+<b>Note:</b><br>
+You can earn 14 credits towards
+your Flight Technology Degree before
+you graduate from high school and
+save around $1,500 in tuition.</p>
+    </div>
+  </div>
+  <div class=gti-list-item>
+    <div id=gti-img-3 class=gti-list-img></div>
+    <div class=gti-list-text>
+      <h1>Biotech Research</h1>
+      <p><b>Cool things you will do:</b><br>
+• Copy your own DNA
+• Explore careers in biotechnology
+• Design your own experiments
+• Make glowing bacteria
+• Learn how to use lab equipment
+• Run DNA fingerprint “CSI” gels
+• Purify proteins
+• Compete in HOSA events <br>
+<b>Pathway Opportunities:</b><br>
+• BTEC 1020, the biotech internship course at SLCC/GTI
+• Biotech Product Design and Bioengineering courses
+also offered at the GTI
+• Biotechnology AS degree at SLCC</p>
+    </div>
+  </div>
+  <div class=gti-list-item>
+    <div id=gti-img-4 class=gti-list-img></div>
+    <div class=gti-list-text>
+      <h1>Computer Programming</h1>
+      <p>This semester course is an introduction to Computer Programming using C#. Students will learn
+programming concepts that will provide a strong base for taking other programming classes.
+Students will be able to solve problems and enhance their skills by learning an object-oriented
+programming language. Students will learn C# syntax, graphical user interface (GUI), program
+control and data structures. Upon completion of this course, students can advance to Computer
+Programming 2 with experience in design, coding and testing of their own computer programs.</p>
+    </div>
+  </div>
+  <div class=gti-list-item>
+    <div id=gti-img-5 class=gti-list-img></div>
+    <div class=gti-list-text>
+      <h1>Biology Agricultural Science</h1>
+      <p><b>Cool things you will do:</b><br>
+• Design and conduct your own experiments
+• Make your own ecosystem in a fish tank
+• Grow plants without soil
+• Make wormy soil
+• Grow plants with wormy soil
+• Compete in FFA <br>
+<b>Pathway Opportunities:</b><br>
+• Aquaculture and Biotechnology courses
+• Animal, Plant, and Vet Science courses
+• Concurrent credit
+• Summer high school credit</p>
+    </div>
+  </div>
+  <div class=gti-list-item>
+    <div id=gti-img-6 class=gti-list-img></div>
+    <div class=gti-list-text>
+      <h1>Web Development</h1>
+      <p>Students who desire an introduction to web development pages using HTML, XHTML, Dynamic
+HTML, tables, frames, input forms and cascading style sheets. Prior web development is not a
+requirement for this course. During the successful completion of class assignments students will build
+their own personal websites and maintain their on-going structure and design changes.</p>
+    </div>
+  </div>
+  <div>
+  <ul id=gti-list-more>
+    <li><a href="https://schools.graniteschools.org/gti/files/2015/11/3danimation.pdf" target="_blank" >3D animation</a></li>
+    <li><a href="https://schools.graniteschools.org/gti/files/2015/11/AcademyofFinance.pdf" target="_blank" >Academy of Finance</a></li>
+    <li><a href="https://schools.graniteschools.org/gti/files/2015/11/AcademyHT.pdf" target="_blank" >Academy of Hospitality and Tourism</a></li>
+    <li><a href="https://schools.graniteschools.org/gti/files/2015/11/Aquaculture.pdf" target="_blank" >Aquaculture</a></li>
+    <li><a href="https://schools.graniteschools.org/gti/files/2015/11/animalscience.pdf" target="_blank" >Animal science</a></li>
+    <li><a href="https://schools.graniteschools.org/gti/files/2015/11/architecture.pdf" target="_blank" >Architectural Design</a></li>
+    <li><a href="https://schools.graniteschools.org/gti/files/2015/11/Aviation.15.pdf" target="_blank" >Aviation</a></li>
+    <li><a href="https://schools.graniteschools.org/gti/files/2015/11/bioag.pdf" target="_blank" >Bio Agriculture</a></li>
+    <li><a href="https://schools.graniteschools.org/gti/files/2015/11/Biomanufacturing1.pdf" target="_blank" >Biomanufacturing</a></li>
+    <li><a href="https://schools.graniteschools.org/gti/files/2015/11/biotech16.pdf" target="_blank" >Biotech</a></li>
+    <li><a href="https://schools.graniteschools.org/gti/files/2015/11/cna.pdf" target="_blank" >Certified Nursing Assistant</a></li>
+    <li><a href="https://schools.graniteschools.org/gti/files/2016/02/composites16.pdf" target="_blank" >Composites</a></li>
+    <li><a href="https://schools.graniteschools.org/gti/files/2015/11/ComputerMaintenance.pdf" target="_blank" >Computer Maintenance</a></li>
+    <li><a href="https://schools.graniteschools.org/gti/files/2015/11/csharp.pdf" target="_blank" >Computer Programming I C#</a></li>
+    <li><a href="https://schools.graniteschools.org/gti/files/2015/11/CProgramming2appsjava.pdf" target="_blank" >Computer Programming II – Mobile Apps</a></li>
+    <li><a href="https://schools.graniteschools.org/gti/files/2015/11/constructiontradefoundation15.pdf" target="_blank" >Construction Trades</a></li>
+    <li><a href="https://schools.graniteschools.org/gti/files/2015/11/criminaljustice17.pdf" target="_blank" >Criminal Justice</a></li>
+    <li><a href="https://schools.graniteschools.org/gti/files/2017/01/culinaryarts.17.pdf">Culinary Arts</a></li>
+    <li><a href="https://schools.graniteschools.org/gti/files/2017/01/culinarymang12.17.pdf">Culinary Management 1 &amp; 2</a></li>
+    <li><a href="https://schools.graniteschools.org/gti/files/2017/04/dental17.pdf" target="_blank" >Dental Assisting</a></li>
+    <li><a href="https://schools.graniteschools.org/gti/files/2018/01/educatonacad17.pdf" target="_blank" >Education Academy</a></li>
+    <li><a href="https://schools.graniteschools.org/gti/files/2015/11/electricalplumbing.pdf" target="_blank" >Electrical and Plumbing</a></li>
+    <li><a href="https://schools.graniteschools.org/gti/files/2015/11/Electronics16.pdf" target="_blank" >Electronics 1 &amp; 2</a></li>
+    <li><a href="https://schools.graniteschools.org/gti/files/2015/11/Electronics316.pdf" target="_blank" >Electronics 3</a></li>
+    <li><a href="https://schools.graniteschools.org/gti/files/2015/11/ems16.pdf" target="_blank" >Emergency Medical Responder</a></li>
+    <li><a href="https://schools.graniteschools.org/gti/files/2018/01/emt18.pdf" target="_blank" >Emergency Medical Technician</a></li>
+    <li><a href="https://schools.graniteschools.org/gti/files/2015/11/EngineerTechDesign16.pdf" target="_blank" >Engineer Tech Design</a></li>
+    <li><a href="https://schools.graniteschools.org/gti/files/2016/01/EngineerCap16.pdf" target="_blank" >Engineering Capstone</a></li>
+    <li><a href="https://schools.graniteschools.org/gti/files/2016/01/Engineerprinciples16.pdf" target="_blank" >Engineering Principles</a></li>
+    <li><a href="https://schools.graniteschools.org/gti/files/2015/11/equine17.pdf">Equine Science 1</a></li>
+    <li><a href="https://schools.graniteschools.org/gti/files/2018/01/exsci18.pdf" target="_blank" >Exercise Science/Sports Med</a></li>
+    <li><a href="https://schools.graniteschools.org/gti/files/2018/01/firescience18.pdf" target="_blank" >Fire science</a></li>
+    <li><a href="https://schools.graniteschools.org/gti/files/2015/11/floriculture16.pdf" target="_blank" >Floriculture</a></li>
+    <li><a href="https://schools.graniteschools.org/gti/files/2017/01/Gaming.17.pdf">Gaming Development Fundamentals</a></li>
+    <li><a href="https://schools.graniteschools.org/gti/files/2015/11/homebldg17.pdf">Home Building</a></li>
+    <li><a href="https://schools.graniteschools.org/gti/files/2015/11/horticulture15.pdf">Horticulture</a></li>
+    <li><a href="https://schools.graniteschools.org/gti/files/2015/11/landscapemanagement.pdf">Landscape management/ Nursery Operations</a></li>
+    <li><a href="https://schools.graniteschools.org/gti/files/2015/11/Linux.pdf">Linux</a></li>
+    <li><a href="https://schools.graniteschools.org/gti/files/2015/11/map16.pdf" rel="">Medical Anatomy and Physiology</a></li>
+    <li><a href="https://schools.graniteschools.org/gti/files/2015/11/medicalassisting.pdf">Medical Assisting</a></li>
+    <li><a href="https://schools.graniteschools.org/gti/files/2015/11/medicalforensics17.pdf">Medical Forensics</a></li>
+    <li><a href="https://schools.graniteschools.org/gti/files/2015/11/medterm.pdf">Medical Terminology</a></li>
+    <li><a href="https://schools.graniteschools.org/gti/files/2015/11/naturalresource1.pdf" target="_blank" >Natural Resource Science 1</a></li>
+    <li><a href="https://schools.graniteschools.org/gti/files/2015/11/Naturalresource2.pdf" target="_blank" >Natural Resource Science 2</a></li>
+    <li><a href="https://schools.graniteschools.org/gti/files/2015/11/BasicNetworking.pdf">Networking, Basic</a></li>
+    <li><a href="https://schools.graniteschools.org/gti/files/2018/01/physicaltherapy.pdf">Physical therapy</a></li>
+    <li><a href="https://schools.graniteschools.org/gti/files/2015/11/pharmacytech.pdf">Pharmacy Technician</a></li>
+    <li><a href="https://schools.graniteschools.org/gti/files/2015/11/Robotics.pdf">Robotics</a></li>
+    <li><a href="https://schools.graniteschools.org/gti/files/2016/11/security16.pdf" rel="">Security +</a></li>
+    <li><a href="https://schools.graniteschools.org/gti/files/2015/11/VetAssistant1.pdf">Vet Assistant</a></li>
+    <li><a href="https://schools.graniteschools.org/gti/files/2015/11/webdeveloperintro1.pdf">Web Development Intro</a></li>
+    <li><a href="https://schools.graniteschools.org/gti/files/2015/11/webdeveloperII1.pdf">Web Development II</a></li>
+    </ul>
+  <div id=gti-list-showmore class=gti-list-show onclick="gtishowmore();"><p>SHOW MORE</p></div>
+  <div id=gti-list-showless class=gti-list-show onclick="gtishowless();"><p>SHOW LESS</p></div>
+</div>
+</div>
+
+
+
+
+
+<!-- <a href="sources.pdf">SOURCES</a> -->
+
+    <!-- </div> -->
+
+<div id=section>
+  <div id=sitemap>
+    <p>DIMENSION FOUR TECHNOLOGIES SITE MAP</p>
+    <!-- <table>
+      <tr>
+        <td><a href="../index.html">HOME</a></td>
+        <td><a href="../GFP/gfp.html">PURCHASE</a></td>
+        <td><a href="../TECHNOLOGIES/technologies.html">TECH</a></td>
+        <td><a href="../BUSAPPS/busapps.html">BUSINESS</a></td>
+        <td><a href="../EDAPPS/edapps.html">EDUCATION</a></td>
+        <td><a href="../FAQ/faq.html">FAQ</a></td>
+        <td><a href="../ABOUT/about.html">ABOUT</a></td>
+      </tr>
+    </table> -->
+    <img src="storyboard2.png"></img>
+  </div>
+</div>
+
+<!-- <div id=section>
+    <object width="100%" height="100%" data="leap_resume_Jack.pdf" type="application/pdf">
+      <embed src="leap_resume_Jack.pdf" type="application/pdf"></embed>
+          Jack Smith's Leap Resume<a href="leap_resume_Jack.pdf">
+    </object>
+    <object width="100%" height="100%" data="leap_resume_Robert.pdf" type="application/pdf">
+      <embed src="leap_resume_Robert.pdf" type="application/pdf"></embed>
+          Robert Richardson's Leap Resume<a href="leap_resume_Robert.pdf">
+    </object>
+
+</div> -->
+
+      </div>
+
+    </body>
+</html>
