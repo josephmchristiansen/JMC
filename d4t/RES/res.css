@@ -208,7 +208,7 @@ body{
 .up-btn{
     text-align: center;
     position: fixed;
-    z-index: 1000;
+    z-index: 970;
     top: 50px;
     height: 60px;
     width: 100%;
@@ -375,7 +375,7 @@ body{
   width: 100%;
 }
 #s-0{
-  background-image: url(buildings.jpg);
+  background-image: url(library.jpg);
 }
 #title-text{
   position: absolute;
@@ -401,19 +401,15 @@ body{
 }
 
 #s-1{
-  background-image: url(keyboard.jpg);
+  background-image: url(doctor.jpg);
   bottom: -100%;
 }
 #s-2{
-  background-image: url(chatbot.jpg);
+  background-image: url(robot-hand.jpg);
   bottom: -100%;
 }
 #s-3{
-  background-image: url(tracker.jpg);
-  bottom: -100%;
-}
-#s-4{
-  background-image: url(ai.jpg);
+  background-image: url(pointing.jpg);
   bottom: -100%;
 }
 
@@ -452,7 +448,6 @@ body{
   background-color: rgb(52, 115, 212);
   background-image: url("../RESOURCES/play.png");
   /* display: inline; */
-  display: none;
 }
 #pause{
   filter: invert(2);

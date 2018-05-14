@@ -208,7 +208,7 @@ body{
 .up-btn{
     text-align: center;
     position: fixed;
-    z-index: 1000;
+    z-index: 970;
     top: 50px;
     height: 60px;
     width: 100%;
