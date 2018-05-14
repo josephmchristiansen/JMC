@@ -75,6 +75,71 @@
 
   </head>
   <body onload="linkcheck();" onmousemove="navdropdownhide();">
+
+    <div id=checkout>
+      <div id=checkout-close onclick="checkout_close();">EXIT CHECKOUT</div>
+      <h1>CHECKOUT</h1>
+      <h6>NOTE: THIS IS A DEMO, DO NOT INPUT PERSONAL INFO</h6>
+      <hr>
+      <div class=checkout-cart></div>
+      <div class=checkout-form>
+
+      <form>
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="John Doe">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="johndoe@example.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="285 Andrew Young International Blvd NW">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="Atlanta">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="GA">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="30313">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <!-- <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <p>visa</p>
+              <p>mastercard</p>
+              <p>discover</p>
+            </div> -->
+            <label for="cname" style="clear:both">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="John Doe">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="June">
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2020">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="314">
+              </div>
+            </div>
+            <input type="submit" value="Continue to checkout" class="btn">
+          </div>
+
+      </form>
+      </div>
+    </div>
+
+
     <div class=intro>
       <h1>Need help deciding what D4T AI Robot to purchase?</h1>
       <h4>Let us help you. Select the option that best fits you. Or, continue, to browse all of our products.</h4>
@@ -89,115 +154,114 @@
         <div id=intro-opt-x class=intro-opt onclick="opt('x');"><p>BROWSE<br> ALL</p></div>
       </div>
     </div>
-    <!-- <div class=page> -->
-        <!-- <div class=jumbotron>
-
-        <div class=jumbotitle><h4>SHOP</h4></div>
-        <div class=jumbo-stuff><h2>DIMENSION FOUR TECHNOLOGIES</h2></div>
-        </div> -->
 
         <div class=section>
-          <div class="item ed">
+          <div class="item ed" >
             <div class=item-title>LMS</div>
-            <img class=item-img src="img/reading.jpg"></img>
-            <div class='item-description'>LEARNING MANAGEMENT SYSTEM. Used  in educational settings to facilitate teaching and make it more accessible.</div>
-            <div class=item-cost>$12,000</div>
-            <div class=item-buy>PURCHASE</div>
-            <!-- https://www.extremetech.com/wp-content/uploads/2016/02/do_androids_read_robot_book__by_d4n13l3-d5dspfv-640x353.jpg -->
+            <div class=item-img id=a></div>
+            <div class='item-description'>Learning Management System. Includes an individualized learning platform. Organize groups for collaborative learning. Offers state-of-the-art AI dynamic scheduling for class activities and assignments.
+            </div>
+            <div class=item-cost>$10,000/yr</div>
+            <div class=item-buy onclick="checkout('a', 'ed');">PURCHASE</div>
           </div>
-          <div class="item st">
+          <div class="item st" >
             <div class=item-title>STUDY TOOLS</div>
-            <img class=item-img src="img/teaching.jpg"></img>
-            <div class='item-description'>Used for business decisions and business management.</div>
-            <div class=item-cost>$12,000</div>
-            <div class=item-buy>PURCHASE</div>
-            <!--https://sdtimes.com/wp-content/uploads/2015/07/0713.sdt-machine-teaching.jpg-->
+            <div class=item-img id=b></div>
+            <div class='item-description'>Creates Intelligent training exercises to aid the student in studying.</div>
+            <div class=item-cost>$230/yr</div>
+            <div class=item-buy onclick="checkout('b', 'st');">PURCHASE</div>
           </div>
-          <div class="item st">
+          <div class="item st" >
             <div class=item-title>PLANNER</div>
-            <img class=item-img src="img/home.jpg"></img>
-            <div class='item-description'>Used to keep track of your calendar and other home operations.</div>
-            <div class=item-cost>$8,000</div>
-            <div class=item-buy>PURCHASE</div>
-            <!--https://www.voicebot.ai/wp-content/uploads/2017/02/pwc-smart-home-consumer-study.jpg-->
+            <div class=item-img id=c></div>
+            <div class='item-description'>Keep track of events, assignments, notes, tasks, etc.
+            </div>
+            <div class=item-cost>$20.99/yr</div>
+            <div class=item-buy onclick="checkout('c', 'st');">PURCHASE</div>
           </div>
-          <div class="item re">
+          <div class="item re" >
             <div class=item-title>DATA ANALYSIS</div>
-            <img class=item-img src="img/reading-deluxe.jpg"></img>
-            <div class='item-description'>Used to facilitate teaching and increase access to education. This edition has more versatility than the basic version.</div>
-            <div class=item-cost>$18,000</div>
-            <div class=item-buy>PURCHASE</div>
-            <!--https://cdn57.androidauthority.net/wp-content/uploads/2016/05/artificial-intelligence-840x473.jpg-->
+            <div class=item-img id=d></div>
+            <div class='item-description'>Tool for quick, simple, and professional data analytics.</div>
+            <div class=item-cost>$800/yr</div>
+            <div class=item-buy onclick="checkout('d', 're');">PURCHASE</div>
           </div>
-          <div class="item re">
+          <div class="item re" >
             <div class=item-title>SIMULATOR</div>
-            <img class=item-img src="img/business-deluxe.jpg"></img>
-            <div class='item-description'>Used for business decisions and business management. This edition has more versatility than the basic version.</div>
-            <div class=item-cost>$18,000</div>
-            <div class=item-buy>PURCHASE</div>
+            <div class=item-img id=e></div>
+            <div class='item-description'>Create professional simulations using various data sets.</div>
+            <div class=item-cost>$800/yr</div>
+            <div class=item-buy onclick="checkout('e', 're');">PURCHASE</div>
           </div>
-          <div class="item re">
+          <div class="item re" >
             <div class=item-title>PREDICTIVE MODELING</div>
-            <img class=item-img src="img/home-deluxe.jpg"></img>
-            <div class='item-description'>Used for keeping track of your calendar and other home operations. This edition has more versatility than the basic version.</div>
-            <div class=item-cost>$12,000</div>
-            <div class=item-buy>PURCHASE</div>
+            <div class=item-img id=f></div>
+            <div class='item-description'>Generate accurate predictive models with ease.
+            </div>
+            <div class=item-cost>$800/yr</div>
+            <div class=item-buy onclick="checkout('f', 're');">PURCHASE</div>
           </div>
-          <div class="item ho">
+          <div class="item ho" >
             <div class=item-title>SMART-FUN</div>
-            <img class=item-img src="img/home-deluxe.jpg"></img>
-            <div class='item-description'>Used for keeping track of your calendar and other home operations. This edition has more versatility than the basic version.</div>
-            <div class=item-cost>$12,000</div>
-            <div class=item-buy>PURCHASE</div>
+            <div class=item-img id=g></div>
+            <div class='item-description'>Never be bored again. With is AI tool you will never have to wonder about what to do with your free time.
+            </div>
+            <div class=item-cost>$100/yr</div>
+            <div class=item-buy onclick="checkout('g', 'ho');">PURCHASE</div>
           </div>
-          <div class="item fa">
+          <div class="item fa" >
             <div class=item-title>GUARD-DOG</div>
-            <img class=item-img src="img/home-deluxe.jpg"></img>
-            <div class='item-description'>Used for keeping track of your calendar and other home operations. This edition has more versatility than the basic version.</div>
+            <div class=item-img id=h></div>
+            <div class='item-description'>This robot will protect your home, possessions, and family. With the help of home perimeter cameras, onboard sensors, and an anti intruder stun gun, you will never have to worry about home security again.
+            </div>
             <div class=item-cost>$12,000</div>
-            <div class=item-buy>PURCHASE</div>
+            <div class=item-buy onclick="checkout('h', 'fa');">PURCHASE</div>
           </div>
-          <div class="item bu">
+          <div class="item bu" >
             <div class=item-title>COMMUNICATOR</div>
-            <img class=item-img src="img/home-deluxe.jpg"></img>
-            <div class='item-description'>Used for keeping track of your calendar and other home operations. This edition has more versatility than the basic version.</div>
-            <div class=item-cost>$12,000</div>
-            <div class=item-buy>PURCHASE</div>
+            <div class=item-img id=i></div>
+            <div class='item-description'>Send intelligent automated emails and phone calls with little effort.  This AI has successfully passed the Turing test and will make a great addition to any business.</div>
+            <div class=item-cost>$2500/yr</div>
+            <div class=item-buy onclick="checkout('i', 'bu');">PURCHASE</div>
           </div>
-          <div class="item bu">
+          <div class="item bu" >
             <div class=item-title>DATA-SAFE</div>
-            <img class=item-img src="img/home-deluxe.jpg"></img>
-            <div class='item-description'>Used for keeping track of your calendar and other home operations. This edition has more versatility than the basic version.</div>
-            <div class=item-cost>$12,000</div>
-            <div class=item-buy>PURCHASE</div>
+            <div class=item-img id=j></div>
+            <div class='item-description'>All businesses have data and files that need precise management to ensure nothing gets lost.  DATA-SAFE will aid in the management and protection of any business data with utmost professionalism.
+            </div>
+            <div class=item-cost>$2000/yr</div>
+            <div class=item-buy onclick="checkout('j', 'bu');">PURCHASE</div>
           </div>
-          <div class="item bu">
+          <div class="item bu" >
             <div class=item-title>FINANCE</div>
-            <img class=item-img src="img/home-deluxe.jpg"></img>
-            <div class='item-description'>Used for keeping track of your calendar and other home operations. This edition has more versatility than the basic version.</div>
-            <div class=item-cost>$12,000</div>
-            <div class=item-buy>PURCHASE</div>
+            <div class=item-img id=k></div>
+            <div class='item-description'>Businesses can not afford to have errors when it comes to financial management.  These AI tools will not only ensure all transactions run smoothly, it will also aid with intelligent investments.  </div>
+            <div class=item-cost>$10,000/yr</div>
+            <div class=item-buy onclick="checkout('k', 'bu');">PURCHASE</div>
+            </div>
+          <div class="item at" >
+            <div class=item-title>COACH</div> <!-- http://graphics8.nytimes.com/newsgraphics/2013/11/28/fourth-downs/assets/static-images/professor-math-large.jpg -->
+            <div class=item-img id=l></div>
+            <div class='item-description'>If you want to know what you need to improve on to up your game in any sport this is the AI for you.  COACH will watch you as you play and record everything it sees and intelligently report back to the user the ways to improve.
+            </div>
+            <div class=item-cost>$980/yr</div>
+            <div class=item-buy onclick="checkout('l', 'at');">PURCHASE</div>
           </div>
-          <div class="item at">
-            <div class=item-title>COACH</div>
-            <img class=item-img src="img/home-deluxe.jpg"></img>
-            <div class='item-description'>Used for keeping track of your calendar and other home operations. This edition has more versatility than the basic version.</div>
-            <div class=item-cost>$12,000</div>
-            <div class=item-buy>PURCHASE</div>
+          <div class="item at" >
+            <div class=item-title>POCKET-DOCTOR</div> <!-- https://i0.wp.com/voiceofpeopletoday.com/wp-content/uploads/2017/11/In-China-the-robot-passed-the-exam-for-a-doctor.jpg?fit=2428%2C1500&ssl=1 -->
+            <div class=item-img id=m></div>
+            <div class='item-description'>Do you engage in a potentially dangerous recreational activity?  Oftentimes a simple first aid kit will not be enough when you get injured. POCKET-DOCTOR is the advanced AI Robot that will give you the confidence that no matter the injury you receive, you have have a professional standing by to offer medical assistance even when a real doctor is not available.
+            </div>
+            <div class=item-cost>$1020</div>
+            <div class=item-buy onclick="checkout('m', 'at');">PURCHASE</div>
           </div>
-          <div class="item at">
-            <div class=item-title>POCKET-DOCTOR</div>
-            <img class=item-img src="img/home-deluxe.jpg"></img>
-            <div class='item-description'>Used for keeping track of your calendar and other home operations. This edition has more versatility than the basic version.</div>
-            <div class=item-cost>$12,000</div>
-            <div class=item-buy>PURCHASE</div>
-          </div>
-          <div class="item at">
+          <div class="item at" >
             <div class=item-title>BUDDY</div>
-            <img class=item-img src="img/home-deluxe.jpg"></img>
-            <div class='item-description'>Used for keeping track of your calendar and other home operations. This edition has more versatility than the basic version.</div>
-            <div class=item-cost>$12,000</div>
-            <div class=item-buy>PURCHASE</div>
+            <div class=item-img id=n></div>
+            <div class='item-description'>Everybody loves to get drone shots of high endurance sports, but oftentimes it is too difficult to record them. With BUDDY you don't need to have a camera operator with you to get these shots. BUDDY will follow your every move with precision.
+            </div>
+            <div class=item-cost>$2000</div>
+            <div class=item-buy onclick="checkout('n', 'at');">PURCHASE</div>
           </div>
         </div>
 

@@ -55,3 +55,25 @@ function opt(option){
   $('.'+ option +'').css("display", "block");
   }
 }
+
+
+
+function checkout(item, type){
+  console.log('item: ' + item);
+  console.log('type: ' + type);
+  $("#checkout").css("display", "block");
+  /*$( '#' + item +'' ).clone().appendTo(".checkout-cart");
+  $('.item-img').css("display", "none");
+  $('.item-description').css("display", "none");
+  $('.item-buy').css("display", "none");
+  $('.item').css("width", "100%");
+  $('.item-title').css("width", "50%");
+  $('.item-cost').css({"width" : "15%", "float" : "left", "min-width":"300px"});
+  $('.item-title').css({"float" : "left", "margin" : "0px","font-size":"20px","min-width":"300px"});*/
+}
+function checkout_close(){
+  $("#checkout").css("display", "none");
+  /*$('.item-img').css("display", "block");
+  $('.item-description').css("display", "block");
+  $('.item-buy').css("display", "block");*/
+}
