@@ -2,6 +2,7 @@
     <head>
         <meta charset="utf-8">
         <title>D4TECH</title>
+        <link rel="shortcut icon" href="RESOURCES/D4TFAVICON.ico" />
         <link rel="stylesheet" href="HOME/master.css">
         <script type="text/javascript" src="HOME/home.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
@@ -36,7 +37,13 @@
                 <li id="nav-dropdown-btn" class="nav-btn"><a href="REC/rec.html?an">AI CAMERAMAN</a></li>
             </ul>
             <ul id=pur class=nav-dropdown-btn>
-                <li id="nav-dropdown-btn" class="nav-btn"><a href="#">pur</a></li>
+              <li id="nav-dropdown-btn" class="nav-btn"><a href="GFP/gfp.html?ed">EDUCATOR</a></li>
+              <li id="nav-dropdown-btn" class="nav-btn"><a href="GFP/gfp.html?st">STUDENT</a></li>
+              <li id="nav-dropdown-btn" class="nav-btn"><a href="GFP/gfp.html?re">RESEARCHER</a></li>
+              <li id="nav-dropdown-btn" class="nav-btn"><a href="GFP/gfp.html?ho">HOMEOWNER</a></li>
+              <li id="nav-dropdown-btn" class="nav-btn"><a href="GFP/gfp.html?fa">FAMILY</a></li>
+              <li id="nav-dropdown-btn" class="nav-btn"><a href="GFP/gfp.html?bu">BUSINESS</a></li>
+              <li id="nav-dropdown-btn" class="nav-btn"><a href="GFP/gfp.html?at">ATHLETE</a></li>
             </ul>
             <ul id=faq class=nav-dropdown-btn>
               <li class="nav-btn"><a href="FAQ/faq.html?cu">CURRENT</a></li>
@@ -47,6 +54,7 @@
               <li class="nav-btn"><a href="FAQ/faq.html?li">LIABILITIES</a></li>
             </ul>
             <ul id=inf class=nav-dropdown-btn>
+                <li id='nav-dropdown-btn' class='nav-btn'><a href='http://tsaweb.org/sites/default/files/2018%20High%20School%20Webmaster%20Design%20Brief.pdf' target='_blank'>Design Brief</a></li>
                 <li id="nav-dropdown-btn" class="nav-btn"><a href="INFO/info.html?ts">TSA</a></li>
                 <li id="nav-dropdown-btn" class="nav-btn"><a href="INFO/info.html?tc">TSA Competitions</a></li>
                 <li id="nav-dropdown-btn" class="nav-btn"><a href="INFO/info.html?gt">GTI</a></li>
@@ -59,8 +67,9 @@
         <div id="header" class=nav-bar style="background-color: black;">
             <ul class=nav-btns>
                 <!-- <li class=nav-btn onmouseover="navdropdown('abt');" ><a href="ABOUT/about.html">ABOUT</a></li> -->
-                <li class=nav-btn onmouseover="navdropdown('inf');" ><a href="INFO/info.html">INFO</a></li>
-                <li class=nav-btn onmouseover="navdropdownhideforce()"><a href="GFP/gfp.html">PURCHASE</a></li>
+                <img class="icon" id=icon onclick="myFunction()" src="RESOURCES/menu-icon.png"> </img>
+                <li class=nav-btn onmouseover="navdropdown('inf');" ><a href="INFO/info.html">ABOUT</a></li>
+                <li class=nav-btn onmouseover="navdropdown('pur')"><a href="GFP/gfp.html?xx">PURCHASE</a></li>
                 <li class=nav-btn onmouseover="navdropdown('faq');"><a href="FAQ/faq.html">FAQ</a></li>
                 <li class=nav-btn onmouseover="navdropdown('rec');"><a href="REC/rec.html">RECREATION</a></li>
                 <li class=nav-btn onmouseover="navdropdown('res');"><a href="RES/res.html">RESEARCH</a></li>
@@ -68,10 +77,25 @@
                 <li class=nav-btn onmouseover="navdropdown('bus');"><a href="BUSAPPS/busapps.html">BUSINESS</a></li>
                 <li class=nav-btn onmouseover="navdropdown('tec');"><a href="TECHNOLOGIES/technologies.html">TECH</a></li>
                 <!-- <li class=nav-btn onclick="pagechange('GFP')"><a href="#">PURCHASE</a></li> -->
-                <img id=D4Ticon style="height:30px; width:30px; float:left; padding:0px; margin:10px;" src="RESOURCES/D4Ticon.png"/>
+                <img id=D4Ticon style="height:30px; width:30px; float:left; padding:0px; margin:10px;" src="RESOURCES/D4Ticon.png" onclick="location.assign('index.html');">
                 <li id=home class="nav-btn home"><a href="index.html">D<b>4</b>TECH</a></li>
             </ul>
         </div>
+        <script>
+          function myFunction() {
+            var x = document.getElementById("header");
+            if (x.className === "nav-bar") {
+              x.className += " r";
+            } else {
+              x.className = "nav-bar";
+            }
+          }
+
+          function headerClose() {
+            var x = document.getElementById("header");
+            x.className = "nav-bar";
+          }
+        </script>
     </head>
 
     <body id=body onload="load();" onmousemove="navdropdownhide();">
@@ -194,9 +218,8 @@
 
 
     <div id=page class=page>
-        <div class=jumbotron>
 
-          <img id=fallbacklogo src="HOME/D4T_TITLE_PNG_1.png"></img>
+          <!--<img id=fallbacklogo src="HOME/D4T_TITLE_PNG_1.png"></img>-->
         <div class=jumbotitle>
           <svg id=jumbotitles2 viewBox="0 0 498.00001 85.024301">
              <g id="layer1" transform="translate(-516 951.64)">
@@ -297,24 +320,21 @@
 
         <div class=quotes>
           <div class=quote-box>
-            <b>
+            <h1><b>
               Steve Wozniak, co-founder of Apple
-            </b>
-            <hr>
+            </b></h1>
             <p>
               "Every bit of tech we’ve ever built is for helping people in different ways... I believe optimistically that the robots we’re building are going to help us have better human lives"
             </p>
           </div>
           <div class=quote-box>
-            <b>
+            <h1><b>
               Mark Zuckerberg, CEO of Facebook
-            </b>
-            <hr>
+            </b></h1>
             <p>
               "One reason I'm so optimistic about AI is that improvements in basic research improve systems across so many different fields."
             </p>
           </div>
-        </div>
         </div>
 
     </div>
