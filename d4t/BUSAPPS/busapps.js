@@ -120,3 +120,32 @@ function pauseAudio(e) {
   $("#"+e).next().css("display", "inline");
   $("#"+e).next().next().css("display", "none");
 }
+
+
+function linkcheck(){
+  var loc = document.URL;
+  loc = loc.slice(-2)
+  console.log(loc);
+  switch (loc) {
+    case "em":
+      btnmouseclick('downbtn');
+      break;
+    case "ct":
+      btnmouseclick('downbtn');
+      btnmouseclick('downbtn');
+      break;
+    case "dm":
+      btnmouseclick('downbtn');
+      btnmouseclick('downbtn');
+      btnmouseclick('downbtn');
+      break;
+    case "ci":
+      btnmouseclick('downbtn');
+      btnmouseclick('downbtn');
+      btnmouseclick('downbtn');
+      btnmouseclick('downbtn');
+      break;
+    default:
+      console.log("ERROR: linkcheck");
+  }
+}

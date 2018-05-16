@@ -50,6 +50,9 @@ function linkcheck(){
     case "fu":
       // openFAQ();
       // location.assign("#");
+      openFAQ(qb);
+      // location.assign("#q1");
+      document.getElementById("qb").scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
       break;
     case "pe":
       openFAQ(q1);
@@ -62,9 +65,9 @@ function linkcheck(){
       document.getElementById("q3").scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
       break;
     case "sa":
-      openFAQ(q);
+      openFAQ(qa);
       // location.assign("#q");
-      document.getElementById("q").scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+      document.getElementById("qa").scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
       break;
     case "li":
       openFAQ(q5);

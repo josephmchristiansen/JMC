@@ -1,7 +1,8 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>FAQ-D4T</title>
+        <title>FAQ</title>
+        <link rel="shortcut icon" href="../RESOURCES/D4TFAVICON.ico" />
         <link rel="stylesheet" href="faq.css">
         <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
         <!--<script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>-->
@@ -37,7 +38,13 @@
                 <li id="nav-dropdown-btn" class="nav-btn"><a href="../REC/rec.html?an">AI CAMERAMAN</a></li>
             </ul>
             <ul id=pur class=nav-dropdown-btn>
-                <li id="nav-dropdown-btn" class="nav-btn"><a href="../#">pur</a></li>
+              <li id="nav-dropdown-btn" class="nav-btn"><a href="../GFP/gfp.html?ed">EDUCATOR</a></li>
+              <li id="nav-dropdown-btn" class="nav-btn"><a href="../GFP/gfp.html?st">STUDENT</a></li>
+              <li id="nav-dropdown-btn" class="nav-btn"><a href="../GFP/gfp.html?re">RESEARCHER</a></li>
+              <li id="nav-dropdown-btn" class="nav-btn"><a href="../GFP/gfp.html?ho">HOMEOWNER</a></li>
+              <li id="nav-dropdown-btn" class="nav-btn"><a href="../GFP/gfp.html?fa">FAMILY</a></li>
+              <li id="nav-dropdown-btn" class="nav-btn"><a href="../GFP/gfp.html?bu">BUSINESS</a></li>
+              <li id="nav-dropdown-btn" class="nav-btn"><a href="../GFP/gfp.html?at">ATHLETE</a></li>
             </ul>
             <ul id=faq class=nav-dropdown-btn>
               <li class="nav-btn"><a href="../FAQ/faq.html?cu">CURRENT</a></li>
@@ -48,6 +55,7 @@
               <li class="nav-btn"><a href="../FAQ/faq.html?li">LIABILITIES</a></li>
             </ul>
             <ul id=inf class=nav-dropdown-btn>
+                <li id='nav-dropdown-btn' class='nav-btn'><a href='http://tsaweb.org/sites/default/files/2018%20High%20School%20Webmaster%20Design%20Brief.pdf' target='_blank'>Design Brief</a></li>
                 <li id="nav-dropdown-btn" class="nav-btn"><a href="../INFO/info.html?ts">TSA</a></li>
                 <li id="nav-dropdown-btn" class="nav-btn"><a href="../INFO/info.html?tc">TSA Competitions</a></li>
                 <li id="nav-dropdown-btn" class="nav-btn"><a href="../INFO/info.html?gt">GTI</a></li>
@@ -60,9 +68,10 @@
         <div id="header" class=nav-bar style="background-color: black;">
             <ul class=nav-btns>
                 <!-- <li class=nav-btn onmouseover="navdropdown('abt');" ><a href="../ABOUT/about.html">ABOUT</a></li> -->
-                <li class=nav-btn onmouseover="navdropdown('inf');" ><a href="../INFO/info.html">INFO</a></li>
-                <li class=nav-btn onmouseover="navdropdownhideforce()"><a href="../GFP/gfp.html">PURCHASE</a></li>
-                <li class=nav-btn onmouseover="navdropdown('faq');"><a href="../FAQ/faq.html">FAQ</a></li>
+                <img class="icon" id=icon onclick="myFunction()" src="../RESOURCES/menu-icon.png"> </img>
+                <li class=nav-btn onmouseover="navdropdown('inf');" ><a href="../INFO/info.html">ABOUT</a></li>
+                <li class=nav-btn onmouseover="navdropdown('pur')"><a href="../GFP/gfp.html?xx">PURCHASE</a></li>
+                <li class=nav-btn onmouseover="navdropdown('faq');"><a href="../FAQ/faq.html" style="background-color:rgb(71,71,71);">FAQ</a></li>
                 <li class=nav-btn onmouseover="navdropdown('rec');"><a href="../REC/rec.html">RECREATION</a></li>
                 <li class=nav-btn onmouseover="navdropdown('res');"><a href="../RES/res.html">RESEARCH</a></li>
                 <li class=nav-btn onmouseover="navdropdown('edu');"><a href="../EDAPPS/edapps.html">EDUCATION</a></li>
@@ -73,18 +82,32 @@
                 <li id=home class="nav-btn home"><a href="../index.html">D<b>4</b>TECH</a></li>
             </ul>
         </div>
+         <script>
+          function myFunction() {
+            var x = document.getElementById("header");
+            if (x.className === "nav-bar") {
+              x.className += " r";
+            } else {
+              x.className = "nav-bar";
+            }
+          }
+
+          function headerClose() {
+            var x = document.getElementById("header");
+            x.className = "nav-bar";
+          }
+        </script>
     </head>
     <body onload="linkcheck();" onmousemove="navdropdownhide();">
-
+ <div class=intro>
+      <h1>FREQUENTLY ASKED QUESTIONS</h1>
+      <h4>Here we hope you will find all of the answers to any questions you may have concerning D4TECH.</h4>
+    </div>
 
       <div class=page>
-        <div class=jumbotron>
-          <div class=jumbo-container>
-            <div id=s0 class=jumbotitle>FREQUENTLY ASKED QUESTIONS</div>
-            <div class=jumbo-stuff><h2>Here we hope you will find all of the answers to any questions you may have concerning D4TECH</h2></div>
-          </div>
-          <!-- <div class=jumbo-btn onclick="document.getElementById('q1').scrollIntoView();      window.scrollBy(0, -70);"></div> -->
-        </div>
+
+
+
 
 
         <div id=qa class=faq onclick="openFAQ(this);">

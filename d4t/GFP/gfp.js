@@ -28,28 +28,13 @@ function linkcheck(){
   var loc = document.URL;
   loc = loc.slice(-2)
   console.log(loc);
-  switch (loc) {
-    case "sr":
-      btnmouseclick('downbtn');
-      break;
-    case "dm":
-      btnmouseclick('downbtn');
-      btnmouseclick('downbtn');
-      break;
-    case "va":
-      btnmouseclick('downbtn');
-      btnmouseclick('downbtn');
-      btnmouseclick('downbtn');
-      break;
-    default:
-      console.log("ERROR: linkcheck");
-  }
+  opt(loc);
 }
 
 
 function opt(option){
   $('.item').css("display", "none");
-  if(option == 'x'){
+  if(option == 'xx'){
     $('.item').css("display", "block");
   }else{
   $('.'+ option +'').css("display", "block");
