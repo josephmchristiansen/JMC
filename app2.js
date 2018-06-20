@@ -67,6 +67,6 @@ $(document).ready(function() {
 //     document.getElementById("about").style.display = "none";
 // }
 
-function notice(){
-  window.alert('NOTICE: YOU ARE VIEWING AN UNFINISHED PRODUCT.  THIS WEBSITE IS CURRENTLY UNDER DEVELOPMENT.  COME BACK SOON TO GET THE FULL EXPERIENCE.');
-}
+// function notice(){
+//   window.alert('NOTICE: YOU ARE VIEWING AN UNFINISHED PRODUCT.  THIS WEBSITE IS CURRENTLY UNDER DEVELOPMENT.  COME BACK SOON TO GET THE FULL EXPERIENCE.');
+// }

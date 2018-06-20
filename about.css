@@ -4,7 +4,7 @@
 body{
     /*position: relative;*/
     /*top: 50px;*/
-    font-family: Armata;
+    font-family: 'Electrolize', sans-serif;
     color: white;
     font-size: 26px;
     background-image: url("img/night scene 2.jpg");
@@ -59,7 +59,7 @@ body{
 }
 .nav-btn a {
     line-height: 50px;
-    font-family: Armata;
+    font-family: 'Electrolize', sans-serif;
     display: block;
     color: rgba(255, 255, 255, 1);
     text-align: center;
@@ -200,8 +200,40 @@ body{
 
 /*//////////////////////////////////////////*/
 
-#info{
+#bc{
   background-color: rgba(0,0,0,0.5);
+  /* background: url('img/businesscardFront.png');
+  background-size: contain;
+  background-repeat: no-repeat; */
+  width: 3.5in;
+  height: 2in;
+}
+#bcimg{
+  width: 50%;
+  height: auto;
+}
+#bc_left{
+  height: 100%;
+  width: 200px;
+  background: url('img/jmc-logo.png');
+  background-size: 100%;
+  float: left;
+}
+#bc_right{
+  height: 100%;
+  width: 480px;
+  float: left;
+}
+.bc_text{
+  text-align: right;
+  margin: 0px;
+  padding: 10px 10px 0px 10px;
+}
+#bc_n{
+  font-size: 36px;
+}
+#bc_e{
+  font-size: 26px;
 }
 
 .box{

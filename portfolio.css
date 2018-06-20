@@ -4,8 +4,8 @@
 body{
     /*position: relative;*/
     /*top: 50px;*/
-    font-family: Armata;
-    color: #a6a6a6;
+    font-family: 'Electrolize', sans-serif;
+    color: #fff;
     font-size: 26px;
     background-image: url("img/night scene 2.jpg");
     background-size: cover;
@@ -33,7 +33,7 @@ body{
 
 
 .nav-bar{
-    color: #a6a6a6;
+    color: #fff;
     position: fixed;
     z-index: 999;
     top: 0px;
@@ -59,10 +59,10 @@ body{
 }
 .nav-btn a {
     line-height: 50px;
-    font-family: Armata;
+    font-family: 'Electrolize', sans-serif;
     display: block;
     /* color: rgba(255, 255, 255, 1); */
-    color: #a6a6a6;
+    color: #fff;
     text-align: center;
     padding: 0px 10px 0px 10px;
     text-decoration: none;
@@ -175,8 +175,18 @@ body{
     padding-bottom: 60px;
     margin-left: auto;
     margin-right: auto;
+    color: #ccc;
 }
-
+h1{
+  background-color: #000;
+  margin: 0px;
+  padding: 20px 0px;
+  text-align: center;
+  color: #fff;
+  border-bottom: solid;
+  border-bottom-color: #436ed4;
+  border-bottom-width: 4px;
+}
 /*//////////////////////////////////////////*/
 
 /*.grids{*/
@@ -206,7 +216,8 @@ body{
     /*grid-template-columns: 1fr;*/
     /*grid-template-rows: auto;*/
     /*grid-gap: 1rem;*/
-    background-color: rgba(0,0,0,0.5);
+    /* background-color: rgba(0,0,0,0.5); */
+    background-color: #2a2a2a;
 }
 
 .box{
@@ -221,9 +232,11 @@ body{
 }
 .title{
     text-align: left;
-    border-right: solid;
-    border-right-color: white;
-    border-right-width: 1px;
+    border-right: none;
+    border-bottom: solid;
+    border-bottom-color: #000;
+    border-bottom-width: 4px;
+    color: #436ed4;
 }
 @media (min-width: 1000px){
     .grid{
@@ -237,6 +250,10 @@ body{
     }
     .title{
     text-align: right;
+    border-bottom: none;
+    border-right: solid;
+    border-right-color: #000;
+    border-right-width: 4px;
 }
 }
 

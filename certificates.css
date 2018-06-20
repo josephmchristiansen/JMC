@@ -4,7 +4,7 @@
 body{
     /*position: relative;*/
     top: 50px;
-    font-family: Armata;
+    font-family: 'Electrolize', sans-serif;
     color: white;
     font-size: 26px;
     background-image: url("img/night scene 2.jpg");
@@ -61,7 +61,7 @@ body{
 }
 .nav-btn a {
     line-height: 50px;
-    font-family: Armata;
+    font-family: 'Electrolize', sans-serif;
     display: block;
     color: rgba(255, 255, 255, 1);
     text-align: center;
@@ -230,7 +230,7 @@ body{
     bottom: 100px;
 
     text-decoration: none;
-    font-family: Armata;
+    font-family: 'Electrolize', sans-serif;
     font-size: 50px;
     font-size: 3.5vw;
 }
@@ -256,7 +256,7 @@ h3{
     /*line-height: 50px;*/
     margin: 0px;
     text-decoration: none;
-    font-family: Armata;
+    font-family: 'Electrolize', sans-serif;
     /*font-size: 26px;*/
     font-size: 2.3vw;
     border-top-style: solid;
@@ -375,7 +375,7 @@ opacity: .5;
     height: 180px;
     width: 180px;
     /*margin: 20px;*/
-    background-color: rgb(255,255,255);
+    background-color: #2a2a2a;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -389,6 +389,7 @@ opacity: .5;
 .img:hover{
     filter: grayscale(0);
     box-shadow: 0px -1px 0px #fff;
+    cursor: pointer !important;
 }
 
 
@@ -431,7 +432,7 @@ opacity: .5;
   height: calc(100% - 100px);
   width: 100%;
   position: fixed;
-  background-color: black;
+  background-color: #2a2a2a;
   z-index: 1000;
   display: none;
 }
@@ -456,15 +457,15 @@ opacity: .5;
     top: 0px;
     right: 0px;
     /*float: right;*/
-    height: 30px;
-    width: 30px;
+    height: 39px;
+    width: 39px;
     font: normal 20px Armata;
     color: white;
     outline: none;
     text-align: center;
-    background-color: black;
+    background-color: #2a2a2a;
     background-image: url("img/icon-close.png");
-    background-size: 15px;
+    background-size: 30px;
     background-repeat: no-repeat;
     background-position: center;
     /*background-attachment: fixed;*/
@@ -477,6 +478,7 @@ opacity: .5;
     border-bottom-width: 1px;
     border-bottom-color: black;
     box-shadow: 0px -1px 0px #fff;
+    cursor: pointer !important;
 }
 #over-content{
     display: grid;
@@ -553,6 +555,7 @@ opacity: .5;
 #over-back:hover{
   border-right: 1px solid white;
   right: 10px;
+  cursor: pointer !important;
 }
 
 #over-next:hover{
@@ -560,6 +563,7 @@ opacity: .5;
     /*box-shadow: 0px -1px 0px #fff;*/
     border-left: 1px solid white;
     left: 10px;
+    cursor: pointer !important;
 }
 
 
@@ -589,7 +593,7 @@ opacity: .5;
   color: rgba(0, 0, 0, 0.0);
   z-index: 100;
   font-size: 6vw;
-  font-family: Armata;
+  font-family: 'Electrolize', sans-serif;
 }
 .iframe-cover:hover{
   background-color: rgba(0, 0, 0, 0.5);

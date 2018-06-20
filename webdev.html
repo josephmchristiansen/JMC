@@ -1,9 +1,10 @@
 <html lang="eg">
     <head>
         <meta charset="utf-8">
-        <title>JOSEPH CHRISTIANSEN</title>
+        <title>JMC | PROJECTS</title>
+<link rel="icon" type="image/png" href="img/jmc-logo.png">
         <link rel="stylesheet" href="webdev.css">
-        <link href="https://fonts.googleapis.com/css?family=Armata" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Armata|Bungee+Hairline|Cuprum|Dosis|Electrolize|Michroma|Oswald|Quantico|Text+Me+One" rel="stylesheet">
         <!--<script src="jquery-3.0.0.js"></script>-->
         <script src="jquery-1.8.3.min.js"></script>
         <script type="text/javascript" src="webdev.js"></script>
@@ -22,17 +23,32 @@
                 <li class=nav-btn><a href="skills.html">SKILLS</a></li>
                 <li class=nav-btn><a href="about.html">CONTACT</a></li>
                 <li class=nav-btn><a href="webdev.html">PROJECTS</a></li>
-                <li id=home class=nav-btn><a href="index.html">JOSEPH CHRISTIANSEN</a></li>
+                <li id=home class=nav-btn><a href="index.html">JMC</a></li>
                 <!--<li class=right-nav-btn><a href="../LOGIN PAGE/login.php">Login</a></li>-->
             </ul>
         </div>
 
         <div id=page>
 
-        <h1>A FEW OF MY PROJECTS</h1>
+        <h1>HERE ARE A FEW OF MY PROJECTS:</h1>
 
         <div id="grid-1">
-
+          <div class="iframe-container" id=if15>
+            <div class=iframe-cover onClick="viewIframe(this); document.getElementById('d4tif').src='http://josephmchristiansen.com/d4t' ">
+              <div class=iframe-cover-text>VIEW PROJECT</div>
+            </div>
+            <div class=iframe-nav-left>
+              <img class=iframe-back src="img/icon-left.png" alt="back" onClick="history.go(-1);return true;"></img>
+              <img class=iframe-forward src="img/icon-right.png" alt="forward"  onClick="history.go(1);return true;"></img>
+              <div class=iframe-title>D4T</div>
+            </div>
+            <div class=iframe-nav-right>
+              <img class=iframe-close src="img/icon-close.png" alt="close"  onClick="closeIframe(this)"></img>
+              <img class=iframe-open src="img/icon-open.png" alt="open"  onClick="closeIframe(this); window.open('http://josephmchristiansen.com/d4t','_blank');"></img>
+              <img class=iframe-info src="img/icon-info.png" alt="info"  onClick="infoIframe(this)"></img>
+            </div>
+            <iframe id=d4tif style="background: white;"src="http://josephmchristiansen.com/d4t" height="600" width="700"></iframe>
+          </div>
 
           <div class="iframe-container" id=if11>
             <div class=iframe-cover onClick="viewIframe(this)">
@@ -45,10 +61,10 @@
             </div>
             <div class=iframe-nav-right>
               <img class=iframe-close src="img/icon-close.png" alt="close"  onClick="closeIframe(this)"></img>
-              <img class=iframe-open src="img/icon-open.png" alt="open"  onClick="closeIframe(this); window.open('http://win10sim.bitballoon.com/','_blank');"></img>
+              <img class=iframe-open src="img/icon-open.png" alt="open"  onClick="closeIframe(this); window.open('http://win10sim.bitballoon.com/win.html/','_blank');"></img>
               <img class=iframe-info src="img/icon-info.png" alt="info"  onClick="infoIframe(this)"></img>
             </div>
-            <iframe style="background: white;"src="http://win10sim.bitballoon.com/" height="600" width="700"></iframe>
+            <iframe style="background: white;"src="http://win10sim.bitballoon.com/win.html/" height="600" width="700"></iframe>
           </div>
 
           <div class="iframe-container" id=if12>
@@ -108,7 +124,7 @@
         </div>
 
 
-        <h1>ASSIGNMENTS FOR MY WEB DEVELOPMENT CLASS</h1>
+        <h1>ASSIGNMENTS FOR MY WEB DEVELOPMENT CLASS:</h1>
 
         <div id="grid-2">
           <div class="iframe-container" id=if1>
@@ -277,9 +293,9 @@
      <div id=footer>
        <!-- <div id=foottime>PAGE CURRENTLY UNDER DEVELOPMENT</div> -->
         <div id=foot-container>
-          <p id=foot1>© 2018 | JOSEPH CHRISTIANSEN | ALL RIGHTS RESERVED</p>
-          <p id=foot2>© 2018 | JOSEPH CHRISTIANSEN <br> ALL RIGHTS RESERVED</p>
-          <p id=foot3>© 2018 | JC <br> ALL RIGHTS RESERVED</p>
+          <p id=foot1>© 2018 | JOSEPH M. CHRISTIANSEN | ALL RIGHTS RESERVED</p>
+          <p id=foot2>© 2018 | JOSEPH M. CHRISTIANSEN <br> ALL RIGHTS RESERVED</p>
+          <p id=foot3>© 2018 | JMC <br> ALL RIGHTS RESERVED</p>
         </div>
      </div>
     </body>
