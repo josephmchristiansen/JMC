@@ -5,26 +5,26 @@ var matrix_memory = [];
 var matrix_memory_values = [];
 var matrix_progress = 0;
 var matrix_mode = "a";
-var matrix_peek = 0;
+var matrix_peek = 1;
 
 function matrix_mode_change(mode){
     matrix_mode = mode;
     if(matrix_mode === "a"){
-        // document.getElementById("matrix").style.color = "hsl(213, 28%, 19%)";
+        // document.getElementById("matrix").style.color = "#6c8bac";
         for(var i = 1; i <= 40; i++){
         var id_temp = "box_" + i;
         // var value_check = matrix_memory
         document.getElementById(id_temp).style.visibility = "visible";
         }
     }else if(matrix_mode === "b"){
-        // document.getElementById("matrix").style.color = "hsl(213, 28%, 19%)";
+        // document.getElementById("matrix").style.color = "#6c8bac";
         for(var i = 1; i <= 40; i++){
         var id_temp = "box_" + i;
         // var value_check = matrix_memory
         document.getElementById(id_temp).style.visibility = "hidden";
         }
     }else if(matrix_mode === "c"){
-        // document.getElementById("matrix").style.color = "hsl(213, 28%, 19%)";
+        // document.getElementById("matrix").style.color = "#6c8bac";
     }
 }
 function matrix_level_change(change){
@@ -70,7 +70,7 @@ function matrix_reset(){
         id_temp = "box_" + i;
         console.log("id_temp: " + id_temp);
         document.getElementById(id_temp).innerHTML = " ";
-        document.getElementById(id_temp).style.background = "hsl(213, 28%, 19%)";
+        document.getElementById(id_temp).style.background = "#6c8bac";
         value_temp = null;
         status_temp = 0;
         matrix.push(id_temp);
@@ -80,13 +80,21 @@ function matrix_reset(){
     console.log("MATRIX: " + matrix);
 }
 
-function matrix_peek_change(status){
-    matrix_peek = status;
-    if(matrix_peek == 1){
-        document.getElementById("matrix").style.color = "#fff !important";
+function matrix_peek_change(){
+    matrix_peek += 1;
+    if(matrix_peek%2 == 0){
+        // document.getElementById("matrix").style.color = "#fff !important";
+        for(var i = 1; i <= 40; i++){
+            var id_temp = "box_" + i;
+            document.getElementById(id_temp).style.color = "#fff";
+        }
         console.log("MATRIX_PEEK: 1");
-    }else if(matrix_peek == 0){
-        document.getElementById("matrix").style.color = "hsl(213, 28%, 19%) !important";
+    }else{
+        // document.getElementById("matrix").style.color = "#6c8bac !important";
+        for(var i = 1; i <= 40; i++){
+            var id_temp = "box_" + i;
+            document.getElementById(id_temp).style.color = "#6c8bac";
+        }
         console.log("MATRIX_PEEK: 0");
     }
 }
@@ -101,33 +109,35 @@ function matrix_click(matrix_id){
     if(matrix_value == matrix_memory_values[matrix_progress]){
         console.log("CORRECT");
         document.getElementById(matrix_id).style.background = "hsl(120, 28%, 19%)";
-        document.getElementById(matrix_id).style.color = "#fff !important";
+        // document.getElementById(matrix_id).style.color = "#fff !important";
         // document.getElementById(matrix_id).className = "matrix2";
         matrix_progress += 1;
         document.getElementById("matrix_score_display").innerHTML = matrix_progress + "/" + matrix_level;
     }else{
         console.log("CORRECT");
         document.getElementById(matrix_id).style.background = "hsl(0, 28%, 19%)";
-        document.getElementById(matrix_id).style.color = "#fff !important";
+        // document.getElementById(matrix_id).style.color = "#fff !important";
     }
     
     if(matrix_mode === "a"){
-        document.getElementById("matrix").style.color = "hsl(213, 28%, 19%)";
+        // document.getElementById("matrix").style.color = "#6c8bac";
+        // document.getElementById("matrix").style.color = "#6c8bac";
         for(var i = 1; i <= 40; i++){
             var id_temp = "box_" + i;
-            document.getElementById(id_temp).style.color = "hsl(213, 28%, 19%)";
+            document.getElementById(id_temp).style.color = "#6c8bac";
         }
     }else if(matrix_mode === "b"){
-        document.getElementById("matrix").style.color = "hsl(213, 28%, 19%)";
+        // document.getElementById("matrix").style.color = "#6c8bac";
+        // document.getElementById("matrix").style.color = "#6c8bac";
         for(var i = 1; i <= 40; i++){
             var id_temp = "box_" + i;
-            document.getElementById(id_temp).style.color = "hsl(213, 28%, 19%)";
+            document.getElementById(id_temp).style.color = "#6c8bac";
         }
     }else if(matrix_mode === "c"){
-        document.getElementById("matrix").style.color = "hsl(213, 28%, 19%)";
+        // document.getElementById("matrix").style.color = "#6c8bac";
         for(var i = 1; i <= 40; i++){
             var id_temp = "box_" + i;
-            document.getElementById(id_temp).style.color = "hsl(213, 28%, 19%)";
+            document.getElementById(id_temp).style.color = "#6c8bac";
         }
     }
 }

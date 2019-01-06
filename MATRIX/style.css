@@ -1,7 +1,7 @@
 body{
     /*background: rgb(34,41,53);*/
     background: rgb(0,0,0);
-    color: #fff;
+    /*color: #fff;*/
     margin: 0px;
     padding: 0px;
     /*font-family: Teko;*/
@@ -24,6 +24,7 @@ body{
     position: fixed;
     margin: 0px;
     z-index: 1000;
+    color: #fff;
 }
 
 .header div{
@@ -103,34 +104,35 @@ body{
     border-collapse: collapse;
     /*grid-gap: 2px;*/
 }
-.matrix{
-    color: #fff;
-}
-.matrix2{
-    color: #fff !important;
+/*.matrix{*/
+    /*color: #fff;*/
+/*}*/
+/*.matrix2{*/
+/*    color: #fff !important;*/
     /*hsl(213, 28%, 19%)*/
-}
+/*}*/
 
 
 #matrix div{
-    width: calc(9.5vw - 0px);
+    width: calc(9.2vw - 0px);
     min-width: 65px;
-    height: calc(9.5vw - 0px);
+    height: calc(9.2vw - 0px);
     min-height: 65px;
     /*width: calc(10.9vh - 60px);*/
     /*min-width: 65px;*/
     /*height: calc(10.9vh - 60px);*/
     /*min-height: 65px;*/
     /*background: rgb(20,21,25);*/
-    background: #232f3e;
-    background: hsl(213, 28%, 19%);
+    /*background: #232f3e;*/
+    /*background: hsl(213, 28%, 19%);*/
+    background: #6c8bac;
     /*border: 5px solid #0f171e;*/
     border: 5px solid #000;
     /*border: 2px solid #fff;*/
     /*box-shadow: #000 0px 0px 0px 2px inset;*/
     text-align: center;
     font-size: 40px;
-    color: inherit;
+    /*color: inherit;*/
     cursor: pointer;
     /*line-height: 90px;*/
     line-height: 9.5vw;
