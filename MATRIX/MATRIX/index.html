@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <title>MATRIX</title>
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <script type="text/javascript" src="script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Anton|Exo+2|Fjalla+One|Oswald|Quicksand|Rubik|Sarpanch|Staatliches|Teko" rel="stylesheet">
+    </head>
+    <body id=body>
+        <div class=header>
+            <div id=header_title>MATRIX</div>
+            <div class=matrix_mode>
+                <div id=matrix_mode>MODE</div>
+                <div id=matrix_mode_a onclick="matrix_mode_change('a');">A</div>
+                <div id=matrix_mode_b onclick="matrix_mode_change('b');">B</div>
+                <div id=matrix_mode_c onclick="matrix_mode_change('c');">C</div>
+            </div>
+            <div class=matrix_level>
+                <div id=matrix_level>LEVEL</div>
+                <div id=matrix_level_sub onclick="matrix_level_change(-1);">-</div>
+                <div id=matrix_level_display >4</div>
+                <div id=matrix_level_add onclick="matrix_level_change(1);">+</div>
+            </div>
+            <div class=matrix_value_range>
+                <div id=matrix_value_range>RANGE</div>
+                <div id=matrix_value_range_sub onclick="matrix_value_range_change(-1);">-</div>
+                <div id=matrix_value_range_display >4</div>
+                <div id=matrix_value_range_add onclick="matrix_value_range_change(1);">+</div>
+            </div>
+            <div id=matrix_start onclick="matrix_start();">START</div>
+            <div id=matrix_peek onmousein="matrix_peek_change(1);" onmouseout="matrix_peek_change(0);">PEEK</div>
+            <!--<div id=matrix_peek onmousein="document.getElementById('matrix').style.color = '#fff';" onmouseout="document.getElementById('matrix').style.color = 'hsl(213, 28%, 19%)';">PEEK</div>-->
+            <div class=matrix_score>
+                <div id=matrix_score>SCORE</div>    
+                <div id=matrix_score_display>0/4</div>
+            </div>
+            
+        </div>
+        <div class=game id=game>
+           
+            <table id=matrix class=matrix>
+                <tr>
+                    <td id="box_1" onclick="matrix_click('box_1');"></td>
+                    <td id="box_2" onclick="matrix_click('box_2');"></td>
+                    <td id="box_3" onclick="matrix_click('box_3');"></td>
+                    <td id="box_4" onclick="matrix_click('box_4');"></td>
+                    <td id="box_5" onclick="matrix_click('box_5');"></td>
+                    <td id="box_6" onclick="matrix_click('box_6');"></td>
+                    <td id="box_7" onclick="matrix_click('box_7');"></td>
+                    <td id="box_8" onclick="matrix_click('box_8');"></td>
+                </tr>
+                <tr>
+                    <td id="box_9" onclick="matrix_click('box_9');"></td>
+                    <td id="box_10" onclick="matrix_click('box_10');"></td>
+                    <td id="box_11" onclick="matrix_click('box_11');"></td>
+                    <td id="box_12" onclick="matrix_click('box_12');"></td>
+                    <td id="box_13" onclick="matrix_click('box_13');"></td>
+                    <td id="box_14" onclick="matrix_click('box_14');"></td>
+                    <td id="box_15" onclick="matrix_click('box_15');"></td>
+                    <td id="box_16" onclick="matrix_click('box_16');"></td>
+                </tr>
+                <tr>
+                    <td id="box_17" onclick="matrix_click('box_17');"></td>
+                    <td id="box_18" onclick="matrix_click('box_18');"></td>
+                    <td id="box_19" onclick="matrix_click('box_19');"></td>
+                    <td id="box_20" onclick="matrix_click('box_20');"></td>
+                    <td id="box_21" onclick="matrix_click('box_21');"></td>
+                    <td id="box_22" onclick="matrix_click('box_22');"></td>
+                    <td id="box_23" onclick="matrix_click('box_23');"></td>
+                    <td id="box_24" onclick="matrix_click('box_24');"></td>
+                </tr>
+                <tr>
+                    <td id="box_25" onclick="matrix_click('box_25');"></td>
+                    <td id="box_26" onclick="matrix_click('box_26');"></td>
+                    <td id="box_27" onclick="matrix_click('box_27');"></td>
+                    <td id="box_28" onclick="matrix_click('box_28');"></td>
+                    <td id="box_29" onclick="matrix_click('box_29');"></td>
+                    <td id="box_30" onclick="matrix_click('box_30');"></td>
+                    <td id="box_31" onclick="matrix_click('box_31');"></td>
+                    <td id="box_32" onclick="matrix_click('box_32');"></td>
+                </tr>
+                <tr>
+                    <td id="box_33" onclick="matrix_click('box_33');"></td>
+                    <td id="box_34" onclick="matrix_click('box_34');"></td>
+                    <td id="box_35" onclick="matrix_click('box_35');"></td>
+                    <td id="box_36" onclick="matrix_click('box_36');"></td>
+                    <td id="box_37" onclick="matrix_click('box_37');"></td>
+                    <td id="box_38" onclick="matrix_click('box_38');"></td>
+                    <td id="box_39" onclick="matrix_click('box_39');"></td>
+                    <td id="box_40" onclick="matrix_click('box_40');"></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
