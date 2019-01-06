@@ -1,0 +1,17 @@
+#matrix div{
+    width: 8vh;
+    height: 8vh;
+    /*background: rgb(20,21,25);*/
+    background: #232f3e;
+    background: hsl(213, 28%, 19%);
+    /*border: 5px solid #0f171e;*/
+    border: 5px solid #000;
+    /*border: 2px solid #fff;*/
+    /*box-shadow: #000 0px 0px 0px 2px inset;*/
+    text-align: center;
+    font-size: 40px;
+    color: inherit;
+    cursor: pointer;
+    line-height: 90px;
+    transition: background 100ms, color 500ms;
+}
