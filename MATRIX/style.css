@@ -70,8 +70,8 @@ body{
 
 #matrix_score{background: #374a62;}
 #matrix_score_display{background: #405872;padding: 10px 0px;margin: 0px 0px 20px 0px;}
-#matrix_start{background: #374a62;cursor: pointer;padding: 20px 0px;}
-#matrix_peek{background: #374a62;cursor: pointer;margin: 5px 0px 20px 0px;}
+#matrix_start{background: #374a62;cursor: pointer;padding: 40px 0px;}
+#matrix_peek{background: #374a62;cursor: pointer;margin: 5px 0px 20px 0px;padding: 40px 0px;}
 #matrix_mode{background: #374a62;}
 #matrix_mode_a{background: #405872;}
 #matrix_mode_b{background: #496583;}
