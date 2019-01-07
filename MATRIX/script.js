@@ -6,7 +6,7 @@ var matrix_memory_values = [];
 var matrix_progress = 0;
 var matrix_mode = "a";
 var matrix_peek = 1;
-
+var matrix_settings_status = 1;
 function matrix_mode_change(mode){
     matrix_mode = mode;
     if(matrix_mode === "a"){
@@ -33,7 +33,7 @@ function matrix_level_change(change){
     document.getElementById("matrix_score_display").innerHTML = matrix_progress + "/" + matrix_level;
     if(matrix_value_range < matrix_level){
         matrix_value_range = matrix_level;
-        document.getElementById("matrix_value_range_display").innerHTML = matrix_value_range;
+        document.getElementById("matrix_range_display").innerHTML = matrix_value_range;
     }
     if(matrix_level < 1){
         matrix_level = 1;
@@ -43,10 +43,10 @@ function matrix_level_change(change){
 }
 function matrix_value_range_change(change){
     matrix_value_range += change;
-    document.getElementById("matrix_value_range_display").innerHTML = matrix_value_range;
+    document.getElementById("matrix_range_display").innerHTML = matrix_value_range;
     if(matrix_value_range < matrix_level){
         matrix_value_range = matrix_level;
-        document.getElementById("matrix_value_range_display").innerHTML = matrix_value_range;
+        document.getElementById("matrix_range_display").innerHTML = matrix_value_range;
     }
 }
 
@@ -108,16 +108,14 @@ function matrix_click(matrix_id){
     
     if(matrix_value == matrix_memory_values[matrix_progress]){
         console.log("CORRECT");
-//         document.getElementById(matrix_id).style.background = "hsl(120, 28%, 16%)";
-        document.getElementById(matrix_id).style.background = "#00ff00";
+        document.getElementById(matrix_id).style.background = "hsl(120, 28%, 19%)";
         // document.getElementById(matrix_id).style.color = "#fff !important";
         // document.getElementById(matrix_id).className = "matrix2";
         matrix_progress += 1;
         document.getElementById("matrix_score_display").innerHTML = matrix_progress + "/" + matrix_level;
     }else{
         console.log("CORRECT");
-//         document.getElementById(matrix_id).style.background = "hsl(0, 28%, 16%)";
-        document.getElementById(matrix_id).style.background = "#ff0000";
+        document.getElementById(matrix_id).style.background = "hsl(0, 28%, 19%)";
         // document.getElementById(matrix_id).style.color = "#fff !important";
     }
     
@@ -185,4 +183,18 @@ function matrix_start() {
     console.log("MATRIX:\n " + matrix);
     matrix_memory_values.sort(function(a, b){return a - b});
     console.log("MATRIX_MEMORY_VALUES:\n " + matrix_memory_values);
+}
+
+
+
+
+function matrix_settings_btn(){
+    matrix_settings_status += 1;
+    if(matrix_settings_status%2 == 0){
+        document.getElementById("matrix_settings").style.transform = "translateX(0px)";
+        console.log("MATRIX_SETTINGS: 1");
+    }else{
+        document.getElementById("matrix_settings").style.transform = "translateX(-283px)";
+        console.log("MATRIX_SETTINGS: 0");
+    }
 }

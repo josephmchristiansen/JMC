@@ -15,3 +15,101 @@
     line-height: 90px;
     transition: background 100ms, color 500ms;
 }
+
+
+
+#matrix_mode{background: #374a62;}
+#matrix_mode_a{background: #405872;}
+#matrix_mode_b{background: #496583;}
+#matrix_mode_c{background: #537293;}
+#matrix_level{background: #374a62;}
+
+
+https://fonts.google.com/selection?selection.family=Anton|Exo+2|Fjalla+One|Oswald|Quicksand|Rubik|Sarpanch|Staatliches|Teko&category=Sans+Serif,Display,Monospace
+
+
+#matrix_mode{background: hsl(359, 30%, 15%);}
+#matrix_mode_a{background: hsl(359, 30%, 20%);}
+#matrix_mode_b{background: hsl(359, 30%, 25%);}
+#matrix_mode_c{background: hsl(359, 30%, 30%);}
+#matrix_level{background: hsl(195, 27%, 15%);}
+#matrix_level_sub{background: hsl(195, 27%, 20%);cursor: pointer;}
+#matrix_level_display{background: hsl(195, 27%, 25%);cursor: default;}
+#matrix_level_add{background: hsl(195, 27%, 30%);cursor: pointer;}
+#matrix_value_range{background: hsl(18, 27%, 15%);}
+#matrix_range_sub{background: hsl(18, 27%, 20%);cursor: pointer;}
+#matrix_value_range_display{background: hsl(18, 27%, 25%);cursor: default;}
+#matrix_range_add{background: hsl(18, 27%, 30%);cursor: pointer;}
+
+
+
+#matrix_level_sub{background: hsl(195, 27%, 20%);cursor: pointer;}
+#matrix_level_display{background: hsl(195, 27%, 25%);cursor: default;}
+#matrix_level_add{background: hsl(195, 27%, 30%);cursor: pointer;}
+#matrix_value_range{background: hsl(18, 27%, 15%);}
+
+
+
+BLUE
+
+#matrix_mode         {background: hsl(215, 60%, 35%);}
+#matrix_mode_a       {background: hsl(215, 60%, 40%);}
+#matrix_mode_b       {background: hsl(215, 60%, 45%);}
+#matrix_mode_c       {background: hsl(215, 60%, 50%);}
+#matrix_level        {background: hsl(220, 60%, 35%);}
+#matrix_level_sub    {background: hsl(220, 60%, 40%);cursor: pointer;}
+#matrix_level_display{background: hsl(220, 60%, 45%);cursor: default;}
+#matrix_level_add    {background: hsl(220, 60%, 50%);cursor: pointer;}
+#matrix_value_range  {background: hsl(225, 60%, 35%);}
+#matrix_range_sub    {background: hsl(225, 60%, 40%);cursor: pointer;}
+#matrix_range_display{background: hsl(225, 60%, 45%);cursor: default;}
+#matrix_range_add    {background: hsl(225, 60%, 50%);cursor: pointer;}
+
+
+
+BLUE TWO
+
+#matrix_mode         {background: hsl(215, 40%, 20%);}
+#matrix_mode_a       {background: hsl(215, 40%, 25%);}
+#matrix_mode_b       {background: hsl(215, 40%, 30%);}
+#matrix_mode_c       {background: hsl(215, 40%, 35%);}
+#matrix_time         {background: hsl(220, 40%, 20%);cursor: pointer;}
+#matrix_time_sub     {background: hsl(220, 40%, 25%);cursor: default;}
+#matrix_time_display {background: hsl(220, 40%, 30%);cursor: pointer;}
+#matrix_time_add     {background: hsl(220, 40%, 35%);}
+#matrix_level        {background: hsl(225, 40%, 20%);}
+#matrix_level_sub    {background: hsl(225, 40%, 25%);cursor: pointer;}
+#matrix_level_display{background: hsl(225, 40%, 30%);cursor: default;}
+#matrix_level_add    {background: hsl(225, 40%, 35%);cursor: pointer;}
+#matrix_value_range  {background: hsl(230, 40%, 20%);}
+#matrix_range_sub    {background: hsl(230, 40%, 25%);cursor: pointer;}
+#matrix_range_display{background: hsl(230, 40%, 30%);cursor: default;}
+#matrix_range_add    {background: hsl(230, 40%, 35%);cursor: pointer;}
+
+
+
+
+#matrix_mode         {background: #212121;}
+#matrix_mode_a       {background: hsl(215, 40%, 25%);}
+#matrix_mode_b       {background: hsl(215, 40%, 30%);}
+#matrix_mode_c       {background: hsl(215, 40%, 35%);}
+#matrix_time         {background: #323a45;cursor: pointer;}
+#matrix_time_sub     {background: hsl(220, 40%, 25%);cursor: default;}
+#matrix_time_display {background: hsl(220, 40%, 30%);cursor: pointer;}
+#matrix_time_add     {background: hsl(220, 40%, 35%);}
+#matrix_level        {background: #aeb0b5;}
+#matrix_level_sub    {background: hsl(225, 40%, 25%);cursor: pointer;}
+#matrix_level_display{background: hsl(225, 40%, 30%);cursor: default;}
+#matrix_level_add    {background: hsl(225, 40%, 35%);cursor: pointer;}
+#matrix_value_range  {background: #ffffff;}
+#matrix_range_sub    {background: hsl(230, 40%, 25%);cursor: pointer;}
+#matrix_range_display{background: hsl(230, 40%, 30%);cursor: default;}
+#matrix_range_add    {background: hsl(230, 40%, 35%);cursor: pointer;}
+
+
+
+
+#matrix_score{background: #374a62;}
+#matrix_score_display{background: #405872;padding: 10px 0px;margin: 0px 0px 20px 0px;}
+#matrix_start{background: #374a62;cursor: pointer;padding: 40px 0px;}
+#matrix_peek{background: #374a62;cursor: pointer;margin: 10px 0px 20px 0px;padding: 40px 0px;}

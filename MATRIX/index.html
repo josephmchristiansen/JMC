@@ -8,40 +8,59 @@
         <!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">-->
     </head>
     <body id=body>
-        <div class=header>
+        <div class=matrix_sidebar>
             <!--MATRIX TITLE-->
             <div id=header_title onclick="location.reload();">MATRIX</div>
             <!--START-->
-            <div class=matrix_option_title id=matrix_start onclick="matrix_start();">START</div>
+            <div class=matrix_sidebar_title id=matrix_start onclick="matrix_start();">START</div>
             <!--PEEK-->
-            <div class=matrix_option_title id=matrix_peek onclick="matrix_peek_change();">PEEK</div>
+            <div class=matrix_sidebar_title id=matrix_peek onclick="matrix_peek_change();">CHEAT</div>
             <!--SCORE-->
             <div class=matrix_score>
-                <div class=matrix_option_title id=matrix_score>SCORE</div>    
+                <div class=matrix_sidebar_title id=matrix_score>SCORE</div>    
                 <div id=matrix_score_display>0/4</div>
             </div>
+            <!--SETTINGS_BTN-->
+            <div class=matrix_sidebar_title id=matrix_settings_btn onclick="matrix_settings_btn();">SETTINGS</div>    
+            <!--HELP_BTN-->
+            <div class=matrix_sidebar_title id=matrix_help_btn onclick="matrix_help_btn();">HELP</div>    
+            
+            
+        </div>
+        <div class=matrix_subsidebar id=matrix_settings>
+            <div class=matrix_subsidebar_title id=matrix_settings_header>SETTINGS</div>
             <!--MODE-->
             <div class=matrix_option>
-                <div class=matrix_option_title id=matrix_mode>MODE</div>
-                <div class=matrix_options id=matrix_mode_a onclick="matrix_mode_change('a');">A</div>
-                <div class=matrix_options id=matrix_mode_b onclick="matrix_mode_change('b');">B</div>
-                <div class=matrix_options id=matrix_mode_c onclick="matrix_mode_change('c');">C</div>
+                <div class=matrix_subsidebar_title id=matrix_mode>MODE</div>
+                <div class=matrix_options id=matrix_mode_a onclick="matrix_mode_change('a');">HARDEST</div>
+                <div class=matrix_options id=matrix_mode_b onclick="matrix_mode_change('b');">HARDER</div>
+                <div class=matrix_options id=matrix_mode_c onclick="matrix_mode_change('c');">HARD</div>
+            </div>
+            <!--TIME-->
+            <div class=matrix_option>
+                <div class=matrix_subsidebar_title id=matrix_time>TIME</div>
+                <div class=matrix_options id=matrix_time_sub onclick="matrix_time_change(-1);">-</div>
+                <div class=matrix_options id=matrix_time_display >4</div>
+                <div class=matrix_options id=matrix_time_add onclick="matrix_time_change(1);">+</div>
             </div>
             <!--LEVEL-->
             <div class=matrix_option>
-                <div class=matrix_option_title id=matrix_level>LEVEL</div>
+                <div class=matrix_subsidebar_title id=matrix_level>LEVEL</div>
                 <div class=matrix_options id=matrix_level_sub onclick="matrix_level_change(-1);">-</div>
                 <div class=matrix_options id=matrix_level_display >4</div>
                 <div class=matrix_options id=matrix_level_add onclick="matrix_level_change(1);">+</div>
             </div>
             <!--RANGE-->
             <div class=matrix_option>
-                <div class=matrix_option_title id=matrix_value_range>RANGE</div>
-                <div class=matrix_options id=matrix_value_range_sub onclick="matrix_value_range_change(-1);">-</div>
-                <div class=matrix_options id=matrix_value_range_display >4</div>
-                <div class=matrix_options id=matrix_value_range_add onclick="matrix_value_range_change(1);">+</div>
+                <div class=matrix_subsidebar_title id=matrix_value_range>RANGE</div>
+                <div class=matrix_options id=matrix_range_sub onclick="matrix_value_range_change(-1);">-</div>
+                <div class=matrix_options id=matrix_range_display >4</div>
+                <div class=matrix_options id=matrix_range_add onclick="matrix_value_range_change(1);">+</div>
             </div>
-            
+        </div>
+        <div class=matrix_subsidebar id=matrix_help>
+            <div class=matrix_subsidebar_title id=matrix_settings_header>HELP</div>
+                
         </div>
         <div class=game id=game>
             <div id=matrix class=matrix>

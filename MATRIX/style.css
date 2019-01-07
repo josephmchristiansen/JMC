@@ -16,74 +16,181 @@ body{
     margin: 0px;
 }
 
-.header{
+/*---------------*/
+/*MATRIX SIDEBAR*/
+/*---------------*/
+.matrix_sidebar{
     height: 100%;
     width: 90px;
-    background: #333;
+    /*background: #333;*/
+    background: #000;
     /*background: #fff;*/
     position: fixed;
     margin: 0px;
     z-index: 1000;
     color: #fff;
+    /*overflow-y: show;*/
+    /*border-right: #000 solid 2px;*/
 }
-
-.header div{
+.matrix_sidebar div{
     /*float: left;*/
     /*width: auto;*/
     /*height: auto;*/
-    font-size: 12px;
+    font-size: 17px;
     /*padding: 15px;*/
     line-height: 12px;
     text-align: center;
 }
-
-.header div:hover{
+.matrix_sidebar div:hover{
     /*opacity: 0.8;*/
 }
 
 #header_title{
-    background: #374a62;
+    /*background: hsl(215, 60%, 35%);*/
     /*background: #555;*/
+    background: #0071bc;
     /*color: #000;*/
-    margin: 0px 0px 20px 0px;
+    margin: 0px 0px 0px 0px;
     padding: 20px 0px;
+    cursor: pointer;
 }
 
 /*MATRIX OPTION*/
 .matrix_option{
     height: 64px;
 }
-.matrix_option_title{
+.matrix_sidebar_title{
     background: #374a62;
     padding: 10px 0px;
-    margin: 5px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+
+
+#matrix_start{background: hsl(215, 60%, 35%);cursor: pointer;padding: 40px 0px;}
+#matrix_peek{background: hsl(215, 60%, 45%);cursor: pointer;margin: 0px 0px 0px 0px;padding: 40px 0px;}
+#matrix_score{background: hsl(215, 60%, 35%);}
+#matrix_score_display{background: hsl(215, 60%, 40%);padding: 10px 0px;margin: 0px 0px 0px 0px;}
+#matrix_settings_btn{background: hsl(215, 60%, 45%);padding: 40px 0px;cursor: pointer;}
+#matrix_help_btn{background: hsl(215, 60%, 50%);padding: 40px 0px;cursor: pointer;}
+
+
+
+
+
+
+.matrix_subsidebar{
+    position: fixed;
+    z-index: 999;
+    height: 100%;
+    width: 270px;
+    transform: translateX(-283px);
+    margin: 0px 0px 0px 90px;
+    /*background: #2f2f2f;*/
+    /*background: #212121;*/
+    /*background: #323a45;*/
+    /*background: hsl(205, 60%, 35%);*/
+    background: #000;
+    /*background: linear-gradient(to bottom, hsl(205, 100%, 20%) 0%, hsl(225, 100%, 20%) 100%);*/
+    border-left: solid 10px #000;
+    font-family: Quicksand;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    /*opacity: 0.8;*/
+}
+matrix_subsidebar_close_btn{
+    /*position: fixed;*/
+    /*right: 0px;*/
+}
+#matrix_settings{
+    display: block;
+    transition: transform 1s;
+    /*transform: translateX(283px);*/
+}
+#matrix_settings_header{
+    /*background: #374a62;*/
+    /*background: hsl(205, 50%, 25%);*/
+    background: #0071bc;
+    margin: 0px 0px 0px 0px;
+}
+.matrix_subsidebar_title{
+    background: #374a62;
+    /*background: hsl(215, 60%, 35%);*/
+    /*padding: 10px 0px;*/
+    float: left;
+    height: 40px;
+    width: 270px;
+    line-height: 40px;
+    margin: 0px 0px 0px 0px;
+    /*opacity: 0.7;*/
 }
 .matrix_options{
     cursor: pointer;
     float: left;
     position: relative;
-    width: 30px;
-    padding: 10px 0px;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    padding: 0px;
     text-align: center;
+    /*opacity: 0.5;*/
+}
+/*.matrix_options:hover{opacity: 0.7;}*/
+
+
+/*#matrix_mode{background: #0000; border: solid 2px hsl(210, 100%, 35%); color: hsl(210, 100%, 35%);}*/
+
+#matrix_mode         {background: hsl(215, 60%, 35%);}
+#matrix_mode_a       {background: hsl(215, 60%, 40%);font-size: 18px;}
+#matrix_mode_a:hover{opacity: 0.7;}
+#matrix_mode_b       {background: hsl(215, 60%, 45%);font-size: 18px;}
+#matrix_mode_b:hover{opacity: 0.7;}
+#matrix_mode_c       {background: hsl(215, 60%, 50%);font-size: 18px;}
+#matrix_mode_c:hover{opacity: 0.7;}
+#matrix_time         {background: hsl(215, 60%, 35%);cursor: pointer;}
+#matrix_time_sub     {background: hsl(215, 60%, 40%);}
+#matrix_time_sub:hover{opacity: 0.7;}
+#matrix_time_display {background: hsl(215, 60%, 45%);cursor: pointer;}
+#matrix_time_add     {background: hsl(215, 60%, 50%);}
+#matrix_time_add:hover{opacity: 0.7;}
+#matrix_level        {background: hsl(215, 60%, 35%);}
+#matrix_level_sub    {background: hsl(215, 60%, 40%);cursor: pointer;}
+#matrix_level_sub:hover{opacity: 0.7;}
+#matrix_level_display{background: hsl(215, 60%, 45%);cursor: default;}
+#matrix_level_add    {background: hsl(215, 60%, 50%);cursor: pointer;}
+#matrix_level_add:hover{opacity: 0.7;}
+#matrix_value_range  {background: hsl(215, 60%, 35%);}
+#matrix_range_sub    {background: hsl(215, 60%, 40%);cursor: pointer;}
+#matrix_range_sub:hover{opacity: 0.7;}
+#matrix_range_display{background: hsl(215, 60%, 45%);cursor: default;}
+#matrix_range_add    {background: hsl(215, 60%, 50%);cursor: pointer;}
+#matrix_range_add:hover{opacity: 0.7;}
+
+/*hsl(150, 27%, 15%);*/
+/*hsl(150, 27%, 20%);*/
+/*hsl(150, 27%, 25%);*/
+/*hsl(150, 27%, 30%);*/
+
+/*hsl(210, 100%, 35%)*/
+
+
+
+#matrix_help{
+    display: none;
+}
+#matrix_help_header{
+    /*background: #374a62;*/
+    /*background: hsl(205, 50%, 25%);*/
+    background: #0071bc;
+    margin: 0px 0px 0px 0px;
 }
 
 
-#matrix_score{background: #374a62;}
-#matrix_score_display{background: #405872;padding: 10px 0px;margin: 0px 0px 20px 0px;}
-#matrix_start{background: #374a62;cursor: pointer;padding: 40px 0px;}
-#matrix_peek{background: #374a62;cursor: pointer;margin: 5px 0px 20px 0px;padding: 40px 0px;}
-#matrix_mode{background: #374a62;}
-#matrix_mode_a{background: #405872;}
-#matrix_mode_b{background: #496583;}
-#matrix_mode_c{background: #537293;}
-#matrix_level{background: #374a62;}
-#matrix_level_sub{background: #537293;cursor: pointer;}
-#matrix_level_display{background: #405872;cursor: default;}
-#matrix_level_add{background: #537293;cursor: pointer;}
-#matrix_value_range{background: #374a62;}
-#matrix_value_range_sub{background: #537293;cursor: pointer;}
-#matrix_value_range_display{background: #405872;cursor: default;}
-#matrix_value_range_add{background: #537293;cursor: pointer;}
+
+
+
+
 
 .game{
     height: auto;
@@ -136,7 +243,7 @@ body{
     cursor: pointer;
     /*line-height: 90px;*/
     line-height: 9.5vw;
-    /*transition: background 100ms, color 500ms; */
+    /*transition: background 100ms, color 500ms;*/
     float: left;
 }
 
