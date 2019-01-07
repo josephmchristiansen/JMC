@@ -108,14 +108,14 @@ function matrix_click(matrix_id){
     
     if(matrix_value == matrix_memory_values[matrix_progress]){
         console.log("CORRECT");
-        document.getElementById(matrix_id).style.background = "hsl(120, 28%, 19%)";
+        document.getElementById(matrix_id).style.background = "hsl(120, 28%, 100%)";
         // document.getElementById(matrix_id).style.color = "#fff !important";
         // document.getElementById(matrix_id).className = "matrix2";
         matrix_progress += 1;
         document.getElementById("matrix_score_display").innerHTML = matrix_progress + "/" + matrix_level;
     }else{
         console.log("CORRECT");
-        document.getElementById(matrix_id).style.background = "hsl(0, 28%, 19%)";
+        document.getElementById(matrix_id).style.background = "hsl(0, 28%, 100%)";
         // document.getElementById(matrix_id).style.color = "#fff !important";
     }
     
