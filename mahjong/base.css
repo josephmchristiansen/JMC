@@ -1,0 +1,262 @@
+body{
+    background-image: url("blue-space-pictures-1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    /*font-family: Armata;*/
+}
+@font-face {
+font-family: call;
+src: url(CALL.TTF);
+}
+.page *{
+    /*padding: 0px;*/
+    /*margin: 0px;*/
+}
+.page{
+    /*height: 100%;*/
+    /*width: 100%;*/
+    /*margin: 0px auto;*/
+    top: 0px;
+    color: white;
+    text-align: center;
+    font-family: call;
+    /*position: relative;*/
+    
+}
+#main-title{
+    font-size: 40;
+}
+h1{
+    top: 0px;
+    font-size: 80;
+    margin: 0px;
+}
+#page-title{
+    font-size: 20;
+    margin: 0px;
+}
+#page-how{
+    font-size: 20;
+    margin: 0px;
+}
+#page-c{
+    height: auto;
+    width: 70%;
+    font-size: 20;
+    margin: 10px auto;
+    background: rgba(0, 0, 0, .5);
+    padding: 10px;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+}
+img{
+    margin-top: 20px;
+    height: auto;
+    width: 60%;
+}
+#li-report, #li-game{
+    /*float: left;*/
+    font-size: 40;
+    margin: 10px;
+    padding: 10px;
+    font-family: call;
+    background: rgba(0, 0, 0, .5);
+    color: white;
+}
+#li-report:hover, #li-game:hover{
+    filter: invert(1);
+}
+#mz-head{
+    position: absolute;
+}
+#mz-home, #mz-report{
+    /*float: left;*/
+    font-size: 12;
+    margin: 5px;
+    padding: 5px;
+    font-family: call;
+    background: rgba(0, 0, 0, .5);
+    color: white;
+}
+#mz-home:hover, #mz-report:hover{
+    filter: invert(1);
+}
+
+
+.game{
+    background: url(mzbak2.png);
+    /*height: 600px;*/
+    /*width: 600px;*/
+    height: 700px;
+    width: 700px;
+    position: relative;
+    margin: auto;
+    top: 0px;
+    font-family: call;
+}
+.game-head{
+    height: 100px;
+    width: 100%;
+    position: relative;
+}
+#game-title{
+    text-align: center;
+    /*background: rgba(255, 255, 255, .2);*/
+    font-family: Armata;
+    margin: auto;
+    position: relative;
+    width: 450px;
+    height: 50px;
+    top: 20px;
+    border-style: none;
+    
+}
+.game-board{
+    /*background:grey;*/
+    /*height: 550px;*/
+    /*width: 550px;*/
+    height: 500px;
+    width: 500px;
+    position: relative;
+    margin: auto;
+    /*top: 25px;*/
+    font-family: call;
+}
+#game-options{
+    /*background: rgba(255, 255, 255, .2);*/
+    /*height: 550px;*/
+    /*width: 550px;*/
+    height: 500px;
+    width: 500px;
+    position: relative;
+    margin: auto;
+    /*top: 25px;*/
+    color: white;
+    font-family: call;
+}
+
+#game-mode{
+    /*margin-top: 60px;*/
+    color: white !important;
+    text-align: center;
+    /*background: white !important;*/
+    font-family: call !important;
+    margin: auto !important;
+    position: relative;
+    width: 100% !important;
+    /*height: 100px !important;*/
+    /*border-bottom-style: solid;*/
+    /*border-bottom-color: black;*/
+    /*border-bottom-width: 2px;*/
+}
+#game-mode p:nth-child(1){
+    width: 100% !important;
+    font-size: 19;
+}
+#game-mode p:nth-child(2){
+    width: 100% !important;
+    top: 34px;
+    font-size: 14;
+}
+#game-mode p:nth-child(3){
+    width: 100% !important;
+    top: 90px;
+    font-size: 22;
+}
+#howtoplay{
+    width: calc(100% - 20px);
+    top: 350px;
+    font-size: 15;
+    text-align: center;
+    font-family: call;
+    height: auto;
+    background: rgba(0, 0, 0, .5);
+    padding: 10px;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+}
+#game-mode-easy{
+    background: url(modebtn3.png);
+    /*background-color: black;*/
+    height: 60px;
+    /*font-family: Armata;*/
+    color: white;
+    top: 150px;
+    position: relative;
+    width: 100%;
+    border-style: none;
+}
+#game-mode-easy:hover{
+    filter: invert(1);
+}
+#game-mode-moderate{
+    background: url(modebtn3.png);
+    height: 60px;
+    /*font-family: Armata;*/
+    color: white;
+    top: 220px;
+    position: relative;
+    width: 100%;
+    border-style: none;
+}
+#game-mode-moderate:hover{
+    filter: invert(1);
+}
+#game-mode-hard{
+    background: url(modebtn3.png);
+    height: 60px;
+    /*font-family: Armata;*/
+    color: white;
+    top: 290px;
+    position: relative;
+    width: 100%;
+    border-style: none;
+}
+#game-mode-hard:hover{
+    filter: invert(1);
+}
+#game-start{
+    top: 150px;
+    height: 20px;
+    font-family: Armata;
+    margin: auto;
+    position: relative;
+    width: 100%;
+    border-style: none;
+}
+
+
+.game-foot{
+    height: 100px;
+    width: 100%;
+    position: relative;
+}
+
+
+.game-board *{
+    height: 80px;
+    width: 80px; 
+    /*height: 15%;*/
+    /*width: 10%;*/
+    /*filter: saturate(.000) contrast(1);*/
+    position: absolute !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+.game-board div:nth-child(n+2):hover{
+    filter: brightness(.7) !important;
+}
+
+@keyframes blur{
+    0%{filter: blur(0px) !important;}
+    90%{opacity: 1 !important;}
+    100%{filter: blur(30px) !important;
+        opacity: 0;
+        visibility: hidden;}
+}

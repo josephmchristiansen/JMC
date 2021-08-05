@@ -1,0 +1,97 @@
+.section{
+    height: 100%;
+    width: 100%;
+    
+}
+.section-1{
+    /*z-index: 5;*/
+    /*position: static;*/
+    background-image: url("zodiac.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    border-bottom-color: black;
+    border-bottom-style: solid;
+    border-bottom-width: 10px;
+}
+.section-1 .container{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    top: calc(50% + 100px);
+}
+.section-1 .content {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-variant: small-caps;
+    font-weight: 900;
+    height: 40px;
+    font-size: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+
+
+.section-2{
+    /*z-index: 5;*/
+}
+.section-2 .container{
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+.section-2 .content {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-variant: small-caps;
+    font-weight: 900;
+    /*height: 40px;*/
+    /*font-size: 40px;*/
+    /*text-align: center;*/
+    /*line-height: 40px;*/
+}
+.section-2 .content-b{
+    height: 470px;
+    width: 600px;
+    position: relative;
+    margin: auto;
+    bottom: 0px;
+}
+.section-2 .content-b img{
+    position: relative;
+    margin: auto;
+}
+
+.section-3{
+    /*z-index: 5;*/
+    /*position: static;*/
+    background-image: url("zodiac.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    border-bottom-color: black;
+    border-bottom-style: solid;
+    border-bottom-width: 10px;
+}
+.section-3 .container{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    /*top: calc(50% + 100px);*/
+}
+.section-3 .content {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-variant: small-caps;
+    font-weight: 900;
+    height: 40px;
+    font-size: 40px;
+    text-align: center;
+    line-height: 40px;
+}

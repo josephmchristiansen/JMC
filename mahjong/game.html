@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My App</title>
+	<meta charset="utf-8">
+	<!--<meta content="width=device-width, initial-scale=1" name="viewport">-->
+	<script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+	<!--<script src="applab/applab-api.js"></script>-->
+	<script src="../Grendel/applab/applab-api.js"></script>
+	<link href="applab/applab.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+	<div class="appModern running" id="divApplab" style="width: 320px; height: 450px; transform: scale(0.85625); display: block;" tabindex="1">
+		<div class="screen" data-canonical-image-url="" id="game" tabindex="1">
+			<label id="label7"></label>
+			<button class="design-mode-hidden" data-canonical-image-url="icon://fa-pause" data-icon-color="#ffffff" id="pause"></button>
+			<button class="design-mode-hidden" data-canonical-image-url="icon://fa-refresh" data-icon-color="#ffffff" id="restart"></button>
+			<button class="design-mode-hidden" data-canonical-image-url="icon://fa-sign-out" data-icon-color="#ffffff" id="exit"></button>
+			<button class="design-mode-hidden" id="button1">TILES</button>
+			<button class="design-mode-hidden" id="button2">TIME</button>
+			<button class="design-mode-hidden" id="tilesLeft">52</button>
+			<button class="design-mode-hidden" id="timeBox">52</button>
+			<button class="design-mode-hidden" data-canonical-image-url="icon://fa-cog" data-icon-color="#ffffff" id="settings2.btn"></button>
+			<button class="design-mode-hidden" data-canonical-image-url="icon://fa-info" data-icon-color="#ffffff" id="info2.btn"></button>
+			<button class="design-mode-hidden" id="data">BETA VERSION 2.3 | © 2017. JOE</button>
+			<button class="design-mode-hidden" data-canonical-image-url="COLOR 3 MAHJONG PIXELS TILES.gif" id="tileGIF"></button>
+			<button class="design-mode-hidden" id="test1">1</button>
+			<button class="design-mode-hidden" id="test2">2</button>
+			<button class="design-mode-hidden" id="test3">3</button>
+			<button class="design-mode-hidden" id="test4">4</button>
+			<button class="design-mode-hidden" id="test5">5</button>
+			<img data-canonical-image-url="3MAHJONG PIXELS TITLE-1.png" id="image19" src="assets/3MAHJONG%20PIXELS%20TITLE-1.png">
+			<button data-canonical-image-url="icon://fa-retweet" data-icon-color="#ffffff" id="restart.btn"></button>
+		</div>
+		<div class="screen" id="main" tabindex="1">
+		  <button id="play.btn">PLAY</button>
+		  <button id="settings1.btn">SETTINGS</button>
+		  <button id="info1.btn">INFORMATION</button>
+		  <button id="htp.btn">HOW TO PLAY</button>
+		  <label id="label1"></label>
+		<div class="textArea" id="null"></div>
+		<div class="textArea" id="null"></div>
+		<div class="textArea" id="null"></div>
+		<div class="textArea" id="null"></div>
+		<div class="textArea" id="null"></div>
+		<div class="textArea" id="null"></div>
+		<div class="textArea" id="null"></div>
+		<div class="textArea" id="null"></div>
+		<div class="textArea" id="null"></div>
+		<div class="textArea" id="null"></div>
+		<div class="textArea" id="null"></div>
+		<div class="textArea" id="null"></div>
+		<div class="textArea" id="null"></div>
+		<div class="textArea" id="null"></div>
+		<div class="textArea" id="null"></div>
+		<div class="textArea design-mode-hidden" contenteditable="false" id="htp.box" spellcheck="true">
+			HOW TO PLAY:
+			<div>
+				<br>
+			</div>
+			<div>
+				- Look for pairs of tiles. Keep in mind that you can only remove a tile if it has space on either its left or its right. If it has a tile on both sides, you cannot remove it.
+			</div>
+			<div>
+				<br>
+			</div>
+			<div>
+				- Once you have found a pair of tiles that both have space on one side, remove them from the board.
+			</div>
+			<div>
+				<br>
+			</div>
+			<div>
+				- As you remove tiles from the board, new pairs will become visible and you can remove them as well.
+			</div>
+			<div>
+				<br>
+			</div>
+			<div>
+				- Continue removing tiles until there are either no tiles left or you have no more legal moves. If you remove all of the tiles from the board, you win.
+			</div>
+			<div>
+				<br>
+			</div>
+			<div>
+				------------------------------------
+			</div>
+			<div>
+				RULES COURTESY OF: http://solitaire.mahjong.com/
+			</div>
+		</div>
+		<div class="textArea design-mode-hidden" contenteditable="false" id="info.box" spellcheck="true">
+			MAHJONG PIXELS - v4.0
+			<div>
+				-----------------------------------------------------
+			</div>
+			<div>
+				© 2017.
+			</div>
+			<div>
+				JOSEPH CHRISTIANSEN.
+			</div>
+			<div>
+				All rights reserved.
+			</div>
+			<div>
+				-----------------------------------------------------
+			</div>
+		</div>
+		<div class="textArea design-mode-hidden" contenteditable="false" id="settings.box" spellcheck="true">
+			SETTINGS:
+			<div>
+				<br>
+			</div>
+			<div>
+				TILE COLOR:
+			</div>
+		</div>
+		<img data-canonical-image-url="3MAHJONG PIXELS TITLE-1.png" id="image22" src="assets/3MAHJONG%20PIXELS%20TITLE-1.png">
+		<img class="design-mode-hidden" data-canonical-image-url="4COLORFULL MAHJONG PIXELS TILES clone.gif" id="color2" src="/v3/assets/LM-ZT7yc6_09P7--sgEaiFyn7wO-UbOrX3pJFfDX-HI/4COLORFULL%20MAHJONG%20PIXELS%20TILES%20clone.gif">
+		<img class="design-mode-hidden" data-canonical-image-url="3COLOR 3 MAHJONG PIXELS TILES.gif" id="color3" src="/v3/assets/LM-ZT7yc6_09P7--sgEaiFyn7wO-UbOrX3pJFfDX-HI/3COLOR%203%20MAHJONG%20PIXELS%20TILES.gif">
+		<img class="design-mode-hidden" data-canonical-image-url="2 COLORFULL MAHJONG PIXELS TILES (1).gif" id="color1" src="/v3/assets/LM-ZT7yc6_09P7--sgEaiFyn7wO-UbOrX3pJFfDX-HI/2%20COLORFULL%20MAHJONG%20PIXELS%20TILES%20(1).gif"></div>
+	</div>
+	<script src="code.js">
+	</script>
+</body>
+</html>
