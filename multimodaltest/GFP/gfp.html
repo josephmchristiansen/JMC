@@ -1,0 +1,296 @@
+
+<html>
+  <head>
+      <meta charset="utf-8">
+      <title>PURCHASE</title>
+      <link rel="shortcut icon" href="../RESOURCES/D4TFAVICON.ico" />
+      <link rel="stylesheet" href="gfp.css">
+      <script type="text/javascript" src="gfp.js"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+      <script src="RESOURCES/jquery-3.2.1.js"></script>
+      <div id=nav-dropdown>
+          <ul id=tec class=nav-dropdown-btn>
+            <li class="nav-btn"><a href="../TECHNOLOGIES/technologies.html?va">VIRTUAL AGENT</a></li>
+            <li class="nav-btn"><a href="../TECHNOLOGIES/technologies.html?dm">DECISION MANAGEMENT</a></li>
+            <li class="nav-btn"><a href="../TECHNOLOGIES/technologies.html?sr">SPEECH RECOGNITION</a></li>
+          </ul>
+          <ul id=bus class=nav-dropdown-btn>
+            <li class="nav-btn"><a href="../BUSAPPS/busapps.html?ci">CUSTOMER INTERACTIONS</a></li>
+            <li class="nav-btn"><a href="../BUSAPPS/busapps.html?dm">DATA MANAGEMENT</a></li>
+            <li class="nav-btn"><a href="../BUSAPPS/busapps.html?ct">CHATBOT</a></li>
+            <li class="nav-btn"><a href="../BUSAPPS/busapps.html?em">EMAIL MANAGEMENT</a></li>
+          </ul>
+          <ul id=edu class=nav-dropdown-btn>
+            <li class="nav-btn"><a href="../EDAPPS/edapps.html?gg">GRADING</a></li>
+            <li class="nav-btn"><a href="../EDAPPS/edapps.html?sg">SCHEDULING</a></li>
+            <li class="nav-btn"><a href="../EDAPPS/edapps.html?gs">GROUPS</a></li>
+            <li class="nav-btn"><a href="../EDAPPS/edapps.html?lg">LEARNING</a></li>
+          </ul>
+          <ul id=res class=nav-dropdown-btn>
+              <li id="nav-dropdown-btn" class="nav-btn"><a href="../RES/res.html?hr">HEALTHCARE RESEARCH</a></li>
+              <li id="nav-dropdown-btn" class="nav-btn"><a href="../RES/res.html?ac">AI CURING CANCER</a></li>
+              <li id="nav-dropdown-btn" class="nav-btn"><a href="../RES/res.html?ar">AI MARKETING RESEARCH</a></li>
+          </ul>
+          <ul id=rec class=nav-dropdown-btn>
+              <li id="nav-dropdown-btn" class="nav-btn"><a href="../REC/rec.html?ac">AI COACHING</a></li>
+              <li id="nav-dropdown-btn" class="nav-btn"><a href="../REC/rec.html?ft">FITNESS TRACKER</a></li>
+              <li id="nav-dropdown-btn" class="nav-btn"><a href="../REC/rec.html?an">AI CAMERAMAN</a></li>
+          </ul>
+          <ul id=pur class=nav-dropdown-btn>
+              <li id="nav-dropdown-btn" class="nav-btn"><a href="../GFP/gfp.html?ed">EDUCATOR</a></li>
+              <li id="nav-dropdown-btn" class="nav-btn"><a href="../GFP/gfp.html?st">STUDENT</a></li>
+              <li id="nav-dropdown-btn" class="nav-btn"><a href="../GFP/gfp.html?re">RESEARCHER</a></li>
+              <li id="nav-dropdown-btn" class="nav-btn"><a href="../GFP/gfp.html?ho">HOMEOWNER</a></li>
+              <li id="nav-dropdown-btn" class="nav-btn"><a href="../GFP/gfp.html?fa">FAMILY</a></li>
+              <li id="nav-dropdown-btn" class="nav-btn"><a href="../GFP/gfp.html?bu">BUSINESS</a></li>
+              <li id="nav-dropdown-btn" class="nav-btn"><a href="../GFP/gfp.html?at">ATHLETE</a></li>
+          </ul>
+          <ul id=faq class=nav-dropdown-btn>
+            <li class="nav-btn"><a href="../FAQ/faq.html?cu">CURRENT</a></li>
+            <li class="nav-btn"><a href="../FAQ/faq.html?fu">FUTURE</a></li>
+            <li class="nav-btn"><a href="../FAQ/faq.html?pe">PERSONAL</a></li>
+            <li class="nav-btn"><a href="../FAQ/faq.html?co">COMMERCIAL</a></li>
+            <li class="nav-btn"><a href="../FAQ/faq.html?sa">SAFETY</a></li>
+            <li class="nav-btn"><a href="../FAQ/faq.html?li">LIABILITIES</a></li>
+          </ul>
+          <ul id=inf class=nav-dropdown-btn>
+                <li id='nav-dropdown-btn' class='nav-btn'><a href='http://tsaweb.org/sites/default/files/2018%20High%20School%20Webmaster%20Design%20Brief.pdf' target='_blank'>Design Brief</a></li>
+              <li id="nav-dropdown-btn" class="nav-btn"><a href="../INFO/info.html?ts">TSA</a></li>
+              <li id="nav-dropdown-btn" class="nav-btn"><a href="../INFO/info.html?tc">TSA Competitions</a></li>
+              <li id="nav-dropdown-btn" class="nav-btn"><a href="../INFO/info.html?gt">GTI</a></li>
+              <li id="nav-dropdown-btn" class="nav-btn"><a href="../INFO/info.html?gc">GTI Courses</a></li>
+          </ul>
+          <ul id=abt class=nav-dropdown-btn>
+              <li id="nav-dropdown-btn" class="nav-btn"><a href="../#">abt</a></li>
+          </ul>
+      </div>
+      <div id="header" class=nav-bar style="background-color: black;">
+          <ul class=nav-btns>
+              <!-- <li class=nav-btn onmouseover="navdropdown('abt');" ><a href="../ABOUT/about.html">ABOUT</a></li> -->
+                <img class="icon" id=icon onclick="myFunction()" src="../RESOURCES/menu-icon.png"> </img>
+              <li class=nav-btn onmouseover="navdropdown('inf');" ><a href="../INFO/info.html">ABOUT</a></li>
+              <li class=nav-btn onmouseover="navdropdown('pur')"><a href="../GFP/gfp.html?xx" style="background-color:rgb(71,71,71);">PURCHASE</a></li>
+              <li class=nav-btn onmouseover="navdropdown('faq');"><a href="../FAQ/faq.html">FAQ</a></li>
+              <li class=nav-btn onmouseover="navdropdown('rec');"><a href="../REC/rec.html">RECREATION</a></li>
+              <li class=nav-btn onmouseover="navdropdown('res');"><a href="../RES/res.html">RESEARCH</a></li>
+              <li class=nav-btn onmouseover="navdropdown('edu');"><a href="../EDAPPS/edapps.html">EDUCATION</a></li>
+              <li class=nav-btn onmouseover="navdropdown('bus');"><a href="../BUSAPPS/busapps.html">BUSINESS</a></li>
+              <li class=nav-btn onmouseover="navdropdown('tec');"><a href="../TECHNOLOGIES/technologies.html">TECH</a></li>
+              <!-- <li class=nav-btn onclick="pagechange('GFP')"><a href="../#">PURCHASE</a></li> -->
+              <img id=D4Ticon style="height:30px; width:30px; float:left; padding:0px; margin:10px;" src="../RESOURCES/D4Ticon.png"/>
+              <li id=home class="nav-btn home"><a href="../index.html">D<b>4</b>TECH</a></li>
+          </ul>
+      </div>
+      <script>
+          function myFunction() {
+            var x = document.getElementById("header");
+            if (x.className === "nav-bar") {
+              x.className += " r";
+            } else {
+              x.className = "nav-bar";
+            }
+          }
+
+          function headerClose() {
+            var x = document.getElementById("header");
+            x.className = "nav-bar";
+          }
+        </script>
+  </head>
+  <body onload="linkcheck();" onmousemove="navdropdownhide();">
+
+    <div id=checkout>
+      <div id=checkout-close onclick="checkout_close();">EXIT CHECKOUT</div>
+      <h1>CHECKOUT</h1>
+      <h6>NOTE: THIS IS A DEMO, DO NOT INPUT PERSONAL INFO</h6>
+      <hr>
+      <div class=checkout-cart></div>
+      <div class=checkout-form>
+
+      <form>
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="John Doe">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="johndoe@example.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="285 Andrew Young International Blvd NW">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="Atlanta">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="GA">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="30313">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <!-- <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <p>visa</p>
+              <p>mastercard</p>
+              <p>discover</p>
+            </div> -->
+            <label for="cname" style="clear:both">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="John Doe">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="June">
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2020">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="314">
+              </div>
+            </div>
+            <input type="submit" value="Continue to checkout" class="btn">
+          </div>
+
+      </form>
+      </div>
+    </div>
+
+
+    <div class=intro>
+      <h1>Need help deciding what D4T AI Robot to purchase?</h1>
+      <h4>Let us help you. Select the option that best fits you. Or, continue, to browse all of our products.</h4>
+      <div id=intro-options-iam class=intro-options>
+        <div id=intro-opt-ed class=intro-opt onclick="opt('ed');"><div class=intro-opt-iam>I'm an</div><p>EDUCATOR</p></div>
+        <div id=intro-opt-st class=intro-opt onclick="opt('st');"><div class=intro-opt-iam>I'm a</div><p>STUDENT</p></div>
+        <div id=intro-opt-re class=intro-opt onclick="opt('re');"><div class=intro-opt-iam>I'm a</div><p>RESEARCHER</p></div>
+        <div id=intro-opt-ho class=intro-opt onclick="opt('ho');"><div class=intro-opt-iam>I'm a</div><p>HOMEOWNER</p></div>
+        <div id=intro-opt-fa class=intro-opt onclick="opt('fa');"><div class=intro-opt-iam>We're a</div><p>FAMILY</p></div>
+        <div id=intro-opt-bu class=intro-opt onclick="opt('bu');"><div class=intro-opt-iam>We're a</div><p>BUSINESS</p></div>
+        <div id=intro-opt-at class=intro-opt onclick="opt('at');"><div class=intro-opt-iam>I'm an</div><p>ATHLETE</p></div>
+        <div id=intro-opt-x class=intro-opt onclick="opt('xx');"><p>BROWSE<br> ALL</p></div>
+      </div>
+    </div>
+
+        <div class=section>
+          <div class="item ed" >
+            <div class=item-title>LMS</div>
+            <div class=item-img id=a></div>
+            <div class='item-description'>Learning Management System. Includes an individualized learning platform. Organize groups for collaborative learning. Offers state-of-the-art AI dynamic scheduling for class activities and assignments.
+            </div>
+            <div class=item-cost>$10,000/yr</div>
+            <div class=item-buy onclick="checkout('a', 'ed');">PURCHASE</div>
+          </div>
+          <div class="item st" >
+            <div class=item-title>STUDY TOOLS</div>
+            <div class=item-img id=b></div>
+            <div class='item-description'>Creates Intelligent training exercises to aid the student in studying.</div>
+            <div class=item-cost>$230/yr</div>
+            <div class=item-buy onclick="checkout('b', 'st');">PURCHASE</div>
+          </div>
+          <div class="item st" >
+            <div class=item-title>PLANNER</div>
+            <div class=item-img id=c></div>
+            <div class='item-description'>Keep track of events, assignments, notes, tasks, etc.
+            </div>
+            <div class=item-cost>$20.99/yr</div>
+            <div class=item-buy onclick="checkout('c', 'st');">PURCHASE</div>
+          </div>
+          <div class="item re" >
+            <div class=item-title>DATA ANALYSIS</div>
+            <div class=item-img id=d></div>
+            <div class='item-description'>Tool for quick, simple, and professional data analytics.</div>
+            <div class=item-cost>$800/yr</div>
+            <div class=item-buy onclick="checkout('d', 're');">PURCHASE</div>
+          </div>
+          <div class="item re" >
+            <div class=item-title>SIMULATOR</div>
+            <div class=item-img id=e></div>
+            <div class='item-description'>Create professional simulations using various data sets.</div>
+            <div class=item-cost>$800/yr</div>
+            <div class=item-buy onclick="checkout('e', 're');">PURCHASE</div>
+          </div>
+          <div class="item re" >
+            <div class=item-title>PREDICTIVE MODELING</div>
+            <div class=item-img id=f></div>
+            <div class='item-description'>Generate accurate predictive models with ease.
+            </div>
+            <div class=item-cost>$800/yr</div>
+            <div class=item-buy onclick="checkout('f', 're');">PURCHASE</div>
+          </div>
+          <div class="item ho" >
+            <div class=item-title>SMART-FUN</div>
+            <div class=item-img id=g></div>
+            <div class='item-description'>Never be bored again. With is AI tool you will never have to wonder about what to do with your free time.
+            </div>
+            <div class=item-cost>$100/yr</div>
+            <div class=item-buy onclick="checkout('g', 'ho');">PURCHASE</div>
+          </div>
+          <div class="item fa" >
+            <div class=item-title>GUARD-DOG</div>
+            <div class=item-img id=h></div>
+            <div class='item-description'>This robot will protect your home, possessions, and family. With the help of home perimeter cameras, onboard sensors, and an anti intruder stun gun, you will never have to worry about home security again.
+            </div>
+            <div class=item-cost>$12,000</div>
+            <div class=item-buy onclick="checkout('h', 'fa');">PURCHASE</div>
+          </div>
+          <div class="item bu" >
+            <div class=item-title>COMMUNICATOR</div>
+            <div class=item-img id=i></div>
+            <div class='item-description'>Send intelligent automated emails and phone calls with little effort.  This AI has successfully passed the Turing test and will make a great addition to any business.</div>
+            <div class=item-cost>$2500/yr</div>
+            <div class=item-buy onclick="checkout('i', 'bu');">PURCHASE</div>
+          </div>
+          <div class="item bu" >
+            <div class=item-title>DATA-SAFE</div>
+            <div class=item-img id=j></div>
+            <div class='item-description'>All businesses have data and files that need precise management to ensure nothing gets lost.  DATA-SAFE will aid in the management and protection of any business data with utmost professionalism.
+            </div>
+            <div class=item-cost>$2000/yr</div>
+            <div class=item-buy onclick="checkout('j', 'bu');">PURCHASE</div>
+          </div>
+          <div class="item bu" >
+            <div class=item-title>FINANCE</div>
+            <div class=item-img id=k></div>
+            <div class='item-description'>Businesses can not afford to have errors when it comes to financial management.  These AI tools will not only ensure all transactions run smoothly, it will also aid with intelligent investments.  </div>
+            <div class=item-cost>$10,000/yr</div>
+            <div class=item-buy onclick="checkout('k', 'bu');">PURCHASE</div>
+            </div>
+          <div class="item at" >
+            <div class=item-title>COACH</div> <!-- http://graphics8.nytimes.com/newsgraphics/2013/11/28/fourth-downs/assets/static-images/professor-math-large.jpg -->
+            <div class=item-img id=l></div>
+            <div class='item-description'>If you want to know what you need to improve on to up your game in any sport this is the AI for you.  COACH will watch you as you play and record everything it sees and intelligently report back to the user the ways to improve.
+            </div>
+            <div class=item-cost>$980/yr</div>
+            <div class=item-buy onclick="checkout('l', 'at');">PURCHASE</div>
+          </div>
+          <div class="item at" >
+            <div class=item-title>POCKET-DOCTOR</div> <!-- https://i0.wp.com/voiceofpeopletoday.com/wp-content/uploads/2017/11/In-China-the-robot-passed-the-exam-for-a-doctor.jpg?fit=2428%2C1500&ssl=1 -->
+            <div class=item-img id=m></div>
+            <div class='item-description'>Do you engage in a potentially dangerous recreational activity?  Oftentimes a simple first aid kit will not be enough when you get injured. POCKET-DOCTOR is the advanced AI Robot that will give you the confidence that no matter the injury you receive, you have have a professional standing by to offer medical assistance even when a real doctor is not available.
+            </div>
+            <div class=item-cost>$1020</div>
+            <div class=item-buy onclick="checkout('m', 'at');">PURCHASE</div>
+          </div>
+          <div class="item at" >
+            <div class=item-title>BUDDY</div>
+            <div class=item-img id=n></div>
+            <div class='item-description'>Everybody loves to get drone shots of high endurance sports, but oftentimes it is too difficult to record them. With BUDDY you don't need to have a camera operator with you to get these shots. BUDDY will follow your every move with precision.
+            </div>
+            <div class=item-cost>$2000</div>
+            <div class=item-buy onclick="checkout('n', 'at');">PURCHASE</div>
+          </div>
+        </div>
+
+    <!-- </div> -->
+    <div class=outtro>
+      <p>CONTACT:<br>PHONE: 314-159-2653</p>
+    </div>
+  </body>
+</html>
