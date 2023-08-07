@@ -1,40 +1,86 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400|Lora");
 
 body {
-    background-color: #000;
-    color: #fff;
-    font-family: Arial, sans-serif;
+    background: #396b87;
+    color: #000000;
+    /* font-family: Arial, sans-serif; */
+    font-family: "Lora", serif !important;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    display: block;
     position: relative;
+    width: 100%;
+    height: 100%;
 }
 
-.error-message {
-    z-index: 2;
-    text-align: center;
-    max-width: 80%;
+.jumbotron{
+    font-family: "Lora", serif;
 }
 
-h1 {
+#title {
     font-size: 24px;
     margin-bottom: 1rem;
+    font-family: "Lora", serif;
+    color: #8e9aaf;
+    font-size: 1.8em;
+    line-height: 1.1em;
+    letter-spacing: 3px;
+    text-align: center;
+    font-weight: 300;
 }
 
-p {
-    font-size: 18px;
+
+#invitation_form{
+    width: 100%;
+    height: 100%;
 }
 
-canvas {
-    position: absolute;
+#texture{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background: lightblue url("paper.png") repeat fixed center; 
+    background-size: 100%;
+    opacity: 0.3;
+}
+
+#flower-1{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 30%;
+    height: 100%;
     z-index: 1;
+    background: url("flower-1.png") fixed center; 
+    background-size: contain;
+    /* opacity: 0.3; */
 }
+
+#flower-2{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 30%;
+    height: 100%;
+    z-index: 1;
+    background: url("flower-2.png") fixed center; 
+    background-size: contain;
+    /* opacity: 0.3; */
+}
+
+  /* box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); */
+
+  /* box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1); */
+
+  /* font-family: "Lora", serif;
+  color: #8e9aaf;
+  font-size: 1.8em;
+  line-height: 1.1em;
+  letter-spacing: 3px;
+  text-align: center;
+  font-weight: 300;
+  margin-top: 20%; */
