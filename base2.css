@@ -17,7 +17,7 @@ body{
 }
 #body{
     background-color: black;
-    background-image: url('img/stars 3.2.png');
+    /* background-image: url('img/stars 3.2.png'); */
     /*background:url() -25px -50px;*/
     /*position: fixed;*/
     /*top: 0;*/
@@ -38,7 +38,7 @@ body{
 /*}*/
 
 #bgimg{
-    background-image: url('img/night scene 3.2.png');
+    background-image: url('img/wedding-sendoff_small.jpg');
     position: fixed;
     height: 100%;
     width: 100%;

@@ -7,13 +7,13 @@ body{
     font-family: 'Electrolize', sans-serif;
     color: white;
     font-size: 26px;
-    background-image: url("img/night scene 2.jpg");
+    /* background-image: url("img/night scene 2.jpg"); */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     padding: 0;
     margin: 0;
-    background-color: black;
+    background-color: rgba(23,23,23,1);
 }
 ::-webkit-scrollbar {
     width: 10px;
