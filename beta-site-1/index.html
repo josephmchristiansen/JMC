@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LavWell</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script>
+        window.addEventListener("scroll", () => {
+            var viewHeight = window.innerHeight;
+            const header = document.querySelector("header");
+            const nav = document.querySelector("nav");
+    
+    
+            if (window.scrollY > (viewHeight / 1.5)) {
+                // Header animation
+                header.style.marginLeft = "calc(50% - 20rem)";
+                // header.style.marginLeft = "calc(auto - 4rem)";
+                // header.style.width = "calc(100% - 8rem)";
+                header.style.width = "calc(48rem - 8rem)";
+                header.style.top = "1rem";
+                header.style.borderRadius = "0.5rem";
+                header.style.backgroundColor = "rgba(255, 255, 255, 0.3)";
+    
+                // Nav animation
+                nav.style.marginLeft = "auto";
+                // nav.style.marginLeft = "auto";
+                // nav.style.width = "calc(100% - 8rem)";
+                nav.style.width = "calc(48rem - 8rem)";
+                nav.style.top = "1rem"; /* Positioned just below the header after scrolling */
+                nav.style.borderRadius = "0.5rem";
+                nav.style.alignitems = "center";
+                nav.style.justifyContent = "center";
+
+
+            } else {
+                // Header reset
+                header.style.marginLeft = "0rem";
+                header.style.width = "calc(100% - 0rem)";
+                header.style.top = "0rem";
+                header.style.borderRadius = "0rem";
+                header.style.backgroundColor = "rgba(255, 255, 255, 1)";
+    
+                // Nav reset
+                nav.style.marginLeft = "0rem";
+                nav.style.width = "calc(100% - 0rem)";
+                nav.style.top = "0rem"; /* Original position below the header */
+                nav.style.borderRadius = "0rem";
+            }
+        });
+    </script>
+    
+    
+    <header>
+        <nav>
+            <ul>
+                <li id="nav-logo"><a href="#LavWell"></a></li>
+                <li><a href="#markets">Markets</a></li>
+                <li><a href="#technology">Technology</a></li>
+                <li><a href="#about0">About</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <video id="hero-video" autoplay muted loop>
+            <source src="./assets/demo-video_01.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+            <div id="hero-content">
+            <h1>Welcome to LavWell Technologies</h1>
+            <p>We turn Waste into Wellness</p>
+            </div>
+        </section>
+
+        <section id="hero">
+            <video id="hero-video" autoplay muted loop>
+            <source src="./assets/demo-video_01.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+            <div id="hero-content">
+            <h1>Welcome to LavWell Technologies</h1>
+            <p>We turn Waste into Wellness</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 LavWell. All rights reserved.</p>
+    </footer>
+</body>
+</html>
