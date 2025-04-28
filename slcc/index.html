@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="googlebot" content="noindex, nofollow, noarchive">
+  <title>Joe Christiansen - SLCC ePortfolio</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <ul class="bg-animation-box">
+        <li class="circle-box"></li>
+        <li class="corners-box-20"></li>
+        <li class="circle-box"></li>
+        <li class="corners-box-20"></li>
+        <li></li>
+        <li class="corners-box-35"></li>
+        <li class="circle-box"></li>
+        <li></li>   
+        <li class="circle-box"></li>
+        <li class="corners-box-35"></li>
+        <li class="corners-box-20"></li>
+        <li class="circle-box"></li>
+        <li></li>
+        <li class="circle-box"></li>
+        <li class="corners-box-35"></li>
+        <li class="circle-box"></li>
+      </ul>
+      
+  <header class="animated fade-down">
+    <h1 style="text-transform: uppercase;">Joe Christiansen</h1>
+    <p>SLCC General Education ePortfolio</p>
+  </header>
+
+  <nav class="main-nav" style="text-transform: uppercase;">
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="math.html">Math (Quantitative Reasoning)</a></li>
+      <li><a href="lifelong-wellness.html">Lifelong Wellness</a></li>
+      <li><a href="#">Future Class 1</a></li>
+      <li><a href="#">Future Class 2</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="hero animated fade-up">
+      <h1>Welcome to My Portfolio</h1>
+      <p style="text-transform: uppercase;">
+        A showcase of learning, growth, and achievement across my educational journey at SLCC.
+      </p>
+      
+      <div class="hero-image">
+        <!-- Insert your hero image here -->
+        <img src="assets/hero-placeholder.jpg" alt="Hero Image">
+      </div>
+    </section>
+
+    
+    
+
+    <section class="class-section animated fade-up">
+      <h2>My Classes</h2>
+      <div class="class-grid">
+        <div class="class-card">
+          <img src="assets/math-placeholder.jpg" alt="Math Class">
+          <h3>Math: Quantitative Reasoning</h3>
+          <p>Real-world applications of math through statistics, finance, and problem-solving projects.</p>
+          <a href="math.html">View Math Portfolio</a>
+        </div>
+
+        <div class="class-card">
+          <img src="assets/wellness-placeholder.jpg" alt="Lifelong Wellness">
+          <h3>Lifelong Wellness</h3>
+          <p>Building sustainable mindfulness and mental wellness habits through meditation and reflection.</p>
+          <a href="lifelong-wellness.html">View Wellness Portfolio</a>
+        </div>
+
+        <div class="class-card">
+          <img src="assets/future-placeholder.jpg" alt="Future Class">
+          <h3>Future Class 1</h3>
+          <p>Coming soon: new academic explorations and growth experiences.</p>
+          <a href="#">Coming Soon</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-me animated fade-up">
+        <h2>About Me</h2>
+        <p>Hello, my name is Joe Christiansen. I am currently pursuing my education in marketing at Salt Lake Community College, working toward a future in business, innovation, and creative strategy. I have a passion for understanding how ideas connect people and how brands can shape experiences. This ePortfolio highlights key projects and reflections from my General Education journey, demonstrating both academic growth and real-world application. Each course has helped me build the skills, mindset, and discipline necessary to thrive in marketing and beyond, preparing me to create meaningful impact in the industries I serve.</p>
+    </section>
+
+  </main>
+
+  <footer class="animated fade-up">
+    <p>© 2025 Joe Christiansen | SLCC General Education ePortfolio</p>
+  </footer>
+
+  <script>
+    // Basic JS fade-in animation on scroll
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    });
+
+    document.querySelectorAll('.animated').forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+</body>
+</html>

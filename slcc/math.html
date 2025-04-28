@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="googlebot" content="noindex, nofollow, noarchive">
+  <title>Joe Christiansen - Math ePortfolio</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+  <style>
+    /* Extra lockdown */
+    body {
+      user-select: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      pointer-events: auto;
+    }
+  </style>
+
+  <script>
+    // Disable right click
+    document.addEventListener('contextmenu', event => event.preventDefault());
+    // Disable keyboard shortcuts
+    document.addEventListener('keydown', function(e) {
+      if (e.ctrlKey || e.metaKey) {
+        if (["c", "v", "x", "u", "a", "s", "p"].includes(e.key.toLowerCase())) {
+          e.preventDefault();
+        }
+      }
+    });
+    // Disable dragging
+    document.addEventListener('dragstart', function(e) {
+      e.preventDefault();
+    });
+    // Disable copy event
+    document.addEventListener('copy', function(e) {
+      e.preventDefault();
+    });
+  </script>
+</head>
+
+<body>
+
+  <ul class="bg-animation-box">
+    <li class="circle-box"></li>
+    <li class="corners-box-20"></li>
+    <li class="circle-box"></li>
+    <li class="corners-box-20"></li>
+    <li></li>
+    <li class="corners-box-35"></li>
+    <li class="circle-box"></li>
+    <li></li>   
+    <li class="circle-box"></li>
+    <li class="corners-box-35"></li>
+    <li class="corners-box-20"></li>
+    <li class="circle-box"></li>
+    <li></li>
+    <li class="circle-box"></li>
+    <li class="corners-box-35"></li>
+    <li class="circle-box"></li>
+  </ul>
+
+  <header class="animated fade-down">
+    <h1 style="text-transform: uppercase;">Joe Christiansen</h1>
+    <p>SLCC Quantitative Reasoning - Math ePortfolio</p>
+  </header>
+
+  <nav class="main-nav" style="text-transform: uppercase;">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="math.html" class="active">Math (Quantitative Reasoning)</a></li>
+      <li><a href="lifelong-wellness.html">Lifelong Wellness</a></li>
+      <li><a href="#">Future Class 1</a></li>
+      <li><a href="#">Future Class 2</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="hero animated fade-up">
+      <h1>Magnets & Pain Project</h1>
+      <p style="text-transform: uppercase;">Applying statistical analysis to real-world healthcare research</p>
+
+      <div class="hero-image">
+        <!-- Optional hero image for the math page -->
+        <img src="assets/math-placeholder.jpg" alt="Math Hero Image">
+      </div>
+    </section>
+
+    <section class="class-section animated fade-up">
+      <h2>Project Overview</h2>
+      <div class="class-grid">
+        <div class="class-card">
+          <h3>Brief Description</h3>
+          <p>This project analyzed the effects of static magnetic fields on chronic pain in post-polio patients. Using statistical methods such as mean, range, histograms, and box plots, we compared pain ratings before and after treatment with either an active magnet or a placebo device. The study aimed to determine whether magnets have a measurable impact on pain relief.</p>
+          <div style="margin-top: 30px;">
+            <iframe src="magnets-and-pain-project.pdf" width="100%" height="800px" style="border: 1px solid #ccc; border-radius: 12px;"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="math-reflection" class="animated fade-up">
+        <h2 class="math-reflection-title">Reflection</h2>
+      
+        <p class="math-reflection-intro">
+          For my project, I decided to test whether magnets actually help with pain like some people claim. I had participants rate their pain before and after using either a real magnet or a fake one (they didn't know which they got). To make sense of what I found, I used basic math tools — averages, ranges, and created some histograms and box plots. This helped me see if there was any real difference between the groups. It was pretty cool seeing how math could be applied to figure out something practical.
+        </p>
+      
+        <div class="math-reflection-articles">
+          <article class="math-reflection-article">
+            <h3>Do you think this project shows how math can be applied to the real world?</h3>
+            <p>Yeah, for sure! I realized while doing this project that math actually matters outside of class. I got tired of all the back-and-forth about whether magnets work, so I figured some actual numbers and graphs would clear things up. In healthcare especially, you need solid evidence before telling people to try treatments, and math gives you that evidence. It was interesting to see how something I learned in class could be used for a real question.</p>
+          </article>
+      
+          <article class="math-reflection-article">
+            <h3>Can you give an example of another application where this type of analysis would be beneficial?</h3>
+            <p>This same kind of math would be super helpful in testing new medicines. Like, if researchers want to know if a new pain reliever actually works better than a sugar pill, they'd need to look at the averages, differences, and patterns in their data — pretty much exactly what I did with the magnets. Without math, they'd have no way to tell if the medicine was actually doing anything. I guess most medical research probably uses these exact methods.</p>
+          </article>
+      
+          <article class="math-reflection-article">
+            <h3>If you were trying to decide if magnets work, why would it be important to explain the details of this project to clients?</h3>
+            <p>If I was telling clients whether magnets work or not, I'd definitely want to walk them through how I tested it. People trust facts more than opinions, and showing them the whole process builds credibility. Breaking down the steps I took and showing the actual data is way more convincing than just saying "trust me, they work" or "they don't work." Plus, when people understand how we got our results, they're more likely to believe what we found.</p>
+          </article>
+      
+          <article class="math-reflection-article">
+            <h3>Did this assignment change your opinion of the usefulness of math?</h3>
+            <p>I wouldn't say it completely changed my opinion, but it definitely reinforced what I already thought about math being useful. Seeing math applied to something concrete like this made it click even more for me. It's not just problems on a page; it's a way to find real answers to questions that affect people. Before this, I understood math was important in theory, but now I can actually point to an example where I used it myself to solve something meaningful.</p>
+          </article>
+        </div>
+      </section>
+      
+      
+  </main>
+
+  <footer class="animated fade-up">
+    <p>© 2025 Joe Christiansen | SLCC General Education ePortfolio</p>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    });
+    document.querySelectorAll('.animated').forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+
+</body>
+</html>

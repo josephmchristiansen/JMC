@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="googlebot" content="noindex, nofollow, noarchive">
+  <title>Joe Christiansen - Lifelong Wellness ePortfolio</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+  <style>
+    /* Lockdown */
+    body {
+      user-select: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      pointer-events: auto;
+    }
+  </style>
+
+  <script>
+    document.addEventListener('contextmenu', event => event.preventDefault());
+    document.addEventListener('keydown', function(e) {
+      if (e.ctrlKey || e.metaKey) {
+        if (["c", "v", "x", "u", "a", "s", "p"].includes(e.key.toLowerCase())) {
+          e.preventDefault();
+        }
+      }
+    });
+    document.addEventListener('dragstart', function(e) {
+      e.preventDefault();
+    });
+    document.addEventListener('copy', function(e) {
+      e.preventDefault();
+    });
+  </script>
+</head>
+
+<body>
+
+  <ul class="bg-animation-box">
+    <li class="circle-box"></li>
+    <li class="corners-box-20"></li>
+    <li class="circle-box"></li>
+    <li class="corners-box-20"></li>
+    <li></li>
+    <li class="corners-box-35"></li>
+    <li class="circle-box"></li>
+    <li></li>   
+    <li class="circle-box"></li>
+    <li class="corners-box-35"></li>
+    <li class="corners-box-20"></li>
+    <li class="circle-box"></li>
+    <li></li>
+    <li class="circle-box"></li>
+    <li class="corners-box-35"></li>
+    <li class="circle-box"></li>
+  </ul>
+
+  <header class="animated fade-down">
+    <h1 style="text-transform: uppercase;">Joe Christiansen</h1>
+    <p>SLCC Lifelong Wellness - General Education</p>
+  </header>
+
+  <nav class="main-nav" style="text-transform: uppercase;">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="math.html">Math (Quantitative Reasoning)</a></li>
+      <li><a href="lifelong-wellness.html" class="active">Lifelong Wellness</a></li>
+      <li><a href="#">Future Class 1</a></li>
+      <li><a href="#">Future Class 2</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <section class="hero animated fade-up">
+      <h1>Lifelong Wellness</h1>
+      <p style="text-transform: uppercase;">Exploring mindfulness, wellness, and personal growth through meditation</p>
+      
+      <div class="hero-image">
+        <img src="assets/wellness-placeholder.jpg" alt="Lifelong Wellness Hero Image">
+      </div>
+    </section>
+
+    <section id="wellness-part1" class="wellness-section animated fade-up">
+      <h2>Part 1: Reflection Questions</h2>
+      <article>
+        <h3>Connection Between Courses</h3>
+        <p>This Lifelong Wellness class was my first real exposure to mindfulness, meditation, and mental wellness practices. Before this course, I hadn't taken any classes related to psychology, mental health, or relaxation techniques. Everything I learned — from breathing exercises to guided meditation — was completely new to me. One connection I made was with my Math class, where I started using some of the meditation and breathing practices before studying for exams. Taking a few minutes to clear my mind and focus helped me feel calmer and more focused, which made a real difference in how I approached my math work. This showed me how mindfulness techniques can directly support academic success, not just personal well-being.</p>
+
+        <h3>Reflection on Fitness and Wellness</h3>
+        <p>Before taking this class, I mostly thought about fitness and wellness in terms of physical activity and nutrition. Now, after completing this course, I understand that mental and emotional wellness are just as important for lifelong health. Learning about meditation and practicing mindfulness exercises each week changed my perspective significantly. The Zoom sessions where we practiced breathing techniques and meditation were especially influential. Moving forward, I plan to keep using mindfulness techniques in my life to reduce stress and improve my overall well-being, treating mental health as an essential part of staying healthy, not just an extra.</p>
+      </article>
+    </section>
+
+    <section id="wellness-part2" class="wellness-section animated fade-up">
+      <h2>Part 2: Signature Assignment</h2>
+      <p><strong>Behavior Change Assignment</strong></p>
+      <div style="margin-top: 30px;">
+        <div class="image-container">
+            <img src="behavior-change.png" alt="Behavior Change Assignment Screenshot">
+        </div>
+        
+        
+      </div>
+    </section>
+
+    <section id="wellness-part3" class="wellness-section animated fade-up">
+      <h2>Part 3: Signature Assignment Reflection</h2>
+      <p>I chose the Behavior Change assignment because it helped me see that making mindfulness a regular part of my life is a real process that takes planning and commitment. Since this was my first experience with meditation and mindfulness, the assignment made me realize that small, consistent efforts are key to making a lasting habit. It showed me that moving from thinking about change to actually taking action requires clear goals and accountability. This really resonated with me because it connected the idea of personal growth with practical steps I could follow. In the future, I’ll use the approach I learned here to build other healthy habits in my life, both for mental wellness and beyond.</p>
+    </section>
+
+  </main>
+
+  <footer class="animated fade-up">
+    <p>© 2025 Joe Christiansen | SLCC General Education ePortfolio</p>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    });
+    document.querySelectorAll('.animated').forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+
+</body>
+</html>
