@@ -24,6 +24,8 @@
     }
   </style>
 
+    
+
   <script>
     // Disable right click
     document.addEventListener('contextmenu', event => event.preventDefault());
@@ -46,7 +48,8 @@
   </script>
 </head>
 
-<body>
+<body oncontextmenu="return false;" ondragstart="return false;" onselectstart="return false;">
+
 
   <ul class="bg-animation-box">
     <li class="circle-box"></li>
@@ -110,31 +113,32 @@
         <h2 class="math-reflection-title">Reflection</h2>
       
         <p class="math-reflection-intro">
-          For my project, I decided to test whether magnets actually help with pain like some people claim. I had participants rate their pain before and after using either a real magnet or a fake one (they didn't know which they got). To make sense of what I found, I used basic math tools — averages, ranges, and created some histograms and box plots. This helped me see if there was any real difference between the groups. It was pretty cool seeing how math could be applied to figure out something practical.
+          This project investigated whether magnets can really help with pain relief by analyzing Dr. Vallbona's study data. I examined the pain levels before and after using either a real magnet or a fake one (placebo). To understand the results, I created histograms, box plots, and calculated averages and ranges. These tools helped me determine if there was an actual difference between the two groups. It was a practical application of statistical math to evaluate a real medical claim.
         </p>
       
         <div class="math-reflection-articles">
           <article class="math-reflection-article">
             <h3>Do you think this project shows how math can be applied to the real world?</h3>
-            <p>Yeah, for sure! I realized while doing this project that math actually matters outside of class. I got tired of all the back-and-forth about whether magnets work, so I figured some actual numbers and graphs would clear things up. In healthcare especially, you need solid evidence before telling people to try treatments, and math gives you that evidence. It was interesting to see how something I learned in class could be used for a real question.</p>
+            <p>Yeah, for sure! I realized while working on this project that math actually matters outside of class. With all the claims about whether magnets work or not, these statistical tools gave us a way to look at the actual evidence. In healthcare especially, you need solid proof before recommending treatments, and math provides that proof. It was cool to see how the statistical methods from our textbook could help evaluate a real medical treatment.</p>
           </article>
       
           <article class="math-reflection-article">
             <h3>Can you give an example of another application where this type of analysis would be beneficial?</h3>
-            <p>This same kind of math would be super helpful in testing new medicines. Like, if researchers want to know if a new pain reliever actually works better than a sugar pill, they'd need to look at the averages, differences, and patterns in their data — pretty much exactly what I did with the magnets. Without math, they'd have no way to tell if the medicine was actually doing anything. I guess most medical research probably uses these exact methods.</p>
+            <p>This same kind of math would be super helpful in testing new medicines. Like, if researchers want to know if a new pain reliever actually works better than a sugar pill, they'd need to look at the averages, differences, and patterns in their data — pretty much exactly what was done in this magnet study. Without statistical analysis, they'd have no way to tell if the medicine was actually doing anything. I guess this is why drug companies have to run so many trials before getting FDA approval.</p>
           </article>
       
           <article class="math-reflection-article">
             <h3>If you were trying to decide if magnets work, why would it be important to explain the details of this project to clients?</h3>
-            <p>If I was telling clients whether magnets work or not, I'd definitely want to walk them through how I tested it. People trust facts more than opinions, and showing them the whole process builds credibility. Breaking down the steps I took and showing the actual data is way more convincing than just saying "trust me, they work" or "they don't work." Plus, when people understand how we got our results, they're more likely to believe what we found.</p>
+            <p>If I was telling clients whether magnets work or not, I'd definitely want to walk them through how the study was designed and what the data showed. People trust facts more than opinions, and showing them the whole analysis builds credibility. Breaking down the research methods and showing the actual data is way more convincing than just saying "trust me, they work" or "they don't work." Plus, when clients understand how we got our results, they're more likely to believe what we found.</p>
           </article>
       
           <article class="math-reflection-article">
             <h3>Did this assignment change your opinion of the usefulness of math?</h3>
-            <p>I wouldn't say it completely changed my opinion, but it definitely reinforced what I already thought about math being useful. Seeing math applied to something concrete like this made it click even more for me. It's not just problems on a page; it's a way to find real answers to questions that affect people. Before this, I understood math was important in theory, but now I can actually point to an example where I used it myself to solve something meaningful.</p>
+            <p>I wouldn't say it completely changed my opinion, but it definitely reinforced what I already thought about math being useful. Seeing statistics applied to something concrete like pain management made it click even more for me. It's not just problems on a page; it's a way to find real answers to questions that affect people's health. Before this, I understood math was important in theory, but now I can actually point to an example where statistical analysis helps evaluate a treatment that might actually help people feel better.</p>
           </article>
         </div>
       </section>
+      
       
       
   </main>
@@ -155,6 +159,31 @@
       observer.observe(section);
     });
   </script>
+    
+    <script>
+        const reflectionSection = document.getElementById('math-reflection');
+        
+        // Blur reflection when tab loses focus
+        window.addEventListener('blur', () => {
+          reflectionSection.style.filter = 'blur(4px)';
+        });
+        
+        // Unblur reflection when tab regains focus
+        window.addEventListener('focus', () => {
+          reflectionSection.style.filter = 'none';
+        });
+        
+        // Blur when mouse leaves the reflection section
+        reflectionSection.addEventListener('mouseleave', () => {
+          reflectionSection.style.filter = 'blur(4px)';
+        });
+        
+        // Unblur when mouse enters the reflection section
+        reflectionSection.addEventListener('mouseenter', () => {
+          reflectionSection.style.filter = 'none';
+        });
+        </script>
+        
 
 </body>
 </html>
