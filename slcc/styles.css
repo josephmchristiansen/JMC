@@ -40,6 +40,17 @@ body::before {
     pointer-events: none; /* make sure it's untouchable */
 }
 
+/* Lock down text selection and copying */
+body, html {
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* Internet Explorer/Edge */
+    user-select: none;         /* Standard syntax */
+}
+
+main {
+    cursor: default;
+}
 
 @keyframes gradientShift {
     0% {
@@ -162,7 +173,7 @@ nav.main-nav ul li a.active {
     margin-top: 20px;
 }
 
-.hero-image img {
+.main-hero-image img {
     width: 50%;
     max-width: 920px;
     object-fit: cover;
@@ -172,6 +183,19 @@ nav.main-nav ul li a.active {
     -moz-filter: grayscale(100%);
     -o-filter: grayscale(100%);
     -ms-filter: grayscale(100%);
+    border: rgba(255, 255, 255, 0.9) 6px solid;
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2);
+    position: relative;
+    left: calc(0% - 3px);
+}
+
+.hero-image img {
+    width: 50%;
+    max-width: 920px;
+    object-fit: cover;
+    border-radius: 20px;
     border: rgba(255, 255, 255, 0.9) 6px solid;
     -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2);
     -moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2);
@@ -570,4 +594,127 @@ footer {
     height: auto;
     /* border-radius: 12px; */
     /* border: 1px solid #ccc; */
+}
+
+
+/* Floating background shapes for inner pages */
+.bg-floating-shapes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.bg-floating-shapes li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 15px;
+    height: 15px;
+    background: rgba(0, 0, 0, 0.2);
+    animation: floatShape 25s linear infinite;
+    bottom: -100px;
+}
+
+.bg-floating-shapes li.circle {
+    border-radius: 50%;
+}
+
+.bg-floating-shapes li.square {
+    border-radius: 20%;
+}
+
+.bg-floating-shapes li:nth-child(1) { left: 5%; width: 30px; height: 30px; animation-delay: 0s; }
+.bg-floating-shapes li:nth-child(2) { left: 15%; animation-delay: 2s; }
+.bg-floating-shapes li:nth-child(3) { left: 30%; width: 50px; height: 50px; animation-delay: 4s; }
+.bg-floating-shapes li:nth-child(4) { left: 50%; animation-delay: 1s; }
+.bg-floating-shapes li:nth-child(5) { left: 70%; width: 40px; height: 40px; animation-delay: 3s; }
+.bg-floating-shapes li:nth-child(6) { left: 85%; animation-delay: 6s; }
+
+@keyframes floatShape {
+    0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(-120vh) rotate(360deg); opacity: 0; }
+}
+
+/* Frosted container for sections */
+.frosted-section {
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    padding: 40px 20px;
+    width: 75%;
+    border-radius: 20px;
+    margin: 40px auto;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2);
+}
+
+/* Custom Prezi Embed Styling */
+.embed iframe {
+    border: 6px solid rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+}
+
+/* Reflection article style */
+.reflection-article {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.reflection-article h2 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    font-weight: 100;
+    text-align: center;
+}
+
+.reflection-article p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+
+
+.prezi-presentation {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
+}
+
+.prezi-presentation img {
+    width: 100%;
+    display: block;
+    border-radius: 20px;
+}
+
+.prezi-button-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px 30px;
+    font-size: 1.8rem;
+    color: #ffffff;
+    background: rgba(0, 123, 255, 0.85);
+    text-decoration: none;
+    border-radius: 12px;
+    backdrop-filter: blur(5px);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.prezi-button-overlay:hover {
+    background: rgba(0, 86, 179, 0.9);
+    transform: translate(-50%, -50%) scale(1.05);
 }

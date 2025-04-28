@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SCTWZQTM9T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SCTWZQTM9T');
+</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="googlebot" content="noindex, nofollow, noarchive">
+  <title>Digital Marketing ePortfolio - SLCC</title>
+  
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Lockdown / Security -->
+  <script>
+    document.addEventListener('contextmenu', event => event.preventDefault());
+    document.addEventListener('keydown', function(e) {
+      if (e.ctrlKey || e.metaKey) {
+        if (["c", "v", "x", "u", "a", "s", "p"].includes(e.key.toLowerCase())) {
+          e.preventDefault();
+        }
+      }
+    });
+    document.addEventListener('dragstart', function(e) { e.preventDefault(); });
+    document.addEventListener('copy', function(e) { e.preventDefault(); });
+  </script>
+
+  <!-- Fonts -->
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Floating background -->
+  <ul class="bg-floating-shapes">
+    <li class="circle"></li>
+    <li class="square"></li>
+    <li class="circle"></li>
+    <li class="square"></li>
+    <li class="circle"></li>
+    <li class="square"></li>
+  </ul>
+
+  <!-- Header -->
+  <header class="animated fade-down">
+    <h1 style="text-transform: uppercase;">Joe Christiansen</h1>
+    <p>SLCC Quantitative Reasoning - Math ePortfolio</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="main-nav" style="text-transform: uppercase;">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="math.html">Quantitative Reasoning</a></li>
+      <li><a href="lifelong-wellness.html">Lifelong Wellness</a></li>
+      <li><a href="digital-marketing.html" class="active">Digital Marketing</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main -->
+  <main>
+    
+
+    <section class="hero animated fade-up">
+      <h1>Digital Marketing</h1>
+      <p style="text-transform: uppercase;">Exploring the Power of YouTube in Digital Marketing Strategy</p>
+
+      <div class="hero-image">
+        <img src="assets/future-placeholder.jpg" alt="Marketing Hero Image">
+      </div>
+    </section>
+
+    <section class="frosted-section animated fade-up">
+      <h2>Project Overview</h2>
+      <p>This project focused on how to strategically use YouTube as a tool for digital marketing. My presentation explored topics like setting up and optimizing a branded YouTube channel, creating SEO-friendly content, using YouTube ads, growing an audience, and tracking analytics for better decision-making. It was a hands-on way to learn about the real-world application of digital video marketing strategies.</p>
+    </section>
+
+    <section class="frosted-section animated fade-up">
+        <h2>Presentation</h2>
+      
+        <div class="prezi-presentation">
+          <img src="assets/prezi-screenshot.png" alt="YouTube Digital Marketing Prezi Screenshot">
+      
+          <a href="https://prezi.com/view/dECjaHcI1XWz0EnVlRXa/" target="_blank" class="prezi-button-overlay">
+            View Presentation
+          </a>
+        </div>
+      </section>
+      
+
+    <section class="frosted-section animated fade-up reflection-article">
+      <h2>Reflection</h2>
+      <p>This project gave me a much clearer understanding of how important YouTube is in today's marketing world. I learned that it’s not just about uploading videos — it's about creating content that connects with the right audience, using SEO techniques, and paying close attention to how YouTube's algorithm works. Setting up a professional, branded channel is key, but so is keeping viewers engaged with quality content.</p>
+
+      <p>Working on this project also helped me realize the importance of using data and analytics. In digital marketing, guessing isn’t enough — you have to track views, engagement, watch time, and other key metrics to really know what's working. The skills I learned here, from optimizing videos to planning advertising strategies, are ones I can carry into real marketing campaigns in the future.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Joe Christiansen | SLCC General Education ePortfolio</p>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    });
+
+    document.querySelectorAll('.animated').forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+
+</body>
+</html>
