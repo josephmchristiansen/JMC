@@ -175,7 +175,8 @@ body{
     overflow: auto;
 }
 #grid-1{
-    width: 100%;
+    width: 75%;
+    max-width: 1700px
     height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -187,7 +188,8 @@ body{
     padding: 100px 0px 20px 0px;
 }
 #grid-2{
-    width: 100%;
+    width: 75%;
+    max-width: 1700px
     height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -244,7 +246,7 @@ svg{
 h1 {
   position: relative;
   top: 50px;
-  font-size: 3vw;
+  font-size: 4rem;
   color: white;
   text-transform: uppercase;
   margin: 0px;
@@ -364,7 +366,7 @@ opacity: .5;
   background-color: rgba(0, 0, 0, 0.1);
   color: rgba(0, 0, 0, 0.0);
   z-index: 100;
-  font-size: 6vw;
+  font-size: 4rem;
   font-family: 'Electrolize', sans-serif;
 }
 .iframe-cover:hover{
@@ -374,7 +376,7 @@ opacity: .5;
 .iframe-cover-text{
   position: absolute;
   width: 100%;
-  top: calc(50% - 3vw);
+  top: calc(50% - 2rem);
   text-align: center;
 }
 .iframe-nav-left{
