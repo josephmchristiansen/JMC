@@ -1,0 +1,157 @@
+<html lang="eg">
+    <head>
+        <meta charset="utf-8">
+        <title>JMC | RESUME</title>
+<link rel="icon" type="image/png" href="img/jmc-logo.png">
+        <link rel="stylesheet" href="portfolio.css">
+        <link href="https://fonts.googleapis.com/css?family=Armata|Bungee+Hairline|Cuprum|Dosis|Electrolize|Michroma|Oswald|Quantico|Text+Me+One" rel="stylesheet">
+        <script src="jquery-3.0.0.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <div id=header class=nav-bar>
+            <ul class=nav-btns>
+                <li class=nav-btn> <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a></li>
+                <li class=nav-btn onmousemove="document.getElementById('nav-port-menu').style.display='block';"><a href="portfolio.html">PORTFOLIO</a></li>
+                <li class=nav-btn><a href="certificates.html">CERTIFICATES</a></li>
+                <li class=nav-btn><a href="skills.html">SKILLS</a></li>
+                <!-- <li class=nav-btn><a href="about.html">CONTACT</a></li> -->
+                <li class=nav-btn><a href="projects.html">PROJECTS</a></li>
+                <li id=home2 class="nav-btn home2"><a href="index.html">JMC</a></li>
+                <li id=home class="nav-btn home"><a href="index.html">JMC</a></li>
+            </ul>
+            <!--div class=nav-port-menu id=nav-port-menu onmouseleave="document.getElementById('nav-port-menu').style.display='none';">
+              <ul class=nav-port-menu-btns>
+                <li class=nav-port-menu-btn onclick="document.getElementById('co').scrollIntoView();
+                  window.scrollBy(0, -50);">CONTACT</li>
+                <li class=nav-port-menu-btn onclick="document.getElementById('ps').scrollIntoView();
+                  window.scrollBy(0, -50);">SUMMARY</li>
+                <li class=nav-port-menu-btn onclick="document.getElementById('aoe').scrollIntoView();
+                  window.scrollBy(0, -50);">EXPERTISE</li>
+                <li class=nav-port-menu-btn onclick="document.getElementById('we').scrollIntoView();
+                  window.scrollBy(0, -50);">WORK EX.</li>
+                <li class=nav-port-menu-btn onclick="document.getElementById('ks').scrollIntoView();
+                  window.scrollBy(0, -50);">KEY SKILLS</li>
+                <li class=nav-port-menu-btn onclick="document.getElementById('psk').scrollIntoView();
+                  window.scrollBy(0, -50);">PERSONAL</li>
+                <li class=nav-port-menu-btn onclick="document.getElementById('pro').scrollIntoView();
+                  window.scrollBy(0, -50);">PRO SKILLS</li>
+                <li class=nav-port-menu-btn onclick="document.getElementById('ac').scrollIntoView();
+                  window.scrollBy(0, -50);">ACADEMIC</li>
+                <li class=nav-port-menu-btn onclick="document.getElementById('ref').scrollIntoView();
+                  window.scrollBy(0, -50);">REFERENCES</li>
+              </ul>
+            </div-->
+          </div>
+        <script>
+          function myFunction() {
+            var x = document.getElementById("header");
+            if (x.className === "nav-bar") {
+              x.className += " r";
+            } else {
+              x.className = "nav-bar";
+            }
+          }
+        </script>
+    </head>
+<body>
+
+<div class="container">
+  <h1>RÉSUMÉ</h1>
+  <iframe id="resume-pdf" src="jmc_resume_marketing_20241001.pdf" width="100%" height="600px" style="border: none;"></iframe>
+
+
+
+<!-- <div class="grid">
+
+  <div class="box title" id=co ><p>CONTACT</p></div>
+  <div class="box"><ul style="list-style-type:circle;">
+        <li>JOSEPH M. CHRISTIANSEN</li>
+        <li>josephmchristiansen@gmail.com</li>
+        <li>385.427.5191</li>
+        <li>linkedin.com/in/jmorchris</li>
+      </ul></div>
+
+  <div class="box title" id=ps ><p>INTRODUCTION</p></div>
+  <div class="box"><p>I’m an aspiring Robotics Engineer currently working with Software and Web Development. I have a record of reliable hard work and I am seeking for more experience which will provide me with the resources and background necessary to achieve my goals.</p></div>
+
+
+  <div class="box title" id=we><p>WORK EXPERIENCE</p></div>
+  <div class="box">
+    <p><b>ROOMCHOICE</b></p>
+    <p><i>2018</i></p>
+    <p><i>Frontend Web Developer, Python and SQL Programmer</i></p>
+    <p>Working as a software developer, I programmed solutions to everyday situations that arose with both our software and the way our company was managed. I created a tool to search through and across multiple databases to find errors and clean up our user data.</p>
+    <br>
+    <p><b>FREELANCE WEB DEVELOPER</b></p>
+    <p><i>2018 - Present</i></p>
+    <p>I optimize existing websites for appearance, UX, and SEO; and build new websites for a variety of clients using HTML, JavaScript, and CSS.</p>
+    <br>
+    <p><b>LDS SERVICE MISSION</b></p>
+    <p><i>2019 - 2021</i></p>
+    <p><i>Baltimore Maryland</i></p>
+    <p>As a District Leader and Trainer, I led, trained, and mentored other missionaries to develop skills and increase efficiency. I helped lead mission efforts to adapt to COVID-19, including more involved mentorship of junior missionaries.</p>
+  </div>
+
+  <div class="box title" id=aw><p>AWARDS</p></div>
+  <div class="box">
+    <p><b>TSA WEB DEVELOPMENT AWARD</b></p>
+    <p><i>Jan, 2018</i></p>
+    <p><i>Technology Student Association (TSA)</i></p>
+    <p>Awarded 1st Place in the state of Utah, and competed at Nationals in Atlanta Georgia.</p>
+    <br>
+    <p><b>UTAH DMAF</b></p>
+    <p><i>Mar, 2018</i></p>
+    <p><i>Utah Digital Media Arts Festival (DMAF)</i></p>
+    <p>Won 1st Place, Best of Show in Web Development.</p>
+    <br>
+    <p><b>GLOBAL ROBOTICS COMPETITION</b></p>
+    <p><i>2012</i></p>
+    <p><i>Online Competition hosted by Instructables.com</i></p>
+    <p>Awarded 1st Place in the 10 to 13 year old age catagory.</p>
+    <br>
+    <p><b>EAGLE SCOUT AWARD</b></p>
+    <p><i>Dec 20, 2017</i></p>
+    <br>
+  </div>
+
+  <div class="box title" id=psk><p>SKILLS</p></div>
+  <div class="box"><ul style="list-style-type:circle;">
+        <li>HTML</li>
+        <li>JAVASCRIPT</li>
+        <li>CSS</li>
+        <li>PYTHON</li>
+        <li>SQL</li>
+        <li>GRAPHIC DESIGN</li>
+        <li>VIDEO EDITING</li>
+      </ul>
+  </div>
+
+  <div class="box title" id=ks><p>EDUCATION</p></div>
+  <div class="box">
+    <p><b>Olympus High School</b></p>
+    <p><i>Holladay UT, 2018</i></p>
+    <ul style="list-style-type:circle;">
+      <li>AP Computer Science</li>
+      <li>Web Development</li>
+      <li>Intro to Engineering</li>
+      <li>Titan Way Award. <i>(Dean’s List) all 3 years</i></li>
+    </ul>
+  </div>
+
+</div> -->
+</div>
+
+        <div id=footer>
+          <!-- <div id=foottime>PAGE CURRENTLY UNDER DEVELOPMENT</div> -->
+            <div id=foot-container>
+              <p id=foot1>© 2021 | JOSEPH M. CHRISTIANSEN | ALL RIGHTS RESERVED</p>
+              <p id=foot2>© 2021 | JOSEPH M. CHRISTIANSEN <br> ALL RIGHTS RESERVED</p>
+              <p id=foot3>© 2021 | JMC <br> ALL RIGHTS RESERVED</p>
+            </div>
+        </div>
+
+    </body>
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="test.js"></script>
+</html>

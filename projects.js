@@ -55,7 +55,7 @@ function viewIframe(element) {
   // var q = document.getElementById(x).childNodes[1].getAttribute("width");
   // console.log("width: "+q);
   // document.getElementById(x).setAttribute('style', "width:" + q + ";");
-  document.getElementById(x).setAttribute('style', "animation: viewIframe 1s forwards; position: fixed; z-index: 1000;");
+  document.getElementById(x).setAttribute('style', "animation: viewIframe 1s forwards; position: fixed; z-index: 1000; left: 0px;");
   document.getElementById(x).childNodes[1].setAttribute('style', 'visibility: hidden;');
   var title = document.getElementsByClassName('iframe-title');
   var back = document.getElementsByClassName('iframe-back');
